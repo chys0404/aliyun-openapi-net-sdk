@@ -26,13 +26,13 @@ namespace Aliyun.Acs.Ecs.Transform.V20140526
 {
     public class CreateVSwitchResponseUnmarshaller
     {
-        public static CreateVSwitchResponse Unmarshall(UnmarshallerContext _ctx)
+        public static CreateVSwitchResponse Unmarshall(UnmarshallerContext context)
         {
 			CreateVSwitchResponse createVSwitchResponse = new CreateVSwitchResponse();
 
-			createVSwitchResponse.HttpResponse = _ctx.HttpResponse;
-			createVSwitchResponse.RequestId = _ctx.StringValue("CreateVSwitch.RequestId");
-			createVSwitchResponse.VSwitchId = _ctx.StringValue("CreateVSwitch.VSwitchId");
+			createVSwitchResponse.HttpResponse = context.HttpResponse;
+			createVSwitchResponse.RequestId = context.StringValue("CreateVSwitch.RequestId");
+			createVSwitchResponse.VSwitchId = context.StringValue("CreateVSwitch.VSwitchId");
         
 			return createVSwitchResponse;
         }

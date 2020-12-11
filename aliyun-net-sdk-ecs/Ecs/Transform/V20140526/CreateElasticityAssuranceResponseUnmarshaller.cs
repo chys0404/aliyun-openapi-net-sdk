@@ -26,14 +26,14 @@ namespace Aliyun.Acs.Ecs.Transform.V20140526
 {
     public class CreateElasticityAssuranceResponseUnmarshaller
     {
-        public static CreateElasticityAssuranceResponse Unmarshall(UnmarshallerContext _ctx)
+        public static CreateElasticityAssuranceResponse Unmarshall(UnmarshallerContext context)
         {
 			CreateElasticityAssuranceResponse createElasticityAssuranceResponse = new CreateElasticityAssuranceResponse();
 
-			createElasticityAssuranceResponse.HttpResponse = _ctx.HttpResponse;
-			createElasticityAssuranceResponse.RequestId = _ctx.StringValue("CreateElasticityAssurance.RequestId");
-			createElasticityAssuranceResponse.PrivatePoolOptionsId = _ctx.StringValue("CreateElasticityAssurance.PrivatePoolOptionsId");
-			createElasticityAssuranceResponse.OrderId = _ctx.StringValue("CreateElasticityAssurance.OrderId");
+			createElasticityAssuranceResponse.HttpResponse = context.HttpResponse;
+			createElasticityAssuranceResponse.RequestId = context.StringValue("CreateElasticityAssurance.RequestId");
+			createElasticityAssuranceResponse.PrivatePoolOptionsId = context.StringValue("CreateElasticityAssurance.PrivatePoolOptionsId");
+			createElasticityAssuranceResponse.OrderId = context.StringValue("CreateElasticityAssurance.OrderId");
         
 			return createElasticityAssuranceResponse;
         }

@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Actiontrail.Transform.V20171204
 {
     public class StopLoggingResponseUnmarshaller
     {
-        public static StopLoggingResponse Unmarshall(UnmarshallerContext _ctx)
+        public static StopLoggingResponse Unmarshall(UnmarshallerContext context)
         {
 			StopLoggingResponse stopLoggingResponse = new StopLoggingResponse();
 
-			stopLoggingResponse.HttpResponse = _ctx.HttpResponse;
-			stopLoggingResponse.RequestId = _ctx.StringValue("StopLogging.RequestId");
+			stopLoggingResponse.HttpResponse = context.HttpResponse;
+			stopLoggingResponse.RequestId = context.StringValue("StopLogging.RequestId");
         
 			return stopLoggingResponse;
         }

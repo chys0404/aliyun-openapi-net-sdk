@@ -26,18 +26,18 @@ namespace Aliyun.Acs.Domain.Transform.V20180208
 {
     public class QueryDomainTransferStatusResponseUnmarshaller
     {
-        public static QueryDomainTransferStatusResponse Unmarshall(UnmarshallerContext _ctx)
+        public static QueryDomainTransferStatusResponse Unmarshall(UnmarshallerContext context)
         {
 			QueryDomainTransferStatusResponse queryDomainTransferStatusResponse = new QueryDomainTransferStatusResponse();
 
-			queryDomainTransferStatusResponse.HttpResponse = _ctx.HttpResponse;
-			queryDomainTransferStatusResponse.RequestId = _ctx.StringValue("QueryDomainTransferStatus.RequestId");
+			queryDomainTransferStatusResponse.HttpResponse = context.HttpResponse;
+			queryDomainTransferStatusResponse.RequestId = context.StringValue("QueryDomainTransferStatus.RequestId");
 
 			List<QueryDomainTransferStatusResponse.QueryDomainTransferStatus_DomainTransferStatusItem> queryDomainTransferStatusResponse_domainTransferStatus = new List<QueryDomainTransferStatusResponse.QueryDomainTransferStatus_DomainTransferStatusItem>();
-			for (int i = 0; i < _ctx.Length("QueryDomainTransferStatus.DomainTransferStatus.Length"); i++) {
+			for (int i = 0; i < context.Length("QueryDomainTransferStatus.DomainTransferStatus.Length"); i++) {
 				QueryDomainTransferStatusResponse.QueryDomainTransferStatus_DomainTransferStatusItem domainTransferStatusItem = new QueryDomainTransferStatusResponse.QueryDomainTransferStatus_DomainTransferStatusItem();
-				domainTransferStatusItem.DomainStatusDescription = _ctx.StringValue("QueryDomainTransferStatus.DomainTransferStatus["+ i +"].DomainStatusDescription");
-				domainTransferStatusItem.DomainName = _ctx.StringValue("QueryDomainTransferStatus.DomainTransferStatus["+ i +"].DomainName");
+				domainTransferStatusItem.DomainStatusDescription = context.StringValue("QueryDomainTransferStatus.DomainTransferStatus["+ i +"].DomainStatusDescription");
+				domainTransferStatusItem.DomainName = context.StringValue("QueryDomainTransferStatus.DomainTransferStatus["+ i +"].DomainName");
 
 				queryDomainTransferStatusResponse_domainTransferStatus.Add(domainTransferStatusItem);
 			}

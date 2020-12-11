@@ -26,16 +26,16 @@ namespace Aliyun.Acs.CCC.Transform.V20170705
 {
     public class SuspendJobsResponseUnmarshaller
     {
-        public static SuspendJobsResponse Unmarshall(UnmarshallerContext _ctx)
+        public static SuspendJobsResponse Unmarshall(UnmarshallerContext context)
         {
 			SuspendJobsResponse suspendJobsResponse = new SuspendJobsResponse();
 
-			suspendJobsResponse.HttpResponse = _ctx.HttpResponse;
-			suspendJobsResponse.RequestId = _ctx.StringValue("SuspendJobs.RequestId");
-			suspendJobsResponse.Success = _ctx.BooleanValue("SuspendJobs.Success");
-			suspendJobsResponse.Code = _ctx.StringValue("SuspendJobs.Code");
-			suspendJobsResponse.Message = _ctx.StringValue("SuspendJobs.Message");
-			suspendJobsResponse.HttpStatusCode = _ctx.IntegerValue("SuspendJobs.HttpStatusCode");
+			suspendJobsResponse.HttpResponse = context.HttpResponse;
+			suspendJobsResponse.RequestId = context.StringValue("SuspendJobs.RequestId");
+			suspendJobsResponse.Success = context.BooleanValue("SuspendJobs.Success");
+			suspendJobsResponse.Code = context.StringValue("SuspendJobs.Code");
+			suspendJobsResponse.Message = context.StringValue("SuspendJobs.Message");
+			suspendJobsResponse.HttpStatusCode = context.IntegerValue("SuspendJobs.HttpStatusCode");
         
 			return suspendJobsResponse;
         }

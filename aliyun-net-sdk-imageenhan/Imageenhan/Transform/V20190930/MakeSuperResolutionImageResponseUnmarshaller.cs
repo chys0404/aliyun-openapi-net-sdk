@@ -26,15 +26,15 @@ namespace Aliyun.Acs.imageenhan.Transform.V20190930
 {
     public class MakeSuperResolutionImageResponseUnmarshaller
     {
-        public static MakeSuperResolutionImageResponse Unmarshall(UnmarshallerContext _ctx)
+        public static MakeSuperResolutionImageResponse Unmarshall(UnmarshallerContext context)
         {
 			MakeSuperResolutionImageResponse makeSuperResolutionImageResponse = new MakeSuperResolutionImageResponse();
 
-			makeSuperResolutionImageResponse.HttpResponse = _ctx.HttpResponse;
-			makeSuperResolutionImageResponse.RequestId = _ctx.StringValue("MakeSuperResolutionImage.RequestId");
+			makeSuperResolutionImageResponse.HttpResponse = context.HttpResponse;
+			makeSuperResolutionImageResponse.RequestId = context.StringValue("MakeSuperResolutionImage.RequestId");
 
 			MakeSuperResolutionImageResponse.MakeSuperResolutionImage_Data data = new MakeSuperResolutionImageResponse.MakeSuperResolutionImage_Data();
-			data.Url = _ctx.StringValue("MakeSuperResolutionImage.Data.Url");
+			data.Url = context.StringValue("MakeSuperResolutionImage.Data.Url");
 			makeSuperResolutionImageResponse.Data = data;
         
 			return makeSuperResolutionImageResponse;

@@ -26,12 +26,12 @@ namespace Aliyun.Acs.oos.Transform.V20190601
 {
     public class TriggerExecutionResponseUnmarshaller
     {
-        public static TriggerExecutionResponse Unmarshall(UnmarshallerContext _ctx)
+        public static TriggerExecutionResponse Unmarshall(UnmarshallerContext context)
         {
 			TriggerExecutionResponse triggerExecutionResponse = new TriggerExecutionResponse();
 
-			triggerExecutionResponse.HttpResponse = _ctx.HttpResponse;
-			triggerExecutionResponse.RequestId = _ctx.StringValue("TriggerExecution.RequestId");
+			triggerExecutionResponse.HttpResponse = context.HttpResponse;
+			triggerExecutionResponse.RequestId = context.StringValue("TriggerExecution.RequestId");
         
 			return triggerExecutionResponse;
         }

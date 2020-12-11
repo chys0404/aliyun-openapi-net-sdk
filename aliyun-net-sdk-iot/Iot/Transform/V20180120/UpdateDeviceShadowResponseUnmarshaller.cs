@@ -26,15 +26,15 @@ namespace Aliyun.Acs.Iot.Transform.V20180120
 {
     public class UpdateDeviceShadowResponseUnmarshaller
     {
-        public static UpdateDeviceShadowResponse Unmarshall(UnmarshallerContext _ctx)
+        public static UpdateDeviceShadowResponse Unmarshall(UnmarshallerContext context)
         {
 			UpdateDeviceShadowResponse updateDeviceShadowResponse = new UpdateDeviceShadowResponse();
 
-			updateDeviceShadowResponse.HttpResponse = _ctx.HttpResponse;
-			updateDeviceShadowResponse.RequestId = _ctx.StringValue("UpdateDeviceShadow.RequestId");
-			updateDeviceShadowResponse.Success = _ctx.BooleanValue("UpdateDeviceShadow.Success");
-			updateDeviceShadowResponse.Code = _ctx.StringValue("UpdateDeviceShadow.Code");
-			updateDeviceShadowResponse.ErrorMessage = _ctx.StringValue("UpdateDeviceShadow.ErrorMessage");
+			updateDeviceShadowResponse.HttpResponse = context.HttpResponse;
+			updateDeviceShadowResponse.RequestId = context.StringValue("UpdateDeviceShadow.RequestId");
+			updateDeviceShadowResponse.Success = context.BooleanValue("UpdateDeviceShadow.Success");
+			updateDeviceShadowResponse.Code = context.StringValue("UpdateDeviceShadow.Code");
+			updateDeviceShadowResponse.ErrorMessage = context.StringValue("UpdateDeviceShadow.ErrorMessage");
         
 			return updateDeviceShadowResponse;
         }

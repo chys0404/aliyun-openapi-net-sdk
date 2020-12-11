@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Ecs.Transform.V20140526
 {
     public class DeleteKeyPairsResponseUnmarshaller
     {
-        public static DeleteKeyPairsResponse Unmarshall(UnmarshallerContext _ctx)
+        public static DeleteKeyPairsResponse Unmarshall(UnmarshallerContext context)
         {
 			DeleteKeyPairsResponse deleteKeyPairsResponse = new DeleteKeyPairsResponse();
 
-			deleteKeyPairsResponse.HttpResponse = _ctx.HttpResponse;
-			deleteKeyPairsResponse.RequestId = _ctx.StringValue("DeleteKeyPairs.RequestId");
+			deleteKeyPairsResponse.HttpResponse = context.HttpResponse;
+			deleteKeyPairsResponse.RequestId = context.StringValue("DeleteKeyPairs.RequestId");
         
 			return deleteKeyPairsResponse;
         }

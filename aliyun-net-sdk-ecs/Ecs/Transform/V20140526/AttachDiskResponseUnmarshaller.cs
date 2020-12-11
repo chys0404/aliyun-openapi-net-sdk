@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Ecs.Transform.V20140526
 {
     public class AttachDiskResponseUnmarshaller
     {
-        public static AttachDiskResponse Unmarshall(UnmarshallerContext _ctx)
+        public static AttachDiskResponse Unmarshall(UnmarshallerContext context)
         {
 			AttachDiskResponse attachDiskResponse = new AttachDiskResponse();
 
-			attachDiskResponse.HttpResponse = _ctx.HttpResponse;
-			attachDiskResponse.RequestId = _ctx.StringValue("AttachDisk.RequestId");
+			attachDiskResponse.HttpResponse = context.HttpResponse;
+			attachDiskResponse.RequestId = context.StringValue("AttachDisk.RequestId");
         
 			return attachDiskResponse;
         }

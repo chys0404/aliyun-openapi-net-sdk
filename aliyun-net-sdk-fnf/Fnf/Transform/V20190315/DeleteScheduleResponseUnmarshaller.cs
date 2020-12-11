@@ -26,12 +26,12 @@ namespace Aliyun.Acs.fnf.Transform.V20190315
 {
     public class DeleteScheduleResponseUnmarshaller
     {
-        public static DeleteScheduleResponse Unmarshall(UnmarshallerContext _ctx)
+        public static DeleteScheduleResponse Unmarshall(UnmarshallerContext context)
         {
 			DeleteScheduleResponse deleteScheduleResponse = new DeleteScheduleResponse();
 
-			deleteScheduleResponse.HttpResponse = _ctx.HttpResponse;
-			deleteScheduleResponse.RequestId = _ctx.StringValue("DeleteSchedule.RequestId");
+			deleteScheduleResponse.HttpResponse = context.HttpResponse;
+			deleteScheduleResponse.RequestId = context.StringValue("DeleteSchedule.RequestId");
         
 			return deleteScheduleResponse;
         }

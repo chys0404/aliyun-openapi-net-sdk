@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Ecs.Transform.V20140526
 {
     public class AddTagsResponseUnmarshaller
     {
-        public static AddTagsResponse Unmarshall(UnmarshallerContext _ctx)
+        public static AddTagsResponse Unmarshall(UnmarshallerContext context)
         {
 			AddTagsResponse addTagsResponse = new AddTagsResponse();
 
-			addTagsResponse.HttpResponse = _ctx.HttpResponse;
-			addTagsResponse.RequestId = _ctx.StringValue("AddTags.RequestId");
+			addTagsResponse.HttpResponse = context.HttpResponse;
+			addTagsResponse.RequestId = context.StringValue("AddTags.RequestId");
         
 			return addTagsResponse;
         }

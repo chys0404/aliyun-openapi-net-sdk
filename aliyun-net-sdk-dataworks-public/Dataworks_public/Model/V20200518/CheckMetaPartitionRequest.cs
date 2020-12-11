@@ -22,7 +22,6 @@ using Aliyun.Acs.Core;
 using Aliyun.Acs.Core.Http;
 using Aliyun.Acs.Core.Transform;
 using Aliyun.Acs.Core.Utils;
-using Aliyun.Acs.dataworks_public;
 using Aliyun.Acs.dataworks_public.Transform;
 using Aliyun.Acs.dataworks_public.Transform.V20200518;
 
@@ -31,40 +30,19 @@ namespace Aliyun.Acs.dataworks_public.Model.V20200518
     public class CheckMetaPartitionRequest : RpcAcsRequest<CheckMetaPartitionResponse>
     {
         public CheckMetaPartitionRequest()
-            : base("dataworks-public", "2020-05-18", "CheckMetaPartition")
+            : base("dataworks-public", "2020-05-18", "CheckMetaPartition", "dide", "openAPI")
         {
             if (this.GetType().GetProperty("ProductEndpointMap") != null && this.GetType().GetProperty("ProductEndpointType") != null)
             {
-                this.GetType().GetProperty("ProductEndpointMap").SetValue(this, Aliyun.Acs.dataworks_public.Endpoint.endpointMap, null);
-                this.GetType().GetProperty("ProductEndpointType").SetValue(this, Aliyun.Acs.dataworks_public.Endpoint.endpointRegionalType, null);
+                this.GetType().GetProperty("ProductEndpointMap").SetValue(this, Endpoint.endpointMap, null);
+                this.GetType().GetProperty("ProductEndpointType").SetValue(this, Endpoint.endpointRegionalType, null);
             }
 			Method = MethodType.POST;
         }
 
-		private string dataSourceType;
-
 		private string partition;
 
 		private string tableGuid;
-
-		private string databaseName;
-
-		private string clusterId;
-
-		private string tableName;
-
-		public string DataSourceType
-		{
-			get
-			{
-				return dataSourceType;
-			}
-			set	
-			{
-				dataSourceType = value;
-				DictionaryUtil.Add(QueryParameters, "DataSourceType", value);
-			}
-		}
 
 		public string Partition
 		{
@@ -89,45 +67,6 @@ namespace Aliyun.Acs.dataworks_public.Model.V20200518
 			{
 				tableGuid = value;
 				DictionaryUtil.Add(QueryParameters, "TableGuid", value);
-			}
-		}
-
-		public string DatabaseName
-		{
-			get
-			{
-				return databaseName;
-			}
-			set	
-			{
-				databaseName = value;
-				DictionaryUtil.Add(QueryParameters, "DatabaseName", value);
-			}
-		}
-
-		public string ClusterId
-		{
-			get
-			{
-				return clusterId;
-			}
-			set	
-			{
-				clusterId = value;
-				DictionaryUtil.Add(QueryParameters, "ClusterId", value);
-			}
-		}
-
-		public string TableName
-		{
-			get
-			{
-				return tableName;
-			}
-			set	
-			{
-				tableName = value;
-				DictionaryUtil.Add(QueryParameters, "TableName", value);
 			}
 		}
 

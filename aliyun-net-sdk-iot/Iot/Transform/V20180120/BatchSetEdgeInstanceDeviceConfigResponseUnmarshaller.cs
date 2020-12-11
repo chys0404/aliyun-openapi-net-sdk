@@ -26,15 +26,15 @@ namespace Aliyun.Acs.Iot.Transform.V20180120
 {
     public class BatchSetEdgeInstanceDeviceConfigResponseUnmarshaller
     {
-        public static BatchSetEdgeInstanceDeviceConfigResponse Unmarshall(UnmarshallerContext _ctx)
+        public static BatchSetEdgeInstanceDeviceConfigResponse Unmarshall(UnmarshallerContext context)
         {
 			BatchSetEdgeInstanceDeviceConfigResponse batchSetEdgeInstanceDeviceConfigResponse = new BatchSetEdgeInstanceDeviceConfigResponse();
 
-			batchSetEdgeInstanceDeviceConfigResponse.HttpResponse = _ctx.HttpResponse;
-			batchSetEdgeInstanceDeviceConfigResponse.RequestId = _ctx.StringValue("BatchSetEdgeInstanceDeviceConfig.RequestId");
-			batchSetEdgeInstanceDeviceConfigResponse.Success = _ctx.BooleanValue("BatchSetEdgeInstanceDeviceConfig.Success");
-			batchSetEdgeInstanceDeviceConfigResponse.Code = _ctx.StringValue("BatchSetEdgeInstanceDeviceConfig.Code");
-			batchSetEdgeInstanceDeviceConfigResponse.ErrorMessage = _ctx.StringValue("BatchSetEdgeInstanceDeviceConfig.ErrorMessage");
+			batchSetEdgeInstanceDeviceConfigResponse.HttpResponse = context.HttpResponse;
+			batchSetEdgeInstanceDeviceConfigResponse.RequestId = context.StringValue("BatchSetEdgeInstanceDeviceConfig.RequestId");
+			batchSetEdgeInstanceDeviceConfigResponse.Success = context.BooleanValue("BatchSetEdgeInstanceDeviceConfig.Success");
+			batchSetEdgeInstanceDeviceConfigResponse.Code = context.StringValue("BatchSetEdgeInstanceDeviceConfig.Code");
+			batchSetEdgeInstanceDeviceConfigResponse.ErrorMessage = context.StringValue("BatchSetEdgeInstanceDeviceConfig.ErrorMessage");
         
 			return batchSetEdgeInstanceDeviceConfigResponse;
         }

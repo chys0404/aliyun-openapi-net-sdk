@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Ecs.Transform.V20140526
 {
     public class JoinSecurityGroupResponseUnmarshaller
     {
-        public static JoinSecurityGroupResponse Unmarshall(UnmarshallerContext _ctx)
+        public static JoinSecurityGroupResponse Unmarshall(UnmarshallerContext context)
         {
 			JoinSecurityGroupResponse joinSecurityGroupResponse = new JoinSecurityGroupResponse();
 
-			joinSecurityGroupResponse.HttpResponse = _ctx.HttpResponse;
-			joinSecurityGroupResponse.RequestId = _ctx.StringValue("JoinSecurityGroup.RequestId");
+			joinSecurityGroupResponse.HttpResponse = context.HttpResponse;
+			joinSecurityGroupResponse.RequestId = context.StringValue("JoinSecurityGroup.RequestId");
         
 			return joinSecurityGroupResponse;
         }

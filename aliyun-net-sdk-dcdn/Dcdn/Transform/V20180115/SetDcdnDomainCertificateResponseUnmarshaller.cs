@@ -26,12 +26,12 @@ namespace Aliyun.Acs.dcdn.Transform.V20180115
 {
     public class SetDcdnDomainCertificateResponseUnmarshaller
     {
-        public static SetDcdnDomainCertificateResponse Unmarshall(UnmarshallerContext _ctx)
+        public static SetDcdnDomainCertificateResponse Unmarshall(UnmarshallerContext context)
         {
 			SetDcdnDomainCertificateResponse setDcdnDomainCertificateResponse = new SetDcdnDomainCertificateResponse();
 
-			setDcdnDomainCertificateResponse.HttpResponse = _ctx.HttpResponse;
-			setDcdnDomainCertificateResponse.RequestId = _ctx.StringValue("SetDcdnDomainCertificate.RequestId");
+			setDcdnDomainCertificateResponse.HttpResponse = context.HttpResponse;
+			setDcdnDomainCertificateResponse.RequestId = context.StringValue("SetDcdnDomainCertificate.RequestId");
         
 			return setDcdnDomainCertificateResponse;
         }

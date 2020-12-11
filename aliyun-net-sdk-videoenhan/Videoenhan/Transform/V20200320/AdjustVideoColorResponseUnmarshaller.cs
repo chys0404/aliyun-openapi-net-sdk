@@ -26,15 +26,15 @@ namespace Aliyun.Acs.videoenhan.Transform.V20200320
 {
     public class AdjustVideoColorResponseUnmarshaller
     {
-        public static AdjustVideoColorResponse Unmarshall(UnmarshallerContext _ctx)
+        public static AdjustVideoColorResponse Unmarshall(UnmarshallerContext context)
         {
 			AdjustVideoColorResponse adjustVideoColorResponse = new AdjustVideoColorResponse();
 
-			adjustVideoColorResponse.HttpResponse = _ctx.HttpResponse;
-			adjustVideoColorResponse.RequestId = _ctx.StringValue("AdjustVideoColor.RequestId");
+			adjustVideoColorResponse.HttpResponse = context.HttpResponse;
+			adjustVideoColorResponse.RequestId = context.StringValue("AdjustVideoColor.RequestId");
 
 			AdjustVideoColorResponse.AdjustVideoColor_Data data = new AdjustVideoColorResponse.AdjustVideoColor_Data();
-			data.VideoUrl = _ctx.StringValue("AdjustVideoColor.Data.VideoUrl");
+			data.VideoUrl = context.StringValue("AdjustVideoColor.Data.VideoUrl");
 			adjustVideoColorResponse.Data = data;
         
 			return adjustVideoColorResponse;

@@ -26,16 +26,16 @@ namespace Aliyun.Acs.CCC.Transform.V20170705
 {
     public class DeleteMediaResponseUnmarshaller
     {
-        public static DeleteMediaResponse Unmarshall(UnmarshallerContext _ctx)
+        public static DeleteMediaResponse Unmarshall(UnmarshallerContext context)
         {
 			DeleteMediaResponse deleteMediaResponse = new DeleteMediaResponse();
 
-			deleteMediaResponse.HttpResponse = _ctx.HttpResponse;
-			deleteMediaResponse.RequestId = _ctx.StringValue("DeleteMedia.RequestId");
-			deleteMediaResponse.Success = _ctx.BooleanValue("DeleteMedia.Success");
-			deleteMediaResponse.Code = _ctx.StringValue("DeleteMedia.Code");
-			deleteMediaResponse.Message = _ctx.StringValue("DeleteMedia.Message");
-			deleteMediaResponse.HttpStatusCode = _ctx.IntegerValue("DeleteMedia.HttpStatusCode");
+			deleteMediaResponse.HttpResponse = context.HttpResponse;
+			deleteMediaResponse.RequestId = context.StringValue("DeleteMedia.RequestId");
+			deleteMediaResponse.Success = context.BooleanValue("DeleteMedia.Success");
+			deleteMediaResponse.Code = context.StringValue("DeleteMedia.Code");
+			deleteMediaResponse.Message = context.StringValue("DeleteMedia.Message");
+			deleteMediaResponse.HttpStatusCode = context.IntegerValue("DeleteMedia.HttpStatusCode");
         
 			return deleteMediaResponse;
         }

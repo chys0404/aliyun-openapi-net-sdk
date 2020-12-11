@@ -26,16 +26,16 @@ namespace Aliyun.Acs.videoenhan.Transform.V20200320
 {
     public class AbstractEcommerceVideoResponseUnmarshaller
     {
-        public static AbstractEcommerceVideoResponse Unmarshall(UnmarshallerContext _ctx)
+        public static AbstractEcommerceVideoResponse Unmarshall(UnmarshallerContext context)
         {
 			AbstractEcommerceVideoResponse abstractEcommerceVideoResponse = new AbstractEcommerceVideoResponse();
 
-			abstractEcommerceVideoResponse.HttpResponse = _ctx.HttpResponse;
-			abstractEcommerceVideoResponse.RequestId = _ctx.StringValue("AbstractEcommerceVideo.RequestId");
+			abstractEcommerceVideoResponse.HttpResponse = context.HttpResponse;
+			abstractEcommerceVideoResponse.RequestId = context.StringValue("AbstractEcommerceVideo.RequestId");
 
 			AbstractEcommerceVideoResponse.AbstractEcommerceVideo_Data data = new AbstractEcommerceVideoResponse.AbstractEcommerceVideo_Data();
-			data.VideoUrl = _ctx.StringValue("AbstractEcommerceVideo.Data.VideoUrl");
-			data.VideoCoverUrl = _ctx.StringValue("AbstractEcommerceVideo.Data.VideoCoverUrl");
+			data.VideoUrl = context.StringValue("AbstractEcommerceVideo.Data.VideoUrl");
+			data.VideoCoverUrl = context.StringValue("AbstractEcommerceVideo.Data.VideoCoverUrl");
 			abstractEcommerceVideoResponse.Data = data;
         
 			return abstractEcommerceVideoResponse;

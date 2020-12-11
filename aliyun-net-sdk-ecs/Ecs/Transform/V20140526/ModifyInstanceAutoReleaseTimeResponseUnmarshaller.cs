@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Ecs.Transform.V20140526
 {
     public class ModifyInstanceAutoReleaseTimeResponseUnmarshaller
     {
-        public static ModifyInstanceAutoReleaseTimeResponse Unmarshall(UnmarshallerContext _ctx)
+        public static ModifyInstanceAutoReleaseTimeResponse Unmarshall(UnmarshallerContext context)
         {
 			ModifyInstanceAutoReleaseTimeResponse modifyInstanceAutoReleaseTimeResponse = new ModifyInstanceAutoReleaseTimeResponse();
 
-			modifyInstanceAutoReleaseTimeResponse.HttpResponse = _ctx.HttpResponse;
-			modifyInstanceAutoReleaseTimeResponse.RequestId = _ctx.StringValue("ModifyInstanceAutoReleaseTime.RequestId");
+			modifyInstanceAutoReleaseTimeResponse.HttpResponse = context.HttpResponse;
+			modifyInstanceAutoReleaseTimeResponse.RequestId = context.StringValue("ModifyInstanceAutoReleaseTime.RequestId");
         
 			return modifyInstanceAutoReleaseTimeResponse;
         }

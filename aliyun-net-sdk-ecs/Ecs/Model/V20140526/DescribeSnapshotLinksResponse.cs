@@ -116,8 +116,6 @@ namespace Aliyun.Acs.Ecs.Model.V20140526
 
 			private string category;
 
-			private bool? instantAccess;
-
 			private long? totalSize;
 
 			private int? totalCount;
@@ -227,18 +225,6 @@ namespace Aliyun.Acs.Ecs.Model.V20140526
 				set	
 				{
 					category = value;
-				}
-			}
-
-			public bool? InstantAccess
-			{
-				get
-				{
-					return instantAccess;
-				}
-				set	
-				{
-					instantAccess = value;
 				}
 			}
 

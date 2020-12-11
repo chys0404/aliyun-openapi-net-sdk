@@ -26,15 +26,15 @@ namespace Aliyun.Acs.videoenhan.Transform.V20200320
 {
     public class SuperResolveVideoResponseUnmarshaller
     {
-        public static SuperResolveVideoResponse Unmarshall(UnmarshallerContext _ctx)
+        public static SuperResolveVideoResponse Unmarshall(UnmarshallerContext context)
         {
 			SuperResolveVideoResponse superResolveVideoResponse = new SuperResolveVideoResponse();
 
-			superResolveVideoResponse.HttpResponse = _ctx.HttpResponse;
-			superResolveVideoResponse.RequestId = _ctx.StringValue("SuperResolveVideo.RequestId");
+			superResolveVideoResponse.HttpResponse = context.HttpResponse;
+			superResolveVideoResponse.RequestId = context.StringValue("SuperResolveVideo.RequestId");
 
 			SuperResolveVideoResponse.SuperResolveVideo_Data data = new SuperResolveVideoResponse.SuperResolveVideo_Data();
-			data.VideoUrl = _ctx.StringValue("SuperResolveVideo.Data.VideoUrl");
+			data.VideoUrl = context.StringValue("SuperResolveVideo.Data.VideoUrl");
 			superResolveVideoResponse.Data = data;
         
 			return superResolveVideoResponse;

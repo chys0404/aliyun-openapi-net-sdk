@@ -26,16 +26,16 @@ namespace Aliyun.Acs.OutboundBot.Transform.V20191226
 {
     public class CancelJobsResponseUnmarshaller
     {
-        public static CancelJobsResponse Unmarshall(UnmarshallerContext _ctx)
+        public static CancelJobsResponse Unmarshall(UnmarshallerContext context)
         {
 			CancelJobsResponse cancelJobsResponse = new CancelJobsResponse();
 
-			cancelJobsResponse.HttpResponse = _ctx.HttpResponse;
-			cancelJobsResponse.Code = _ctx.StringValue("CancelJobs.Code");
-			cancelJobsResponse.HttpStatusCode = _ctx.IntegerValue("CancelJobs.HttpStatusCode");
-			cancelJobsResponse.Message = _ctx.StringValue("CancelJobs.Message");
-			cancelJobsResponse.RequestId = _ctx.StringValue("CancelJobs.RequestId");
-			cancelJobsResponse.Success = _ctx.BooleanValue("CancelJobs.Success");
+			cancelJobsResponse.HttpResponse = context.HttpResponse;
+			cancelJobsResponse.RequestId = context.StringValue("CancelJobs.RequestId");
+			cancelJobsResponse.Success = context.BooleanValue("CancelJobs.Success");
+			cancelJobsResponse.Code = context.StringValue("CancelJobs.Code");
+			cancelJobsResponse.Message = context.StringValue("CancelJobs.Message");
+			cancelJobsResponse.HttpStatusCode = context.IntegerValue("CancelJobs.HttpStatusCode");
         
 			return cancelJobsResponse;
         }

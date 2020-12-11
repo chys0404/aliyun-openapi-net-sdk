@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Ecs.Transform.V20140526
 {
     public class DeleteHaVipResponseUnmarshaller
     {
-        public static DeleteHaVipResponse Unmarshall(UnmarshallerContext _ctx)
+        public static DeleteHaVipResponse Unmarshall(UnmarshallerContext context)
         {
 			DeleteHaVipResponse deleteHaVipResponse = new DeleteHaVipResponse();
 
-			deleteHaVipResponse.HttpResponse = _ctx.HttpResponse;
-			deleteHaVipResponse.RequestId = _ctx.StringValue("DeleteHaVip.RequestId");
+			deleteHaVipResponse.HttpResponse = context.HttpResponse;
+			deleteHaVipResponse.RequestId = context.StringValue("DeleteHaVip.RequestId");
         
 			return deleteHaVipResponse;
         }

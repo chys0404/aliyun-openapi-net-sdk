@@ -26,12 +26,12 @@ namespace Aliyun.Acs.dcdn.Transform.V20180115
 {
     public class RollbackDcdnStagingConfigResponseUnmarshaller
     {
-        public static RollbackDcdnStagingConfigResponse Unmarshall(UnmarshallerContext _ctx)
+        public static RollbackDcdnStagingConfigResponse Unmarshall(UnmarshallerContext context)
         {
 			RollbackDcdnStagingConfigResponse rollbackDcdnStagingConfigResponse = new RollbackDcdnStagingConfigResponse();
 
-			rollbackDcdnStagingConfigResponse.HttpResponse = _ctx.HttpResponse;
-			rollbackDcdnStagingConfigResponse.RequestId = _ctx.StringValue("RollbackDcdnStagingConfig.RequestId");
+			rollbackDcdnStagingConfigResponse.HttpResponse = context.HttpResponse;
+			rollbackDcdnStagingConfigResponse.RequestId = context.StringValue("RollbackDcdnStagingConfig.RequestId");
         
 			return rollbackDcdnStagingConfigResponse;
         }

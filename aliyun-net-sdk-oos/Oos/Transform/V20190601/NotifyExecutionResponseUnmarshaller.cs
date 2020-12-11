@@ -26,12 +26,12 @@ namespace Aliyun.Acs.oos.Transform.V20190601
 {
     public class NotifyExecutionResponseUnmarshaller
     {
-        public static NotifyExecutionResponse Unmarshall(UnmarshallerContext _ctx)
+        public static NotifyExecutionResponse Unmarshall(UnmarshallerContext context)
         {
 			NotifyExecutionResponse notifyExecutionResponse = new NotifyExecutionResponse();
 
-			notifyExecutionResponse.HttpResponse = _ctx.HttpResponse;
-			notifyExecutionResponse.RequestId = _ctx.StringValue("NotifyExecution.RequestId");
+			notifyExecutionResponse.HttpResponse = context.HttpResponse;
+			notifyExecutionResponse.RequestId = context.StringValue("NotifyExecution.RequestId");
         
 			return notifyExecutionResponse;
         }

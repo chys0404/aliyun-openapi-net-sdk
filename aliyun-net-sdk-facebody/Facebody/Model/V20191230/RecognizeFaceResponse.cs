@@ -56,37 +56,43 @@ namespace Aliyun.Acs.facebody.Model.V20191230
 		public class RecognizeFace_Data
 		{
 
+			private int? faceCount;
+
 			private int? landmarkCount;
 
 			private int? denseFeatureLength;
 
-			private int? faceCount;
-
-			private List<string> denseFeatures;
+			private List<string> faceRectangles;
 
 			private List<string> faceProbabilityList;
 
-			private List<string> hatList;
-
-			private List<string> ageList;
-
-			private List<string> beuatyList;
-
-			private List<string> faceRectangles;
-
-			private List<string> glasses;
+			private List<string> poseList;
 
 			private List<string> landmarks;
 
-			private List<string> expressions;
-
-			private List<string> poseList;
+			private List<string> pupils;
 
 			private List<string> genderList;
 
-			private List<string> pupils;
+			private List<string> ageList;
 
-			private RecognizeFace_Qualities qualities;
+			private List<string> expressions;
+
+			private List<string> glasses;
+
+			private List<string> denseFeatures;
+
+			public int? FaceCount
+			{
+				get
+				{
+					return faceCount;
+				}
+				set	
+				{
+					faceCount = value;
+				}
+			}
 
 			public int? LandmarkCount
 			{
@@ -112,27 +118,15 @@ namespace Aliyun.Acs.facebody.Model.V20191230
 				}
 			}
 
-			public int? FaceCount
+			public List<string> FaceRectangles
 			{
 				get
 				{
-					return faceCount;
+					return faceRectangles;
 				}
 				set	
 				{
-					faceCount = value;
-				}
-			}
-
-			public List<string> DenseFeatures
-			{
-				get
-				{
-					return denseFeatures;
-				}
-				set	
-				{
-					denseFeatures = value;
+					faceRectangles = value;
 				}
 			}
 
@@ -148,63 +142,15 @@ namespace Aliyun.Acs.facebody.Model.V20191230
 				}
 			}
 
-			public List<string> HatList
+			public List<string> PoseList
 			{
 				get
 				{
-					return hatList;
+					return poseList;
 				}
 				set	
 				{
-					hatList = value;
-				}
-			}
-
-			public List<string> AgeList
-			{
-				get
-				{
-					return ageList;
-				}
-				set	
-				{
-					ageList = value;
-				}
-			}
-
-			public List<string> BeuatyList
-			{
-				get
-				{
-					return beuatyList;
-				}
-				set	
-				{
-					beuatyList = value;
-				}
-			}
-
-			public List<string> FaceRectangles
-			{
-				get
-				{
-					return faceRectangles;
-				}
-				set	
-				{
-					faceRectangles = value;
-				}
-			}
-
-			public List<string> Glasses
-			{
-				get
-				{
-					return glasses;
-				}
-				set	
-				{
-					glasses = value;
+					poseList = value;
 				}
 			}
 
@@ -220,27 +166,15 @@ namespace Aliyun.Acs.facebody.Model.V20191230
 				}
 			}
 
-			public List<string> Expressions
+			public List<string> Pupils
 			{
 				get
 				{
-					return expressions;
+					return pupils;
 				}
 				set	
 				{
-					expressions = value;
-				}
-			}
-
-			public List<string> PoseList
-			{
-				get
-				{
-					return poseList;
-				}
-				set	
-				{
-					poseList = value;
+					pupils = value;
 				}
 			}
 
@@ -256,143 +190,51 @@ namespace Aliyun.Acs.facebody.Model.V20191230
 				}
 			}
 
-			public List<string> Pupils
+			public List<string> AgeList
 			{
 				get
 				{
-					return pupils;
+					return ageList;
 				}
 				set	
 				{
-					pupils = value;
+					ageList = value;
 				}
 			}
 
-			public RecognizeFace_Qualities Qualities
+			public List<string> Expressions
 			{
 				get
 				{
-					return qualities;
+					return expressions;
 				}
 				set	
 				{
-					qualities = value;
+					expressions = value;
 				}
 			}
 
-			public class RecognizeFace_Qualities
+			public List<string> Glasses
 			{
-
-				private List<string> noiseList;
-
-				private List<string> scoreList;
-
-				private List<string> blurList;
-
-				private List<string> maskList;
-
-				private List<string> glassList;
-
-				private List<string> fnfList;
-
-				private List<string> poseList1;
-
-				private List<string> illuList;
-
-				public List<string> NoiseList
+				get
 				{
-					get
-					{
-						return noiseList;
-					}
-					set	
-					{
-						noiseList = value;
-					}
+					return glasses;
 				}
-
-				public List<string> ScoreList
+				set	
 				{
-					get
-					{
-						return scoreList;
-					}
-					set	
-					{
-						scoreList = value;
-					}
+					glasses = value;
 				}
+			}
 
-				public List<string> BlurList
+			public List<string> DenseFeatures
+			{
+				get
 				{
-					get
-					{
-						return blurList;
-					}
-					set	
-					{
-						blurList = value;
-					}
+					return denseFeatures;
 				}
-
-				public List<string> MaskList
+				set	
 				{
-					get
-					{
-						return maskList;
-					}
-					set	
-					{
-						maskList = value;
-					}
-				}
-
-				public List<string> GlassList
-				{
-					get
-					{
-						return glassList;
-					}
-					set	
-					{
-						glassList = value;
-					}
-				}
-
-				public List<string> FnfList
-				{
-					get
-					{
-						return fnfList;
-					}
-					set	
-					{
-						fnfList = value;
-					}
-				}
-
-				public List<string> PoseList1
-				{
-					get
-					{
-						return poseList1;
-					}
-					set	
-					{
-						poseList1 = value;
-					}
-				}
-
-				public List<string> IlluList
-				{
-					get
-					{
-						return illuList;
-					}
-					set	
-					{
-						illuList = value;
-					}
+					denseFeatures = value;
 				}
 			}
 		}

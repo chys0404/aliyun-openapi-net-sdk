@@ -43,6 +43,8 @@ namespace Aliyun.Acs.Cdn.Model.V20180510
 
 		private string startTime;
 
+		private string securityToken;
+
 		private string domainName;
 
 		private string endTime;
@@ -59,6 +61,19 @@ namespace Aliyun.Acs.Cdn.Model.V20180510
 			{
 				startTime = value;
 				DictionaryUtil.Add(QueryParameters, "StartTime", value);
+			}
+		}
+
+		public string SecurityToken
+		{
+			get
+			{
+				return securityToken;
+			}
+			set	
+			{
+				securityToken = value;
+				DictionaryUtil.Add(QueryParameters, "SecurityToken", value);
 			}
 		}
 

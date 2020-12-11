@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Ecs.Transform.V20140526
 {
     public class AcceptInquiredSystemEventResponseUnmarshaller
     {
-        public static AcceptInquiredSystemEventResponse Unmarshall(UnmarshallerContext _ctx)
+        public static AcceptInquiredSystemEventResponse Unmarshall(UnmarshallerContext context)
         {
 			AcceptInquiredSystemEventResponse acceptInquiredSystemEventResponse = new AcceptInquiredSystemEventResponse();
 
-			acceptInquiredSystemEventResponse.HttpResponse = _ctx.HttpResponse;
-			acceptInquiredSystemEventResponse.RequestId = _ctx.StringValue("AcceptInquiredSystemEvent.RequestId");
+			acceptInquiredSystemEventResponse.HttpResponse = context.HttpResponse;
+			acceptInquiredSystemEventResponse.RequestId = context.StringValue("AcceptInquiredSystemEvent.RequestId");
         
 			return acceptInquiredSystemEventResponse;
         }

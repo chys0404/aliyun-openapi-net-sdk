@@ -26,13 +26,13 @@ namespace Aliyun.Acs.Ecs.Transform.V20140526
 {
     public class ReplaceSystemDiskResponseUnmarshaller
     {
-        public static ReplaceSystemDiskResponse Unmarshall(UnmarshallerContext _ctx)
+        public static ReplaceSystemDiskResponse Unmarshall(UnmarshallerContext context)
         {
 			ReplaceSystemDiskResponse replaceSystemDiskResponse = new ReplaceSystemDiskResponse();
 
-			replaceSystemDiskResponse.HttpResponse = _ctx.HttpResponse;
-			replaceSystemDiskResponse.RequestId = _ctx.StringValue("ReplaceSystemDisk.RequestId");
-			replaceSystemDiskResponse.DiskId = _ctx.StringValue("ReplaceSystemDisk.DiskId");
+			replaceSystemDiskResponse.HttpResponse = context.HttpResponse;
+			replaceSystemDiskResponse.RequestId = context.StringValue("ReplaceSystemDisk.RequestId");
+			replaceSystemDiskResponse.DiskId = context.StringValue("ReplaceSystemDisk.DiskId");
         
 			return replaceSystemDiskResponse;
         }

@@ -26,16 +26,16 @@ namespace Aliyun.Acs.VoiceNavigator.Transform.V20180612
 {
     public class DebugCollectedNumberResponseUnmarshaller
     {
-        public static DebugCollectedNumberResponse Unmarshall(UnmarshallerContext _ctx)
+        public static DebugCollectedNumberResponse Unmarshall(UnmarshallerContext context)
         {
 			DebugCollectedNumberResponse debugCollectedNumberResponse = new DebugCollectedNumberResponse();
 
-			debugCollectedNumberResponse.HttpResponse = _ctx.HttpResponse;
-			debugCollectedNumberResponse.RequestId = _ctx.StringValue("DebugCollectedNumber.RequestId");
-			debugCollectedNumberResponse.TextResponse = _ctx.StringValue("DebugCollectedNumber.TextResponse");
-			debugCollectedNumberResponse.Interruptible = _ctx.BooleanValue("DebugCollectedNumber.Interruptible");
-			debugCollectedNumberResponse.Action = _ctx.StringValue("DebugCollectedNumber.Action");
-			debugCollectedNumberResponse.ActionParams = _ctx.StringValue("DebugCollectedNumber.ActionParams");
+			debugCollectedNumberResponse.HttpResponse = context.HttpResponse;
+			debugCollectedNumberResponse.RequestId = context.StringValue("DebugCollectedNumber.RequestId");
+			debugCollectedNumberResponse.TextResponse = context.StringValue("DebugCollectedNumber.TextResponse");
+			debugCollectedNumberResponse.Interruptible = context.BooleanValue("DebugCollectedNumber.Interruptible");
+			debugCollectedNumberResponse.Action = context.StringValue("DebugCollectedNumber.Action");
+			debugCollectedNumberResponse.ActionParams = context.StringValue("DebugCollectedNumber.ActionParams");
         
 			return debugCollectedNumberResponse;
         }

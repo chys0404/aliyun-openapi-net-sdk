@@ -26,22 +26,22 @@ namespace Aliyun.Acs.aliyuncvc.Transform.V20191030
 {
     public class GetDeviceActiveCodeResponseUnmarshaller
     {
-        public static GetDeviceActiveCodeResponse Unmarshall(UnmarshallerContext _ctx)
+        public static GetDeviceActiveCodeResponse Unmarshall(UnmarshallerContext context)
         {
 			GetDeviceActiveCodeResponse getDeviceActiveCodeResponse = new GetDeviceActiveCodeResponse();
 
-			getDeviceActiveCodeResponse.HttpResponse = _ctx.HttpResponse;
-			getDeviceActiveCodeResponse.ErrorCode = _ctx.IntegerValue("GetDeviceActiveCode.ErrorCode");
-			getDeviceActiveCodeResponse.Message = _ctx.StringValue("GetDeviceActiveCode.Message");
-			getDeviceActiveCodeResponse.Success = _ctx.BooleanValue("GetDeviceActiveCode.Success");
+			getDeviceActiveCodeResponse.HttpResponse = context.HttpResponse;
+			getDeviceActiveCodeResponse.ErrorCode = context.IntegerValue("GetDeviceActiveCode.ErrorCode");
+			getDeviceActiveCodeResponse.Message = context.StringValue("GetDeviceActiveCode.Message");
+			getDeviceActiveCodeResponse.Success = context.BooleanValue("GetDeviceActiveCode.Success");
 
 			List<GetDeviceActiveCodeResponse.GetDeviceActiveCode_Data> getDeviceActiveCodeResponse_devices = new List<GetDeviceActiveCodeResponse.GetDeviceActiveCode_Data>();
-			for (int i = 0; i < _ctx.Length("GetDeviceActiveCode.Devices.Length"); i++) {
+			for (int i = 0; i < context.Length("GetDeviceActiveCode.Devices.Length"); i++) {
 				GetDeviceActiveCodeResponse.GetDeviceActiveCode_Data data = new GetDeviceActiveCodeResponse.GetDeviceActiveCode_Data();
-				data.DeviceErrorCode = _ctx.IntegerValue("GetDeviceActiveCode.Devices["+ i +"].DeviceErrorCode");
-				data.DeviceMessage = _ctx.StringValue("GetDeviceActiveCode.Devices["+ i +"].DeviceMessage");
-				data.SN = _ctx.StringValue("GetDeviceActiveCode.Devices["+ i +"].SN");
-				data.ActiveCode = _ctx.StringValue("GetDeviceActiveCode.Devices["+ i +"].ActiveCode");
+				data.DeviceErrorCode = context.IntegerValue("GetDeviceActiveCode.Devices["+ i +"].DeviceErrorCode");
+				data.DeviceMessage = context.StringValue("GetDeviceActiveCode.Devices["+ i +"].DeviceMessage");
+				data.SN = context.StringValue("GetDeviceActiveCode.Devices["+ i +"].SN");
+				data.ActiveCode = context.StringValue("GetDeviceActiveCode.Devices["+ i +"].ActiveCode");
 
 				getDeviceActiveCodeResponse_devices.Add(data);
 			}

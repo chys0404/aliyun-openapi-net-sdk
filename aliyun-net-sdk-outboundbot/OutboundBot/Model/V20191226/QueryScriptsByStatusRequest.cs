@@ -34,13 +34,10 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
         {
             if (this.GetType().GetProperty("ProductEndpointMap") != null && this.GetType().GetProperty("ProductEndpointType") != null)
             {
-                this.GetType().GetProperty("ProductEndpointMap").SetValue(this, Aliyun.Acs.OutboundBot.Endpoint.endpointMap, null);
-                this.GetType().GetProperty("ProductEndpointType").SetValue(this, Aliyun.Acs.OutboundBot.Endpoint.endpointRegionalType, null);
+                this.GetType().GetProperty("ProductEndpointMap").SetValue(this, Endpoint.endpointMap, null);
+                this.GetType().GetProperty("ProductEndpointType").SetValue(this, Endpoint.endpointRegionalType, null);
             }
-			Method = MethodType.POST;
         }
-
-		private List<string> statusLists = new List<string>(){ };
 
 		private int? pageNumber;
 
@@ -48,22 +45,7 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 
 		private int? pageSize;
 
-		public List<string> StatusLists
-		{
-			get
-			{
-				return statusLists;
-			}
-
-			set
-			{
-				statusLists = value;
-				for (int i = 0; i < statusLists.Count; i++)
-				{
-					DictionaryUtil.Add(QueryParameters,"StatusList." + (i + 1) , statusLists[i]);
-				}
-			}
-		}
+		private string status;
 
 		public int? PageNumber
 		{
@@ -101,6 +83,19 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 			{
 				pageSize = value;
 				DictionaryUtil.Add(QueryParameters, "PageSize", value.ToString());
+			}
+		}
+
+		public string Status
+		{
+			get
+			{
+				return status;
+			}
+			set	
+			{
+				status = value;
+				DictionaryUtil.Add(QueryParameters, "Status", value);
 			}
 		}
 

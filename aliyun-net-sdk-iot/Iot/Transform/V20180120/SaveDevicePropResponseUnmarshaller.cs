@@ -26,15 +26,15 @@ namespace Aliyun.Acs.Iot.Transform.V20180120
 {
     public class SaveDevicePropResponseUnmarshaller
     {
-        public static SaveDevicePropResponse Unmarshall(UnmarshallerContext _ctx)
+        public static SaveDevicePropResponse Unmarshall(UnmarshallerContext context)
         {
 			SaveDevicePropResponse saveDevicePropResponse = new SaveDevicePropResponse();
 
-			saveDevicePropResponse.HttpResponse = _ctx.HttpResponse;
-			saveDevicePropResponse.RequestId = _ctx.StringValue("SaveDeviceProp.RequestId");
-			saveDevicePropResponse.Success = _ctx.BooleanValue("SaveDeviceProp.Success");
-			saveDevicePropResponse.Code = _ctx.StringValue("SaveDeviceProp.Code");
-			saveDevicePropResponse.ErrorMessage = _ctx.StringValue("SaveDeviceProp.ErrorMessage");
+			saveDevicePropResponse.HttpResponse = context.HttpResponse;
+			saveDevicePropResponse.RequestId = context.StringValue("SaveDeviceProp.RequestId");
+			saveDevicePropResponse.Success = context.BooleanValue("SaveDeviceProp.Success");
+			saveDevicePropResponse.Code = context.StringValue("SaveDeviceProp.Code");
+			saveDevicePropResponse.ErrorMessage = context.StringValue("SaveDeviceProp.ErrorMessage");
         
 			return saveDevicePropResponse;
         }

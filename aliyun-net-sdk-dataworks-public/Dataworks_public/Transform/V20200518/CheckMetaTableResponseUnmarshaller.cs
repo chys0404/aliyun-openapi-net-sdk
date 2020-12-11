@@ -26,13 +26,17 @@ namespace Aliyun.Acs.dataworks_public.Transform.V20200518
 {
     public class CheckMetaTableResponseUnmarshaller
     {
-        public static CheckMetaTableResponse Unmarshall(UnmarshallerContext _ctx)
+        public static CheckMetaTableResponse Unmarshall(UnmarshallerContext context)
         {
 			CheckMetaTableResponse checkMetaTableResponse = new CheckMetaTableResponse();
 
-			checkMetaTableResponse.HttpResponse = _ctx.HttpResponse;
-			checkMetaTableResponse.RequestId = _ctx.StringValue("CheckMetaTable.RequestId");
-			checkMetaTableResponse.Data = _ctx.BooleanValue("CheckMetaTable.Data");
+			checkMetaTableResponse.HttpResponse = context.HttpResponse;
+			checkMetaTableResponse.RequestId = context.StringValue("CheckMetaTable.RequestId");
+			checkMetaTableResponse.ErrorCode = context.StringValue("CheckMetaTable.ErrorCode");
+			checkMetaTableResponse.ErrorMessage = context.StringValue("CheckMetaTable.ErrorMessage");
+			checkMetaTableResponse.HttpStatusCode = context.IntegerValue("CheckMetaTable.HttpStatusCode");
+			checkMetaTableResponse.Success = context.BooleanValue("CheckMetaTable.Success");
+			checkMetaTableResponse.Data = context.BooleanValue("CheckMetaTable.Data");
         
 			return checkMetaTableResponse;
         }

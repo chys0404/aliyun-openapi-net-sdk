@@ -26,17 +26,17 @@ namespace Aliyun.Acs.alimt.Transform.V20181012
 {
     public class GetImageDiagnoseResponseUnmarshaller
     {
-        public static GetImageDiagnoseResponse Unmarshall(UnmarshallerContext _ctx)
+        public static GetImageDiagnoseResponse Unmarshall(UnmarshallerContext context)
         {
 			GetImageDiagnoseResponse getImageDiagnoseResponse = new GetImageDiagnoseResponse();
 
-			getImageDiagnoseResponse.HttpResponse = _ctx.HttpResponse;
-			getImageDiagnoseResponse.RequestId = _ctx.StringValue("GetImageDiagnose.RequestId");
-			getImageDiagnoseResponse.Code = _ctx.IntegerValue("GetImageDiagnose.Code");
-			getImageDiagnoseResponse.Message = _ctx.StringValue("GetImageDiagnose.Message");
+			getImageDiagnoseResponse.HttpResponse = context.HttpResponse;
+			getImageDiagnoseResponse.RequestId = context.StringValue("GetImageDiagnose.RequestId");
+			getImageDiagnoseResponse.Code = context.IntegerValue("GetImageDiagnose.Code");
+			getImageDiagnoseResponse.Message = context.StringValue("GetImageDiagnose.Message");
 
 			GetImageDiagnoseResponse.GetImageDiagnose_Data data = new GetImageDiagnoseResponse.GetImageDiagnose_Data();
-			data.Language = _ctx.StringValue("GetImageDiagnose.Data.Language");
+			data.Language = context.StringValue("GetImageDiagnose.Data.Language");
 			getImageDiagnoseResponse.Data = data;
         
 			return getImageDiagnoseResponse;

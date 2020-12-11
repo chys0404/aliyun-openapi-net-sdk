@@ -26,16 +26,16 @@ namespace Aliyun.Acs.OutboundBot.Transform.V20191226
 {
     public class DeleteInstanceResponseUnmarshaller
     {
-        public static DeleteInstanceResponse Unmarshall(UnmarshallerContext _ctx)
+        public static DeleteInstanceResponse Unmarshall(UnmarshallerContext context)
         {
 			DeleteInstanceResponse deleteInstanceResponse = new DeleteInstanceResponse();
 
-			deleteInstanceResponse.HttpResponse = _ctx.HttpResponse;
-			deleteInstanceResponse.Code = _ctx.StringValue("DeleteInstance.Code");
-			deleteInstanceResponse.HttpStatusCode = _ctx.IntegerValue("DeleteInstance.HttpStatusCode");
-			deleteInstanceResponse.Message = _ctx.StringValue("DeleteInstance.Message");
-			deleteInstanceResponse.RequestId = _ctx.StringValue("DeleteInstance.RequestId");
-			deleteInstanceResponse.Success = _ctx.BooleanValue("DeleteInstance.Success");
+			deleteInstanceResponse.HttpResponse = context.HttpResponse;
+			deleteInstanceResponse.RequestId = context.StringValue("DeleteInstance.RequestId");
+			deleteInstanceResponse.Success = context.BooleanValue("DeleteInstance.Success");
+			deleteInstanceResponse.Code = context.StringValue("DeleteInstance.Code");
+			deleteInstanceResponse.Message = context.StringValue("DeleteInstance.Message");
+			deleteInstanceResponse.HttpStatusCode = context.IntegerValue("DeleteInstance.HttpStatusCode");
         
 			return deleteInstanceResponse;
         }

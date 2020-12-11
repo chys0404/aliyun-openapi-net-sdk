@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Domain.Transform.V20180129
 {
     public class EmailVerifiedResponseUnmarshaller
     {
-        public static EmailVerifiedResponse Unmarshall(UnmarshallerContext _ctx)
+        public static EmailVerifiedResponse Unmarshall(UnmarshallerContext context)
         {
 			EmailVerifiedResponse emailVerifiedResponse = new EmailVerifiedResponse();
 
-			emailVerifiedResponse.HttpResponse = _ctx.HttpResponse;
-			emailVerifiedResponse.RequestId = _ctx.StringValue("EmailVerified.RequestId");
+			emailVerifiedResponse.HttpResponse = context.HttpResponse;
+			emailVerifiedResponse.RequestId = context.StringValue("EmailVerified.RequestId");
         
 			return emailVerifiedResponse;
         }

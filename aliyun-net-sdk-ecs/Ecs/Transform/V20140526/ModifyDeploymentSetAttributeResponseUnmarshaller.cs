@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Ecs.Transform.V20140526
 {
     public class ModifyDeploymentSetAttributeResponseUnmarshaller
     {
-        public static ModifyDeploymentSetAttributeResponse Unmarshall(UnmarshallerContext _ctx)
+        public static ModifyDeploymentSetAttributeResponse Unmarshall(UnmarshallerContext context)
         {
 			ModifyDeploymentSetAttributeResponse modifyDeploymentSetAttributeResponse = new ModifyDeploymentSetAttributeResponse();
 
-			modifyDeploymentSetAttributeResponse.HttpResponse = _ctx.HttpResponse;
-			modifyDeploymentSetAttributeResponse.RequestId = _ctx.StringValue("ModifyDeploymentSetAttribute.RequestId");
+			modifyDeploymentSetAttributeResponse.HttpResponse = context.HttpResponse;
+			modifyDeploymentSetAttributeResponse.RequestId = context.StringValue("ModifyDeploymentSetAttribute.RequestId");
         
 			return modifyDeploymentSetAttributeResponse;
         }

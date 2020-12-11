@@ -26,16 +26,16 @@ namespace Aliyun.Acs.devops_rdc.Transform.V20200303
 {
     public class CreateCredentialResponseUnmarshaller
     {
-        public static CreateCredentialResponse Unmarshall(UnmarshallerContext _ctx)
+        public static CreateCredentialResponse Unmarshall(UnmarshallerContext context)
         {
 			CreateCredentialResponse createCredentialResponse = new CreateCredentialResponse();
 
-			createCredentialResponse.HttpResponse = _ctx.HttpResponse;
-			createCredentialResponse.RequestId = _ctx.StringValue("CreateCredential.RequestId");
-			createCredentialResponse.ErrorCode = _ctx.StringValue("CreateCredential.ErrorCode");
-			createCredentialResponse.ErrorMessage = _ctx.StringValue("CreateCredential.ErrorMessage");
-			createCredentialResponse.Success = _ctx.BooleanValue("CreateCredential.Success");
-			createCredentialResponse._Object = _ctx.LongValue("CreateCredential.Object");
+			createCredentialResponse.HttpResponse = context.HttpResponse;
+			createCredentialResponse.RequestId = context.StringValue("CreateCredential.RequestId");
+			createCredentialResponse.ErrorCode = context.StringValue("CreateCredential.ErrorCode");
+			createCredentialResponse.ErrorMessage = context.StringValue("CreateCredential.ErrorMessage");
+			createCredentialResponse.Success = context.BooleanValue("CreateCredential.Success");
+			createCredentialResponse._Object = context.LongValue("CreateCredential.Object");
         
 			return createCredentialResponse;
         }

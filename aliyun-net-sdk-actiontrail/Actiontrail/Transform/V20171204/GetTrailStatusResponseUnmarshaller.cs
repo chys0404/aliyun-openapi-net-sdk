@@ -26,17 +26,17 @@ namespace Aliyun.Acs.Actiontrail.Transform.V20171204
 {
     public class GetTrailStatusResponseUnmarshaller
     {
-        public static GetTrailStatusResponse Unmarshall(UnmarshallerContext _ctx)
+        public static GetTrailStatusResponse Unmarshall(UnmarshallerContext context)
         {
 			GetTrailStatusResponse getTrailStatusResponse = new GetTrailStatusResponse();
 
-			getTrailStatusResponse.HttpResponse = _ctx.HttpResponse;
-			getTrailStatusResponse.RequestId = _ctx.StringValue("GetTrailStatus.RequestId");
-			getTrailStatusResponse.IsLogging = _ctx.BooleanValue("GetTrailStatus.IsLogging");
-			getTrailStatusResponse.LatestDeliveryError = _ctx.StringValue("GetTrailStatus.LatestDeliveryError");
-			getTrailStatusResponse.LatestDeliveryTime = _ctx.StringValue("GetTrailStatus.LatestDeliveryTime");
-			getTrailStatusResponse.StartLoggingTime = _ctx.StringValue("GetTrailStatus.StartLoggingTime");
-			getTrailStatusResponse.StopLoggingTime = _ctx.StringValue("GetTrailStatus.StopLoggingTime");
+			getTrailStatusResponse.HttpResponse = context.HttpResponse;
+			getTrailStatusResponse.RequestId = context.StringValue("GetTrailStatus.RequestId");
+			getTrailStatusResponse.IsLogging = context.BooleanValue("GetTrailStatus.IsLogging");
+			getTrailStatusResponse.LatestDeliveryError = context.StringValue("GetTrailStatus.LatestDeliveryError");
+			getTrailStatusResponse.LatestDeliveryTime = context.StringValue("GetTrailStatus.LatestDeliveryTime");
+			getTrailStatusResponse.StartLoggingTime = context.StringValue("GetTrailStatus.StartLoggingTime");
+			getTrailStatusResponse.StopLoggingTime = context.StringValue("GetTrailStatus.StopLoggingTime");
         
 			return getTrailStatusResponse;
         }

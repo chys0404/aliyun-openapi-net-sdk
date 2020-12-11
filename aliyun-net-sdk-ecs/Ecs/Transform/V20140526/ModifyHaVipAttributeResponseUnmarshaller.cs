@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Ecs.Transform.V20140526
 {
     public class ModifyHaVipAttributeResponseUnmarshaller
     {
-        public static ModifyHaVipAttributeResponse Unmarshall(UnmarshallerContext _ctx)
+        public static ModifyHaVipAttributeResponse Unmarshall(UnmarshallerContext context)
         {
 			ModifyHaVipAttributeResponse modifyHaVipAttributeResponse = new ModifyHaVipAttributeResponse();
 
-			modifyHaVipAttributeResponse.HttpResponse = _ctx.HttpResponse;
-			modifyHaVipAttributeResponse.RequestId = _ctx.StringValue("ModifyHaVipAttribute.RequestId");
+			modifyHaVipAttributeResponse.HttpResponse = context.HttpResponse;
+			modifyHaVipAttributeResponse.RequestId = context.StringValue("ModifyHaVipAttribute.RequestId");
         
 			return modifyHaVipAttributeResponse;
         }

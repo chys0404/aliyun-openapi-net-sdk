@@ -26,13 +26,13 @@ namespace Aliyun.Acs.dcdn.Transform.V20180115
 {
     public class DescribeDcdnVerifyContentResponseUnmarshaller
     {
-        public static DescribeDcdnVerifyContentResponse Unmarshall(UnmarshallerContext _ctx)
+        public static DescribeDcdnVerifyContentResponse Unmarshall(UnmarshallerContext context)
         {
 			DescribeDcdnVerifyContentResponse describeDcdnVerifyContentResponse = new DescribeDcdnVerifyContentResponse();
 
-			describeDcdnVerifyContentResponse.HttpResponse = _ctx.HttpResponse;
-			describeDcdnVerifyContentResponse.RequestId = _ctx.StringValue("DescribeDcdnVerifyContent.RequestId");
-			describeDcdnVerifyContentResponse.Content = _ctx.StringValue("DescribeDcdnVerifyContent.Content");
+			describeDcdnVerifyContentResponse.HttpResponse = context.HttpResponse;
+			describeDcdnVerifyContentResponse.RequestId = context.StringValue("DescribeDcdnVerifyContent.RequestId");
+			describeDcdnVerifyContentResponse.Content = context.StringValue("DescribeDcdnVerifyContent.Content");
         
 			return describeDcdnVerifyContentResponse;
         }

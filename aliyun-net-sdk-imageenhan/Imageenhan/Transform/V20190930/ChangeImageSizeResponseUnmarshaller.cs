@@ -26,21 +26,21 @@ namespace Aliyun.Acs.imageenhan.Transform.V20190930
 {
     public class ChangeImageSizeResponseUnmarshaller
     {
-        public static ChangeImageSizeResponse Unmarshall(UnmarshallerContext _ctx)
+        public static ChangeImageSizeResponse Unmarshall(UnmarshallerContext context)
         {
 			ChangeImageSizeResponse changeImageSizeResponse = new ChangeImageSizeResponse();
 
-			changeImageSizeResponse.HttpResponse = _ctx.HttpResponse;
-			changeImageSizeResponse.RequestId = _ctx.StringValue("ChangeImageSize.RequestId");
+			changeImageSizeResponse.HttpResponse = context.HttpResponse;
+			changeImageSizeResponse.RequestId = context.StringValue("ChangeImageSize.RequestId");
 
 			ChangeImageSizeResponse.ChangeImageSize_Data data = new ChangeImageSizeResponse.ChangeImageSize_Data();
-			data.Url = _ctx.StringValue("ChangeImageSize.Data.Url");
+			data.Url = context.StringValue("ChangeImageSize.Data.Url");
 
 			ChangeImageSizeResponse.ChangeImageSize_Data.ChangeImageSize_RetainLocation retainLocation = new ChangeImageSizeResponse.ChangeImageSize_Data.ChangeImageSize_RetainLocation();
-			retainLocation.X = _ctx.IntegerValue("ChangeImageSize.Data.RetainLocation.X");
-			retainLocation.Y = _ctx.IntegerValue("ChangeImageSize.Data.RetainLocation.Y");
-			retainLocation.Width = _ctx.IntegerValue("ChangeImageSize.Data.RetainLocation.Width");
-			retainLocation.Height = _ctx.IntegerValue("ChangeImageSize.Data.RetainLocation.Height");
+			retainLocation.X = context.IntegerValue("ChangeImageSize.Data.RetainLocation.X");
+			retainLocation.Y = context.IntegerValue("ChangeImageSize.Data.RetainLocation.Y");
+			retainLocation.Width = context.IntegerValue("ChangeImageSize.Data.RetainLocation.Width");
+			retainLocation.Height = context.IntegerValue("ChangeImageSize.Data.RetainLocation.Height");
 			data.RetainLocation = retainLocation;
 			changeImageSizeResponse.Data = data;
         

@@ -26,13 +26,13 @@ namespace Aliyun.Acs.Ecs.Transform.V20140526
 {
     public class CreateAutoSnapshotPolicyResponseUnmarshaller
     {
-        public static CreateAutoSnapshotPolicyResponse Unmarshall(UnmarshallerContext _ctx)
+        public static CreateAutoSnapshotPolicyResponse Unmarshall(UnmarshallerContext context)
         {
 			CreateAutoSnapshotPolicyResponse createAutoSnapshotPolicyResponse = new CreateAutoSnapshotPolicyResponse();
 
-			createAutoSnapshotPolicyResponse.HttpResponse = _ctx.HttpResponse;
-			createAutoSnapshotPolicyResponse.RequestId = _ctx.StringValue("CreateAutoSnapshotPolicy.RequestId");
-			createAutoSnapshotPolicyResponse.AutoSnapshotPolicyId = _ctx.StringValue("CreateAutoSnapshotPolicy.AutoSnapshotPolicyId");
+			createAutoSnapshotPolicyResponse.HttpResponse = context.HttpResponse;
+			createAutoSnapshotPolicyResponse.RequestId = context.StringValue("CreateAutoSnapshotPolicy.RequestId");
+			createAutoSnapshotPolicyResponse.AutoSnapshotPolicyId = context.StringValue("CreateAutoSnapshotPolicy.AutoSnapshotPolicyId");
         
 			return createAutoSnapshotPolicyResponse;
         }

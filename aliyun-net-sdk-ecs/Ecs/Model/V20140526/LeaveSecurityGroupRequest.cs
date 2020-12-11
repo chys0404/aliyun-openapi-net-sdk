@@ -35,8 +35,8 @@ namespace Aliyun.Acs.Ecs.Model.V20140526
         {
             if (this.GetType().GetProperty("ProductEndpointMap") != null && this.GetType().GetProperty("ProductEndpointType") != null)
             {
-                this.GetType().GetProperty("ProductEndpointMap").SetValue(this, Aliyun.Acs.Ecs.Endpoint.endpointMap, null);
-                this.GetType().GetProperty("ProductEndpointType").SetValue(this, Aliyun.Acs.Ecs.Endpoint.endpointRegionalType, null);
+                this.GetType().GetProperty("ProductEndpointMap").SetValue(this, Endpoint.endpointMap, null);
+                this.GetType().GetProperty("ProductEndpointType").SetValue(this, Endpoint.endpointRegionalType, null);
             }
 			Method = MethodType.POST;
         }
@@ -52,8 +52,6 @@ namespace Aliyun.Acs.Ecs.Model.V20140526
 		private long? ownerId;
 
 		private string instanceId;
-
-		private string networkInterfaceId;
 
 		public long? ResourceOwnerId
 		{
@@ -130,19 +128,6 @@ namespace Aliyun.Acs.Ecs.Model.V20140526
 			{
 				instanceId = value;
 				DictionaryUtil.Add(QueryParameters, "InstanceId", value);
-			}
-		}
-
-		public string NetworkInterfaceId
-		{
-			get
-			{
-				return networkInterfaceId;
-			}
-			set	
-			{
-				networkInterfaceId = value;
-				DictionaryUtil.Add(QueryParameters, "NetworkInterfaceId", value);
 			}
 		}
 

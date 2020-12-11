@@ -55,6 +55,11 @@ namespace Aliyun.Acs.HBase.Model.V20190101
 			}
 		}
 
+		public override bool CheckShowJsonItemName()
+		{
+			return false;
+		}
+
         public override DescribeClusterConnectionResponse GetResponse(UnmarshallerContext unmarshallerContext)
         {
             return DescribeClusterConnectionResponseUnmarshaller.Unmarshall(unmarshallerContext);

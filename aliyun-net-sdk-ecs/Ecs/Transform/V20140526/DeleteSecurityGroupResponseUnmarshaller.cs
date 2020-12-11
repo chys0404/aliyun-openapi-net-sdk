@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Ecs.Transform.V20140526
 {
     public class DeleteSecurityGroupResponseUnmarshaller
     {
-        public static DeleteSecurityGroupResponse Unmarshall(UnmarshallerContext _ctx)
+        public static DeleteSecurityGroupResponse Unmarshall(UnmarshallerContext context)
         {
 			DeleteSecurityGroupResponse deleteSecurityGroupResponse = new DeleteSecurityGroupResponse();
 
-			deleteSecurityGroupResponse.HttpResponse = _ctx.HttpResponse;
-			deleteSecurityGroupResponse.RequestId = _ctx.StringValue("DeleteSecurityGroup.RequestId");
+			deleteSecurityGroupResponse.HttpResponse = context.HttpResponse;
+			deleteSecurityGroupResponse.RequestId = context.StringValue("DeleteSecurityGroup.RequestId");
         
 			return deleteSecurityGroupResponse;
         }

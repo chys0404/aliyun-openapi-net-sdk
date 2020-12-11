@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Domain.Transform.V20180129
 {
     public class SubmitOperationCredentialsResponseUnmarshaller
     {
-        public static SubmitOperationCredentialsResponse Unmarshall(UnmarshallerContext _ctx)
+        public static SubmitOperationCredentialsResponse Unmarshall(UnmarshallerContext context)
         {
 			SubmitOperationCredentialsResponse submitOperationCredentialsResponse = new SubmitOperationCredentialsResponse();
 
-			submitOperationCredentialsResponse.HttpResponse = _ctx.HttpResponse;
-			submitOperationCredentialsResponse.RequestId = _ctx.StringValue("SubmitOperationCredentials.RequestId");
+			submitOperationCredentialsResponse.HttpResponse = context.HttpResponse;
+			submitOperationCredentialsResponse.RequestId = context.StringValue("SubmitOperationCredentials.RequestId");
         
 			return submitOperationCredentialsResponse;
         }

@@ -26,15 +26,15 @@ namespace Aliyun.Acs.Iot.Transform.V20180120
 {
     public class ReplaceEdgeInstanceGatewayResponseUnmarshaller
     {
-        public static ReplaceEdgeInstanceGatewayResponse Unmarshall(UnmarshallerContext _ctx)
+        public static ReplaceEdgeInstanceGatewayResponse Unmarshall(UnmarshallerContext context)
         {
 			ReplaceEdgeInstanceGatewayResponse replaceEdgeInstanceGatewayResponse = new ReplaceEdgeInstanceGatewayResponse();
 
-			replaceEdgeInstanceGatewayResponse.HttpResponse = _ctx.HttpResponse;
-			replaceEdgeInstanceGatewayResponse.RequestId = _ctx.StringValue("ReplaceEdgeInstanceGateway.RequestId");
-			replaceEdgeInstanceGatewayResponse.Success = _ctx.BooleanValue("ReplaceEdgeInstanceGateway.Success");
-			replaceEdgeInstanceGatewayResponse.Code = _ctx.StringValue("ReplaceEdgeInstanceGateway.Code");
-			replaceEdgeInstanceGatewayResponse.ErrorMessage = _ctx.StringValue("ReplaceEdgeInstanceGateway.ErrorMessage");
+			replaceEdgeInstanceGatewayResponse.HttpResponse = context.HttpResponse;
+			replaceEdgeInstanceGatewayResponse.RequestId = context.StringValue("ReplaceEdgeInstanceGateway.RequestId");
+			replaceEdgeInstanceGatewayResponse.Success = context.BooleanValue("ReplaceEdgeInstanceGateway.Success");
+			replaceEdgeInstanceGatewayResponse.Code = context.StringValue("ReplaceEdgeInstanceGateway.Code");
+			replaceEdgeInstanceGatewayResponse.ErrorMessage = context.StringValue("ReplaceEdgeInstanceGateway.ErrorMessage");
         
 			return replaceEdgeInstanceGatewayResponse;
         }

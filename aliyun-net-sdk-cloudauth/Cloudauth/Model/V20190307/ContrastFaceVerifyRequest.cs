@@ -34,8 +34,8 @@ namespace Aliyun.Acs.Cloudauth.Model.V20190307
         {
             if (this.GetType().GetProperty("ProductEndpointMap") != null && this.GetType().GetProperty("ProductEndpointType") != null)
             {
-                this.GetType().GetProperty("ProductEndpointMap").SetValue(this, Aliyun.Acs.Cloudauth.Endpoint.endpointMap, null);
-                this.GetType().GetProperty("ProductEndpointType").SetValue(this, Aliyun.Acs.Cloudauth.Endpoint.endpointRegionalType, null);
+                this.GetType().GetProperty("ProductEndpointMap").SetValue(this, Endpoint.endpointMap, null);
+                this.GetType().GetProperty("ProductEndpointType").SetValue(this, Endpoint.endpointRegionalType, null);
             }
 			Method = MethodType.POST;
         }
@@ -67,8 +67,6 @@ namespace Aliyun.Acs.Cloudauth.Model.V20190307
 		private string ip;
 
 		private string mobile;
-
-		private string faceContrastFile;
 
 		private long? sceneId;
 
@@ -253,19 +251,6 @@ namespace Aliyun.Acs.Cloudauth.Model.V20190307
 			{
 				mobile = value;
 				DictionaryUtil.Add(BodyParameters, "Mobile", value);
-			}
-		}
-
-		public string FaceContrastFile
-		{
-			get
-			{
-				return faceContrastFile;
-			}
-			set	
-			{
-				faceContrastFile = value;
-				DictionaryUtil.Add(BodyParameters, "FaceContrastFile", value);
 			}
 		}
 

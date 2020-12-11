@@ -26,15 +26,15 @@ namespace Aliyun.Acs.Iot.Transform.V20180120
 {
     public class DeleteClientIdsResponseUnmarshaller
     {
-        public static DeleteClientIdsResponse Unmarshall(UnmarshallerContext _ctx)
+        public static DeleteClientIdsResponse Unmarshall(UnmarshallerContext context)
         {
 			DeleteClientIdsResponse deleteClientIdsResponse = new DeleteClientIdsResponse();
 
-			deleteClientIdsResponse.HttpResponse = _ctx.HttpResponse;
-			deleteClientIdsResponse.RequestId = _ctx.StringValue("DeleteClientIds.RequestId");
-			deleteClientIdsResponse.Success = _ctx.BooleanValue("DeleteClientIds.Success");
-			deleteClientIdsResponse.Code = _ctx.StringValue("DeleteClientIds.Code");
-			deleteClientIdsResponse.ErrorMessage = _ctx.StringValue("DeleteClientIds.ErrorMessage");
+			deleteClientIdsResponse.HttpResponse = context.HttpResponse;
+			deleteClientIdsResponse.RequestId = context.StringValue("DeleteClientIds.RequestId");
+			deleteClientIdsResponse.Success = context.BooleanValue("DeleteClientIds.Success");
+			deleteClientIdsResponse.Code = context.StringValue("DeleteClientIds.Code");
+			deleteClientIdsResponse.ErrorMessage = context.StringValue("DeleteClientIds.ErrorMessage");
         
 			return deleteClientIdsResponse;
         }

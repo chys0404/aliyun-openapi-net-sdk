@@ -35,8 +35,8 @@ namespace Aliyun.Acs.Ecs.Model.V20140526
         {
             if (this.GetType().GetProperty("ProductEndpointMap") != null && this.GetType().GetProperty("ProductEndpointType") != null)
             {
-                this.GetType().GetProperty("ProductEndpointMap").SetValue(this, Aliyun.Acs.Ecs.Endpoint.endpointMap, null);
-                this.GetType().GetProperty("ProductEndpointType").SetValue(this, Aliyun.Acs.Ecs.Endpoint.endpointRegionalType, null);
+                this.GetType().GetProperty("ProductEndpointMap").SetValue(this, Endpoint.endpointMap, null);
+                this.GetType().GetProperty("ProductEndpointType").SetValue(this, Endpoint.endpointRegionalType, null);
             }
 			Method = MethodType.POST;
         }
@@ -50,8 +50,6 @@ namespace Aliyun.Acs.Ecs.Model.V20140526
 		private string bootMode;
 
 		private string imageName;
-
-		private string licenseType;
 
 		private string resourceOwnerAccount;
 
@@ -125,19 +123,6 @@ namespace Aliyun.Acs.Ecs.Model.V20140526
 			{
 				imageName = value;
 				DictionaryUtil.Add(QueryParameters, "ImageName", value);
-			}
-		}
-
-		public string LicenseType
-		{
-			get
-			{
-				return licenseType;
-			}
-			set	
-			{
-				licenseType = value;
-				DictionaryUtil.Add(QueryParameters, "LicenseType", value);
 			}
 		}
 

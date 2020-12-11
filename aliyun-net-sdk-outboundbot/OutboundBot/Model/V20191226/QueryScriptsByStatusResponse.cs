@@ -25,53 +25,17 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 	public class QueryScriptsByStatusResponse : AcsResponse
 	{
 
-		private string code;
-
-		private int? httpStatusCode;
-
-		private string message;
-
 		private string requestId;
 
 		private bool? success;
 
+		private string code;
+
+		private string message;
+
+		private int? httpStatusCode;
+
 		private QueryScriptsByStatus_Scripts scripts;
-
-		public string Code
-		{
-			get
-			{
-				return code;
-			}
-			set	
-			{
-				code = value;
-			}
-		}
-
-		public int? HttpStatusCode
-		{
-			get
-			{
-				return httpStatusCode;
-			}
-			set	
-			{
-				httpStatusCode = value;
-			}
-		}
-
-		public string Message
-		{
-			get
-			{
-				return message;
-			}
-			set	
-			{
-				message = value;
-			}
-		}
 
 		public string RequestId
 		{
@@ -97,6 +61,42 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 			}
 		}
 
+		public string Code
+		{
+			get
+			{
+				return code;
+			}
+			set	
+			{
+				code = value;
+			}
+		}
+
+		public string Message
+		{
+			get
+			{
+				return message;
+			}
+			set	
+			{
+				message = value;
+			}
+		}
+
+		public int? HttpStatusCode
+		{
+			get
+			{
+				return httpStatusCode;
+			}
+			set	
+			{
+				httpStatusCode = value;
+			}
+		}
+
 		public QueryScriptsByStatus_Scripts Scripts
 		{
 			get
@@ -112,13 +112,25 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 		public class QueryScriptsByStatus_Scripts
 		{
 
+			private int? totalCount;
+
 			private int? pageNumber;
 
 			private int? pageSize;
 
-			private int? totalCount;
-
 			private List<QueryScriptsByStatus_Script> list;
+
+			public int? TotalCount
+			{
+				get
+				{
+					return totalCount;
+				}
+				set	
+				{
+					totalCount = value;
+				}
+			}
 
 			public int? PageNumber
 			{
@@ -144,18 +156,6 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 				}
 			}
 
-			public int? TotalCount
-			{
-				get
-				{
-					return totalCount;
-				}
-				set	
-				{
-					totalCount = value;
-				}
-			}
-
 			public List<QueryScriptsByStatus_Script> List
 			{
 				get
@@ -171,39 +171,99 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 			public class QueryScriptsByStatus_Script
 			{
 
-				private string appliedVersion;
+				private string scriptId;
+
+				private string scriptName;
+
+				private string scriptDescription;
+
+				private string industry;
+
+				private string scene;
+
+				private string status;
 
 				private string debugStatus;
 
 				private string debugVersion;
 
-				private string industry;
-
-				private bool? isDebugDrafted;
-
-				private bool? isDrafted;
-
-				private string scene;
-
-				private string scriptDescription;
-
-				private string scriptId;
-
-				private string scriptName;
-
-				private string status;
+				private string appliedVersion;
 
 				private long? updateTime;
 
-				public string AppliedVersion
+				private bool? isDrafted;
+
+				private bool? isDebugDrafted;
+
+				public string ScriptId
 				{
 					get
 					{
-						return appliedVersion;
+						return scriptId;
 					}
 					set	
 					{
-						appliedVersion = value;
+						scriptId = value;
+					}
+				}
+
+				public string ScriptName
+				{
+					get
+					{
+						return scriptName;
+					}
+					set	
+					{
+						scriptName = value;
+					}
+				}
+
+				public string ScriptDescription
+				{
+					get
+					{
+						return scriptDescription;
+					}
+					set	
+					{
+						scriptDescription = value;
+					}
+				}
+
+				public string Industry
+				{
+					get
+					{
+						return industry;
+					}
+					set	
+					{
+						industry = value;
+					}
+				}
+
+				public string Scene
+				{
+					get
+					{
+						return scene;
+					}
+					set	
+					{
+						scene = value;
+					}
+				}
+
+				public string Status
+				{
+					get
+					{
+						return status;
+					}
+					set	
+					{
+						status = value;
 					}
 				}
 
@@ -231,27 +291,27 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 					}
 				}
 
-				public string Industry
+				public string AppliedVersion
 				{
 					get
 					{
-						return industry;
+						return appliedVersion;
 					}
 					set	
 					{
-						industry = value;
+						appliedVersion = value;
 					}
 				}
 
-				public bool? IsDebugDrafted
+				public long? UpdateTime
 				{
 					get
 					{
-						return isDebugDrafted;
+						return updateTime;
 					}
 					set	
 					{
-						isDebugDrafted = value;
+						updateTime = value;
 					}
 				}
 
@@ -267,75 +327,15 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 					}
 				}
 
-				public string Scene
+				public bool? IsDebugDrafted
 				{
 					get
 					{
-						return scene;
+						return isDebugDrafted;
 					}
 					set	
 					{
-						scene = value;
-					}
-				}
-
-				public string ScriptDescription
-				{
-					get
-					{
-						return scriptDescription;
-					}
-					set	
-					{
-						scriptDescription = value;
-					}
-				}
-
-				public string ScriptId
-				{
-					get
-					{
-						return scriptId;
-					}
-					set	
-					{
-						scriptId = value;
-					}
-				}
-
-				public string ScriptName
-				{
-					get
-					{
-						return scriptName;
-					}
-					set	
-					{
-						scriptName = value;
-					}
-				}
-
-				public string Status
-				{
-					get
-					{
-						return status;
-					}
-					set	
-					{
-						status = value;
-					}
-				}
-
-				public long? UpdateTime
-				{
-					get
-					{
-						return updateTime;
-					}
-					set	
-					{
-						updateTime = value;
+						isDebugDrafted = value;
 					}
 				}
 			}

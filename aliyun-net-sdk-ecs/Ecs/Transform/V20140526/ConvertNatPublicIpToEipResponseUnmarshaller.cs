@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Ecs.Transform.V20140526
 {
     public class ConvertNatPublicIpToEipResponseUnmarshaller
     {
-        public static ConvertNatPublicIpToEipResponse Unmarshall(UnmarshallerContext _ctx)
+        public static ConvertNatPublicIpToEipResponse Unmarshall(UnmarshallerContext context)
         {
 			ConvertNatPublicIpToEipResponse convertNatPublicIpToEipResponse = new ConvertNatPublicIpToEipResponse();
 
-			convertNatPublicIpToEipResponse.HttpResponse = _ctx.HttpResponse;
-			convertNatPublicIpToEipResponse.RequestId = _ctx.StringValue("ConvertNatPublicIpToEip.RequestId");
+			convertNatPublicIpToEipResponse.HttpResponse = context.HttpResponse;
+			convertNatPublicIpToEipResponse.RequestId = context.StringValue("ConvertNatPublicIpToEip.RequestId");
         
 			return convertNatPublicIpToEipResponse;
         }

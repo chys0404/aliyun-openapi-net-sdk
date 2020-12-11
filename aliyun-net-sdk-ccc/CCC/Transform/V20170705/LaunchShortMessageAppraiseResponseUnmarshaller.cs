@@ -26,16 +26,16 @@ namespace Aliyun.Acs.CCC.Transform.V20170705
 {
     public class LaunchShortMessageAppraiseResponseUnmarshaller
     {
-        public static LaunchShortMessageAppraiseResponse Unmarshall(UnmarshallerContext _ctx)
+        public static LaunchShortMessageAppraiseResponse Unmarshall(UnmarshallerContext context)
         {
 			LaunchShortMessageAppraiseResponse launchShortMessageAppraiseResponse = new LaunchShortMessageAppraiseResponse();
 
-			launchShortMessageAppraiseResponse.HttpResponse = _ctx.HttpResponse;
-			launchShortMessageAppraiseResponse.RequestId = _ctx.StringValue("LaunchShortMessageAppraise.RequestId");
-			launchShortMessageAppraiseResponse.Success = _ctx.BooleanValue("LaunchShortMessageAppraise.Success");
-			launchShortMessageAppraiseResponse.Code = _ctx.StringValue("LaunchShortMessageAppraise.Code");
-			launchShortMessageAppraiseResponse.Message = _ctx.StringValue("LaunchShortMessageAppraise.Message");
-			launchShortMessageAppraiseResponse.HttpStatusCode = _ctx.IntegerValue("LaunchShortMessageAppraise.HttpStatusCode");
+			launchShortMessageAppraiseResponse.HttpResponse = context.HttpResponse;
+			launchShortMessageAppraiseResponse.RequestId = context.StringValue("LaunchShortMessageAppraise.RequestId");
+			launchShortMessageAppraiseResponse.Success = context.BooleanValue("LaunchShortMessageAppraise.Success");
+			launchShortMessageAppraiseResponse.Code = context.StringValue("LaunchShortMessageAppraise.Code");
+			launchShortMessageAppraiseResponse.Message = context.StringValue("LaunchShortMessageAppraise.Message");
+			launchShortMessageAppraiseResponse.HttpStatusCode = context.IntegerValue("LaunchShortMessageAppraise.HttpStatusCode");
         
 			return launchShortMessageAppraiseResponse;
         }

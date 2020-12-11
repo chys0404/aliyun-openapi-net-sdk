@@ -26,13 +26,13 @@ namespace Aliyun.Acs.Httpdns.Transform.V20160201
 {
     public class AddDomainResponseUnmarshaller
     {
-        public static AddDomainResponse Unmarshall(UnmarshallerContext _ctx)
+        public static AddDomainResponse Unmarshall(UnmarshallerContext context)
         {
 			AddDomainResponse addDomainResponse = new AddDomainResponse();
 
-			addDomainResponse.HttpResponse = _ctx.HttpResponse;
-			addDomainResponse.RequestId = _ctx.StringValue("AddDomain.RequestId");
-			addDomainResponse.DomainName = _ctx.StringValue("AddDomain.DomainName");
+			addDomainResponse.HttpResponse = context.HttpResponse;
+			addDomainResponse.RequestId = context.StringValue("AddDomain.RequestId");
+			addDomainResponse.DomainName = context.StringValue("AddDomain.DomainName");
         
 			return addDomainResponse;
         }

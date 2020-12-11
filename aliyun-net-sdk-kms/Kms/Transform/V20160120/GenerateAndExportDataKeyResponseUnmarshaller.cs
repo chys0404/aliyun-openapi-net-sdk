@@ -26,16 +26,16 @@ namespace Aliyun.Acs.Kms.Transform.V20160120
 {
     public class GenerateAndExportDataKeyResponseUnmarshaller
     {
-        public static GenerateAndExportDataKeyResponse Unmarshall(UnmarshallerContext _ctx)
+        public static GenerateAndExportDataKeyResponse Unmarshall(UnmarshallerContext context)
         {
 			GenerateAndExportDataKeyResponse generateAndExportDataKeyResponse = new GenerateAndExportDataKeyResponse();
 
-			generateAndExportDataKeyResponse.HttpResponse = _ctx.HttpResponse;
-			generateAndExportDataKeyResponse.CiphertextBlob = _ctx.StringValue("GenerateAndExportDataKey.CiphertextBlob");
-			generateAndExportDataKeyResponse.KeyId = _ctx.StringValue("GenerateAndExportDataKey.KeyId");
-			generateAndExportDataKeyResponse.ExportedDataKey = _ctx.StringValue("GenerateAndExportDataKey.ExportedDataKey");
-			generateAndExportDataKeyResponse.RequestId = _ctx.StringValue("GenerateAndExportDataKey.RequestId");
-			generateAndExportDataKeyResponse.KeyVersionId = _ctx.StringValue("GenerateAndExportDataKey.KeyVersionId");
+			generateAndExportDataKeyResponse.HttpResponse = context.HttpResponse;
+			generateAndExportDataKeyResponse.CiphertextBlob = context.StringValue("GenerateAndExportDataKey.CiphertextBlob");
+			generateAndExportDataKeyResponse.KeyId = context.StringValue("GenerateAndExportDataKey.KeyId");
+			generateAndExportDataKeyResponse.ExportedDataKey = context.StringValue("GenerateAndExportDataKey.ExportedDataKey");
+			generateAndExportDataKeyResponse.RequestId = context.StringValue("GenerateAndExportDataKey.RequestId");
+			generateAndExportDataKeyResponse.KeyVersionId = context.StringValue("GenerateAndExportDataKey.KeyVersionId");
         
 			return generateAndExportDataKeyResponse;
         }

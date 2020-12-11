@@ -26,12 +26,12 @@ namespace Aliyun.Acs.oos.Transform.V20190601
 {
     public class TagResourcesResponseUnmarshaller
     {
-        public static TagResourcesResponse Unmarshall(UnmarshallerContext _ctx)
+        public static TagResourcesResponse Unmarshall(UnmarshallerContext context)
         {
 			TagResourcesResponse tagResourcesResponse = new TagResourcesResponse();
 
-			tagResourcesResponse.HttpResponse = _ctx.HttpResponse;
-			tagResourcesResponse.RequestId = _ctx.StringValue("TagResources.RequestId");
+			tagResourcesResponse.HttpResponse = context.HttpResponse;
+			tagResourcesResponse.RequestId = context.StringValue("TagResources.RequestId");
         
 			return tagResourcesResponse;
         }

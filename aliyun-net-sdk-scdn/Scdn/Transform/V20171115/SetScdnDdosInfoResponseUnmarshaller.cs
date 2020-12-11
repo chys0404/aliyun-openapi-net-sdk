@@ -26,12 +26,12 @@ namespace Aliyun.Acs.scdn.Transform.V20171115
 {
     public class SetScdnDdosInfoResponseUnmarshaller
     {
-        public static SetScdnDdosInfoResponse Unmarshall(UnmarshallerContext _ctx)
+        public static SetScdnDdosInfoResponse Unmarshall(UnmarshallerContext context)
         {
 			SetScdnDdosInfoResponse setScdnDdosInfoResponse = new SetScdnDdosInfoResponse();
 
-			setScdnDdosInfoResponse.HttpResponse = _ctx.HttpResponse;
-			setScdnDdosInfoResponse.RequestId = _ctx.StringValue("SetScdnDdosInfo.RequestId");
+			setScdnDdosInfoResponse.HttpResponse = context.HttpResponse;
+			setScdnDdosInfoResponse.RequestId = context.StringValue("SetScdnDdosInfo.RequestId");
         
 			return setScdnDdosInfoResponse;
         }

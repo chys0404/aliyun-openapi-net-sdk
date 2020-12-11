@@ -26,14 +26,14 @@ namespace Aliyun.Acs.Ecs.Transform.V20140526
 {
     public class DescribeLimitationResponseUnmarshaller
     {
-        public static DescribeLimitationResponse Unmarshall(UnmarshallerContext _ctx)
+        public static DescribeLimitationResponse Unmarshall(UnmarshallerContext context)
         {
 			DescribeLimitationResponse describeLimitationResponse = new DescribeLimitationResponse();
 
-			describeLimitationResponse.HttpResponse = _ctx.HttpResponse;
-			describeLimitationResponse.RequestId = _ctx.StringValue("DescribeLimitation.RequestId");
-			describeLimitationResponse.Limitation = _ctx.StringValue("DescribeLimitation.Limitation");
-			describeLimitationResponse._Value = _ctx.StringValue("DescribeLimitation.Value");
+			describeLimitationResponse.HttpResponse = context.HttpResponse;
+			describeLimitationResponse.RequestId = context.StringValue("DescribeLimitation.RequestId");
+			describeLimitationResponse.Limitation = context.StringValue("DescribeLimitation.Limitation");
+			describeLimitationResponse._Value = context.StringValue("DescribeLimitation.Value");
         
 			return describeLimitationResponse;
         }

@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Kms.Transform.V20160120
 {
     public class OpenKmsServiceResponseUnmarshaller
     {
-        public static OpenKmsServiceResponse Unmarshall(UnmarshallerContext _ctx)
+        public static OpenKmsServiceResponse Unmarshall(UnmarshallerContext context)
         {
 			OpenKmsServiceResponse openKmsServiceResponse = new OpenKmsServiceResponse();
 
-			openKmsServiceResponse.HttpResponse = _ctx.HttpResponse;
-			openKmsServiceResponse.RequestId = _ctx.StringValue("OpenKmsService.RequestId");
+			openKmsServiceResponse.HttpResponse = context.HttpResponse;
+			openKmsServiceResponse.RequestId = context.StringValue("OpenKmsService.RequestId");
         
 			return openKmsServiceResponse;
         }

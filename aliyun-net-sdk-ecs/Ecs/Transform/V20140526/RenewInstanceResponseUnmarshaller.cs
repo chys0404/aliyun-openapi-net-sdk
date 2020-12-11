@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Ecs.Transform.V20140526
 {
     public class RenewInstanceResponseUnmarshaller
     {
-        public static RenewInstanceResponse Unmarshall(UnmarshallerContext _ctx)
+        public static RenewInstanceResponse Unmarshall(UnmarshallerContext context)
         {
 			RenewInstanceResponse renewInstanceResponse = new RenewInstanceResponse();
 
-			renewInstanceResponse.HttpResponse = _ctx.HttpResponse;
-			renewInstanceResponse.RequestId = _ctx.StringValue("RenewInstance.RequestId");
+			renewInstanceResponse.HttpResponse = context.HttpResponse;
+			renewInstanceResponse.RequestId = context.StringValue("RenewInstance.RequestId");
         
 			return renewInstanceResponse;
         }

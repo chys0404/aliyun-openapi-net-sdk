@@ -22,7 +22,6 @@ using Aliyun.Acs.Core;
 using Aliyun.Acs.Core.Http;
 using Aliyun.Acs.Core.Transform;
 using Aliyun.Acs.Core.Utils;
-using Aliyun.Acs.dataworks_public;
 using Aliyun.Acs.dataworks_public.Transform;
 using Aliyun.Acs.dataworks_public.Transform.V20200518;
 
@@ -31,53 +30,21 @@ namespace Aliyun.Acs.dataworks_public.Model.V20200518
     public class GetMetaDBTableListRequest : RpcAcsRequest<GetMetaDBTableListResponse>
     {
         public GetMetaDBTableListRequest()
-            : base("dataworks-public", "2020-05-18", "GetMetaDBTableList")
+            : base("dataworks-public", "2020-05-18", "GetMetaDBTableList", "dide", "openAPI")
         {
             if (this.GetType().GetProperty("ProductEndpointMap") != null && this.GetType().GetProperty("ProductEndpointType") != null)
             {
-                this.GetType().GetProperty("ProductEndpointMap").SetValue(this, Aliyun.Acs.dataworks_public.Endpoint.endpointMap, null);
-                this.GetType().GetProperty("ProductEndpointType").SetValue(this, Aliyun.Acs.dataworks_public.Endpoint.endpointRegionalType, null);
+                this.GetType().GetProperty("ProductEndpointMap").SetValue(this, Endpoint.endpointMap, null);
+                this.GetType().GetProperty("ProductEndpointType").SetValue(this, Endpoint.endpointRegionalType, null);
             }
 			Method = MethodType.POST;
         }
 
-		private string dataSourceType;
-
-		private string databaseName;
-
 		private int? pageSize;
-
-		private string clusterId;
 
 		private string appGuid;
 
 		private int? pageNumber;
-
-		public string DataSourceType
-		{
-			get
-			{
-				return dataSourceType;
-			}
-			set	
-			{
-				dataSourceType = value;
-				DictionaryUtil.Add(QueryParameters, "DataSourceType", value);
-			}
-		}
-
-		public string DatabaseName
-		{
-			get
-			{
-				return databaseName;
-			}
-			set	
-			{
-				databaseName = value;
-				DictionaryUtil.Add(QueryParameters, "DatabaseName", value);
-			}
-		}
 
 		public int? PageSize
 		{
@@ -89,19 +56,6 @@ namespace Aliyun.Acs.dataworks_public.Model.V20200518
 			{
 				pageSize = value;
 				DictionaryUtil.Add(QueryParameters, "PageSize", value.ToString());
-			}
-		}
-
-		public string ClusterId
-		{
-			get
-			{
-				return clusterId;
-			}
-			set	
-			{
-				clusterId = value;
-				DictionaryUtil.Add(QueryParameters, "ClusterId", value);
 			}
 		}
 

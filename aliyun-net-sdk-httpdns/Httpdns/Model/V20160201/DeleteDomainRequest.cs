@@ -22,7 +22,6 @@ using Aliyun.Acs.Core;
 using Aliyun.Acs.Core.Http;
 using Aliyun.Acs.Core.Transform;
 using Aliyun.Acs.Core.Utils;
-using Aliyun.Acs.Httpdns;
 using Aliyun.Acs.Httpdns.Transform;
 using Aliyun.Acs.Httpdns.Transform.V20160201;
 
@@ -31,14 +30,28 @@ namespace Aliyun.Acs.Httpdns.Model.V20160201
     public class DeleteDomainRequest : RpcAcsRequest<DeleteDomainResponse>
     {
         public DeleteDomainRequest()
-            : base("Httpdns", "2016-02-01", "DeleteDomain")
+            : base("Httpdns", "2016-02-01", "DeleteDomain", "httpdns", "openAPI")
         {
-			Method = MethodType.POST;
         }
+
+		private string accountId;
 
 		private string domainName;
 
-		private string accountId;
+		private string accessKeyId;
+
+		public string AccountId
+		{
+			get
+			{
+				return accountId;
+			}
+			set	
+			{
+				accountId = value;
+				DictionaryUtil.Add(QueryParameters, "AccountId", value);
+			}
+		}
 
 		public string DomainName
 		{
@@ -53,16 +66,16 @@ namespace Aliyun.Acs.Httpdns.Model.V20160201
 			}
 		}
 
-		public string AccountId
+		public string AccessKeyId
 		{
 			get
 			{
-				return accountId;
+				return accessKeyId;
 			}
 			set	
 			{
-				accountId = value;
-				DictionaryUtil.Add(QueryParameters, "AccountId", value);
+				accessKeyId = value;
+				DictionaryUtil.Add(QueryParameters, "AccessKeyId", value);
 			}
 		}
 

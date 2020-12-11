@@ -31,10 +31,6 @@ namespace Aliyun.Acs.scdn.Model.V20171115
 
 		private string startTime;
 
-		private string endTime;
-
-		private string dataInterval;
-
 		private List<DescribeScdnDomainPvData_UsageData> pvDataInterval;
 
 		public string RequestId
@@ -70,30 +66,6 @@ namespace Aliyun.Acs.scdn.Model.V20171115
 			set	
 			{
 				startTime = value;
-			}
-		}
-
-		public string EndTime
-		{
-			get
-			{
-				return endTime;
-			}
-			set	
-			{
-				endTime = value;
-			}
-		}
-
-		public string DataInterval
-		{
-			get
-			{
-				return dataInterval;
-			}
-			set	
-			{
-				dataInterval = value;
 			}
 		}
 

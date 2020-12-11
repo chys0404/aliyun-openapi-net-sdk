@@ -26,13 +26,13 @@ namespace Aliyun.Acs.Domain.Transform.V20180129
 {
     public class SaveBatchTaskForCreatingOrderTransferResponseUnmarshaller
     {
-        public static SaveBatchTaskForCreatingOrderTransferResponse Unmarshall(UnmarshallerContext _ctx)
+        public static SaveBatchTaskForCreatingOrderTransferResponse Unmarshall(UnmarshallerContext context)
         {
 			SaveBatchTaskForCreatingOrderTransferResponse saveBatchTaskForCreatingOrderTransferResponse = new SaveBatchTaskForCreatingOrderTransferResponse();
 
-			saveBatchTaskForCreatingOrderTransferResponse.HttpResponse = _ctx.HttpResponse;
-			saveBatchTaskForCreatingOrderTransferResponse.RequestId = _ctx.StringValue("SaveBatchTaskForCreatingOrderTransfer.RequestId");
-			saveBatchTaskForCreatingOrderTransferResponse.TaskNo = _ctx.StringValue("SaveBatchTaskForCreatingOrderTransfer.TaskNo");
+			saveBatchTaskForCreatingOrderTransferResponse.HttpResponse = context.HttpResponse;
+			saveBatchTaskForCreatingOrderTransferResponse.RequestId = context.StringValue("SaveBatchTaskForCreatingOrderTransfer.RequestId");
+			saveBatchTaskForCreatingOrderTransferResponse.TaskNo = context.StringValue("SaveBatchTaskForCreatingOrderTransfer.TaskNo");
         
 			return saveBatchTaskForCreatingOrderTransferResponse;
         }

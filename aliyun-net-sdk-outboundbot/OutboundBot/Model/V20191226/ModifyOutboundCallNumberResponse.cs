@@ -25,53 +25,17 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 	public class ModifyOutboundCallNumberResponse : AcsResponse
 	{
 
-		private string code;
-
-		private int? httpStatusCode;
-
-		private string message;
-
 		private string requestId;
 
 		private bool? success;
 
+		private string code;
+
+		private string message;
+
+		private int? httpStatusCode;
+
 		private ModifyOutboundCallNumber_OutboundCallNumber outboundCallNumber;
-
-		public string Code
-		{
-			get
-			{
-				return code;
-			}
-			set	
-			{
-				code = value;
-			}
-		}
-
-		public int? HttpStatusCode
-		{
-			get
-			{
-				return httpStatusCode;
-			}
-			set	
-			{
-				httpStatusCode = value;
-			}
-		}
-
-		public string Message
-		{
-			get
-			{
-				return message;
-			}
-			set	
-			{
-				message = value;
-			}
-		}
 
 		public string RequestId
 		{
@@ -97,6 +61,42 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 			}
 		}
 
+		public string Code
+		{
+			get
+			{
+				return code;
+			}
+			set	
+			{
+				code = value;
+			}
+		}
+
+		public string Message
+		{
+			get
+			{
+				return message;
+			}
+			set	
+			{
+				message = value;
+			}
+		}
+
+		public int? HttpStatusCode
+		{
+			get
+			{
+				return httpStatusCode;
+			}
+			set	
+			{
+				httpStatusCode = value;
+			}
+		}
+
 		public ModifyOutboundCallNumber_OutboundCallNumber OutboundCallNumber
 		{
 			get
@@ -112,25 +112,13 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 		public class ModifyOutboundCallNumber_OutboundCallNumber
 		{
 
-			private string number;
-
 			private string outboundCallNumberId;
 
-			private string rateLimitCount;
+			private string number;
 
 			private string rateLimitPeriod;
 
-			public string Number
-			{
-				get
-				{
-					return number;
-				}
-				set	
-				{
-					number = value;
-				}
-			}
+			private string rateLimitCount;
 
 			public string OutboundCallNumberId
 			{
@@ -144,15 +132,15 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 				}
 			}
 
-			public string RateLimitCount
+			public string Number
 			{
 				get
 				{
-					return rateLimitCount;
+					return number;
 				}
 				set	
 				{
-					rateLimitCount = value;
+					number = value;
 				}
 			}
 
@@ -165,6 +153,18 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 				set	
 				{
 					rateLimitPeriod = value;
+				}
+			}
+
+			public string RateLimitCount
+			{
+				get
+				{
+					return rateLimitCount;
+				}
+				set	
+				{
+					rateLimitCount = value;
 				}
 			}
 		}

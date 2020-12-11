@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Actiontrail.Transform.V20171204
 {
     public class DeleteTrailResponseUnmarshaller
     {
-        public static DeleteTrailResponse Unmarshall(UnmarshallerContext _ctx)
+        public static DeleteTrailResponse Unmarshall(UnmarshallerContext context)
         {
 			DeleteTrailResponse deleteTrailResponse = new DeleteTrailResponse();
 
-			deleteTrailResponse.HttpResponse = _ctx.HttpResponse;
-			deleteTrailResponse.RequestId = _ctx.StringValue("DeleteTrail.RequestId");
+			deleteTrailResponse.HttpResponse = context.HttpResponse;
+			deleteTrailResponse.RequestId = context.StringValue("DeleteTrail.RequestId");
         
 			return deleteTrailResponse;
         }

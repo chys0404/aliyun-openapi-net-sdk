@@ -26,15 +26,15 @@ namespace Aliyun.Acs.Iot.Transform.V20180120
 {
     public class SetDevicesPropertyResponseUnmarshaller
     {
-        public static SetDevicesPropertyResponse Unmarshall(UnmarshallerContext _ctx)
+        public static SetDevicesPropertyResponse Unmarshall(UnmarshallerContext context)
         {
 			SetDevicesPropertyResponse setDevicesPropertyResponse = new SetDevicesPropertyResponse();
 
-			setDevicesPropertyResponse.HttpResponse = _ctx.HttpResponse;
-			setDevicesPropertyResponse.RequestId = _ctx.StringValue("SetDevicesProperty.RequestId");
-			setDevicesPropertyResponse.Success = _ctx.BooleanValue("SetDevicesProperty.Success");
-			setDevicesPropertyResponse.ErrorMessage = _ctx.StringValue("SetDevicesProperty.ErrorMessage");
-			setDevicesPropertyResponse.Code = _ctx.StringValue("SetDevicesProperty.Code");
+			setDevicesPropertyResponse.HttpResponse = context.HttpResponse;
+			setDevicesPropertyResponse.RequestId = context.StringValue("SetDevicesProperty.RequestId");
+			setDevicesPropertyResponse.Success = context.BooleanValue("SetDevicesProperty.Success");
+			setDevicesPropertyResponse.ErrorMessage = context.StringValue("SetDevicesProperty.ErrorMessage");
+			setDevicesPropertyResponse.Code = context.StringValue("SetDevicesProperty.Code");
         
 			return setDevicesPropertyResponse;
         }

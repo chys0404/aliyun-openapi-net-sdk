@@ -26,25 +26,25 @@ namespace Aliyun.Acs.OutboundBot.Transform.V20191226
 {
     public class ModifyScriptVoiceConfigResponseUnmarshaller
     {
-        public static ModifyScriptVoiceConfigResponse Unmarshall(UnmarshallerContext _ctx)
+        public static ModifyScriptVoiceConfigResponse Unmarshall(UnmarshallerContext context)
         {
 			ModifyScriptVoiceConfigResponse modifyScriptVoiceConfigResponse = new ModifyScriptVoiceConfigResponse();
 
-			modifyScriptVoiceConfigResponse.HttpResponse = _ctx.HttpResponse;
-			modifyScriptVoiceConfigResponse.Code = _ctx.StringValue("ModifyScriptVoiceConfig.Code");
-			modifyScriptVoiceConfigResponse.HttpStatusCode = _ctx.IntegerValue("ModifyScriptVoiceConfig.HttpStatusCode");
-			modifyScriptVoiceConfigResponse.Message = _ctx.StringValue("ModifyScriptVoiceConfig.Message");
-			modifyScriptVoiceConfigResponse.RequestId = _ctx.StringValue("ModifyScriptVoiceConfig.RequestId");
-			modifyScriptVoiceConfigResponse.Success = _ctx.BooleanValue("ModifyScriptVoiceConfig.Success");
+			modifyScriptVoiceConfigResponse.HttpResponse = context.HttpResponse;
+			modifyScriptVoiceConfigResponse.RequestId = context.StringValue("ModifyScriptVoiceConfig.RequestId");
+			modifyScriptVoiceConfigResponse.Success = context.BooleanValue("ModifyScriptVoiceConfig.Success");
+			modifyScriptVoiceConfigResponse.Code = context.StringValue("ModifyScriptVoiceConfig.Code");
+			modifyScriptVoiceConfigResponse.Message = context.StringValue("ModifyScriptVoiceConfig.Message");
+			modifyScriptVoiceConfigResponse.HttpStatusCode = context.IntegerValue("ModifyScriptVoiceConfig.HttpStatusCode");
 
 			ModifyScriptVoiceConfigResponse.ModifyScriptVoiceConfig_ScriptVoiceConfig scriptVoiceConfig = new ModifyScriptVoiceConfigResponse.ModifyScriptVoiceConfig_ScriptVoiceConfig();
-			scriptVoiceConfig.InstanceId = _ctx.StringValue("ModifyScriptVoiceConfig.ScriptVoiceConfig.InstanceId");
-			scriptVoiceConfig.ScriptContent = _ctx.StringValue("ModifyScriptVoiceConfig.ScriptVoiceConfig.ScriptContent");
-			scriptVoiceConfig.ScriptId = _ctx.StringValue("ModifyScriptVoiceConfig.ScriptVoiceConfig.ScriptId");
-			scriptVoiceConfig.ScriptVoiceConfigId = _ctx.StringValue("ModifyScriptVoiceConfig.ScriptVoiceConfig.ScriptVoiceConfigId");
-			scriptVoiceConfig.ScriptWaveformRelation = _ctx.StringValue("ModifyScriptVoiceConfig.ScriptVoiceConfig.ScriptWaveformRelation");
-			scriptVoiceConfig.Source = _ctx.StringValue("ModifyScriptVoiceConfig.ScriptVoiceConfig.Source");
-			scriptVoiceConfig.Type = _ctx.StringValue("ModifyScriptVoiceConfig.ScriptVoiceConfig.Type");
+			scriptVoiceConfig.ScriptVoiceConfigId = context.StringValue("ModifyScriptVoiceConfig.ScriptVoiceConfig.ScriptVoiceConfigId");
+			scriptVoiceConfig.InstanceId = context.StringValue("ModifyScriptVoiceConfig.ScriptVoiceConfig.InstanceId");
+			scriptVoiceConfig.ScriptId = context.StringValue("ModifyScriptVoiceConfig.ScriptVoiceConfig.ScriptId");
+			scriptVoiceConfig.ScriptContent = context.StringValue("ModifyScriptVoiceConfig.ScriptVoiceConfig.ScriptContent");
+			scriptVoiceConfig.Source = context.StringValue("ModifyScriptVoiceConfig.ScriptVoiceConfig.Source");
+			scriptVoiceConfig.Type = context.StringValue("ModifyScriptVoiceConfig.ScriptVoiceConfig.Type");
+			scriptVoiceConfig.ScriptWaveformRelation = context.StringValue("ModifyScriptVoiceConfig.ScriptVoiceConfig.ScriptWaveformRelation");
 			modifyScriptVoiceConfigResponse.ScriptVoiceConfig = scriptVoiceConfig;
         
 			return modifyScriptVoiceConfigResponse;

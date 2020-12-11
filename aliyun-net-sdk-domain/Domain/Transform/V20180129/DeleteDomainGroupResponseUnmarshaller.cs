@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Domain.Transform.V20180129
 {
     public class DeleteDomainGroupResponseUnmarshaller
     {
-        public static DeleteDomainGroupResponse Unmarshall(UnmarshallerContext _ctx)
+        public static DeleteDomainGroupResponse Unmarshall(UnmarshallerContext context)
         {
 			DeleteDomainGroupResponse deleteDomainGroupResponse = new DeleteDomainGroupResponse();
 
-			deleteDomainGroupResponse.HttpResponse = _ctx.HttpResponse;
-			deleteDomainGroupResponse.RequestId = _ctx.StringValue("DeleteDomainGroup.RequestId");
+			deleteDomainGroupResponse.HttpResponse = context.HttpResponse;
+			deleteDomainGroupResponse.RequestId = context.StringValue("DeleteDomainGroup.RequestId");
         
 			return deleteDomainGroupResponse;
         }

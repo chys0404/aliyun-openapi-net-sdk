@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Domain.Transform.V20180129
 {
     public class DeleteRegistrantProfileResponseUnmarshaller
     {
-        public static DeleteRegistrantProfileResponse Unmarshall(UnmarshallerContext _ctx)
+        public static DeleteRegistrantProfileResponse Unmarshall(UnmarshallerContext context)
         {
 			DeleteRegistrantProfileResponse deleteRegistrantProfileResponse = new DeleteRegistrantProfileResponse();
 
-			deleteRegistrantProfileResponse.HttpResponse = _ctx.HttpResponse;
-			deleteRegistrantProfileResponse.RequestId = _ctx.StringValue("DeleteRegistrantProfile.RequestId");
+			deleteRegistrantProfileResponse.HttpResponse = context.HttpResponse;
+			deleteRegistrantProfileResponse.RequestId = context.StringValue("DeleteRegistrantProfile.RequestId");
         
 			return deleteRegistrantProfileResponse;
         }

@@ -25,53 +25,17 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 	public class DialogueResponse : AcsResponse
 	{
 
-		private string code;
-
-		private int? httpStatusCode;
-
-		private string message;
-
 		private string requestId;
 
 		private bool? success;
 
+		private string code;
+
+		private string message;
+
+		private int? httpStatusCode;
+
 		private Dialogue_Feedback feedback;
-
-		public string Code
-		{
-			get
-			{
-				return code;
-			}
-			set	
-			{
-				code = value;
-			}
-		}
-
-		public int? HttpStatusCode
-		{
-			get
-			{
-				return httpStatusCode;
-			}
-			set	
-			{
-				httpStatusCode = value;
-			}
-		}
-
-		public string Message
-		{
-			get
-			{
-				return message;
-			}
-			set	
-			{
-				message = value;
-			}
-		}
 
 		public string RequestId
 		{
@@ -97,6 +61,42 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 			}
 		}
 
+		public string Code
+		{
+			get
+			{
+				return code;
+			}
+			set	
+			{
+				code = value;
+			}
+		}
+
+		public string Message
+		{
+			get
+			{
+				return message;
+			}
+			set	
+			{
+				message = value;
+			}
+		}
+
+		public int? HttpStatusCode
+		{
+			get
+			{
+				return httpStatusCode;
+			}
+			set	
+			{
+				httpStatusCode = value;
+			}
+		}
+
 		public Dialogue_Feedback Feedback
 		{
 			get
@@ -112,13 +112,25 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 		public class Dialogue_Feedback
 		{
 
+			private string content;
+
 			private string action;
 
 			private string actionParams;
 
-			private string content;
-
 			private bool? interruptible;
+
+			public string Content
+			{
+				get
+				{
+					return content;
+				}
+				set	
+				{
+					content = value;
+				}
+			}
 
 			public string Action
 			{
@@ -141,18 +153,6 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 				set	
 				{
 					actionParams = value;
-				}
-			}
-
-			public string Content
-			{
-				get
-				{
-					return content;
-				}
-				set	
-				{
-					content = value;
 				}
 			}
 

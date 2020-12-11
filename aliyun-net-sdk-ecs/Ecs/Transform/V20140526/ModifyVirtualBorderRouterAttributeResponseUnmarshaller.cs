@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Ecs.Transform.V20140526
 {
     public class ModifyVirtualBorderRouterAttributeResponseUnmarshaller
     {
-        public static ModifyVirtualBorderRouterAttributeResponse Unmarshall(UnmarshallerContext _ctx)
+        public static ModifyVirtualBorderRouterAttributeResponse Unmarshall(UnmarshallerContext context)
         {
 			ModifyVirtualBorderRouterAttributeResponse modifyVirtualBorderRouterAttributeResponse = new ModifyVirtualBorderRouterAttributeResponse();
 
-			modifyVirtualBorderRouterAttributeResponse.HttpResponse = _ctx.HttpResponse;
-			modifyVirtualBorderRouterAttributeResponse.RequestId = _ctx.StringValue("ModifyVirtualBorderRouterAttribute.RequestId");
+			modifyVirtualBorderRouterAttributeResponse.HttpResponse = context.HttpResponse;
+			modifyVirtualBorderRouterAttributeResponse.RequestId = context.StringValue("ModifyVirtualBorderRouterAttribute.RequestId");
         
 			return modifyVirtualBorderRouterAttributeResponse;
         }

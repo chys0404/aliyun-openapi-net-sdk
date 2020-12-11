@@ -25,53 +25,17 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 	public class ModifyTTSConfigResponse : AcsResponse
 	{
 
-		private string code;
-
-		private int? httpStatusCode;
-
-		private string message;
-
 		private string requestId;
 
 		private bool? success;
 
+		private string code;
+
+		private string message;
+
+		private int? httpStatusCode;
+
 		private ModifyTTSConfig_TTSConfig tTSConfig;
-
-		public string Code
-		{
-			get
-			{
-				return code;
-			}
-			set	
-			{
-				code = value;
-			}
-		}
-
-		public int? HttpStatusCode
-		{
-			get
-			{
-				return httpStatusCode;
-			}
-			set	
-			{
-				httpStatusCode = value;
-			}
-		}
-
-		public string Message
-		{
-			get
-			{
-				return message;
-			}
-			set	
-			{
-				message = value;
-			}
-		}
 
 		public string RequestId
 		{
@@ -97,6 +61,42 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 			}
 		}
 
+		public string Code
+		{
+			get
+			{
+				return code;
+			}
+			set	
+			{
+				code = value;
+			}
+		}
+
+		public string Message
+		{
+			get
+			{
+				return message;
+			}
+			set	
+			{
+				message = value;
+			}
+		}
+
+		public int? HttpStatusCode
+		{
+			get
+			{
+				return httpStatusCode;
+			}
+			set	
+			{
+				httpStatusCode = value;
+			}
+		}
+
 		public ModifyTTSConfig_TTSConfig TTSConfig
 		{
 			get
@@ -112,27 +112,27 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 		public class ModifyTTSConfig_TTSConfig
 		{
 
-			private string instanceId;
+			private string tTSConfigId;
 
 			private string scriptId;
 
-			private string speechRate;
-
-			private string tTSConfigId;
+			private string instanceId;
 
 			private string voice;
 
+			private string speechRate;
+
 			private string volume;
 
-			public string InstanceId
+			public string TTSConfigId
 			{
 				get
 				{
-					return instanceId;
+					return tTSConfigId;
 				}
 				set	
 				{
-					instanceId = value;
+					tTSConfigId = value;
 				}
 			}
 
@@ -148,27 +148,15 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 				}
 			}
 
-			public string SpeechRate
+			public string InstanceId
 			{
 				get
 				{
-					return speechRate;
+					return instanceId;
 				}
 				set	
 				{
-					speechRate = value;
-				}
-			}
-
-			public string TTSConfigId
-			{
-				get
-				{
-					return tTSConfigId;
-				}
-				set	
-				{
-					tTSConfigId = value;
+					instanceId = value;
 				}
 			}
 
@@ -181,6 +169,18 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 				set	
 				{
 					voice = value;
+				}
+			}
+
+			public string SpeechRate
+			{
+				get
+				{
+					return speechRate;
+				}
+				set	
+				{
+					speechRate = value;
 				}
 			}
 

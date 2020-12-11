@@ -25,51 +25,15 @@ namespace Aliyun.Acs.VoiceNavigator.Model.V20180612
 	public class DebugBeginDialogueResponse : AcsResponse
 	{
 
-		private string action;
-
-		private string actionParams;
-
-		private bool? interruptible;
-
 		private string requestId;
 
 		private string textResponse;
 
-		public string Action
-		{
-			get
-			{
-				return action;
-			}
-			set	
-			{
-				action = value;
-			}
-		}
+		private bool? interruptible;
 
-		public string ActionParams
-		{
-			get
-			{
-				return actionParams;
-			}
-			set	
-			{
-				actionParams = value;
-			}
-		}
+		private string action;
 
-		public bool? Interruptible
-		{
-			get
-			{
-				return interruptible;
-			}
-			set	
-			{
-				interruptible = value;
-			}
-		}
+		private string actionParams;
 
 		public string RequestId
 		{
@@ -92,6 +56,42 @@ namespace Aliyun.Acs.VoiceNavigator.Model.V20180612
 			set	
 			{
 				textResponse = value;
+			}
+		}
+
+		public bool? Interruptible
+		{
+			get
+			{
+				return interruptible;
+			}
+			set	
+			{
+				interruptible = value;
+			}
+		}
+
+		public string Action
+		{
+			get
+			{
+				return action;
+			}
+			set	
+			{
+				action = value;
+			}
+		}
+
+		public string ActionParams
+		{
+			get
+			{
+				return actionParams;
+			}
+			set	
+			{
+				actionParams = value;
 			}
 		}
 	}

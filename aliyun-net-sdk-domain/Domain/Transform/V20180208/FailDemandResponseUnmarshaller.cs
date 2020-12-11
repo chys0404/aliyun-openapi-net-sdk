@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Domain.Transform.V20180208
 {
     public class FailDemandResponseUnmarshaller
     {
-        public static FailDemandResponse Unmarshall(UnmarshallerContext _ctx)
+        public static FailDemandResponse Unmarshall(UnmarshallerContext context)
         {
 			FailDemandResponse failDemandResponse = new FailDemandResponse();
 
-			failDemandResponse.HttpResponse = _ctx.HttpResponse;
-			failDemandResponse.RequestId = _ctx.StringValue("FailDemand.RequestId");
+			failDemandResponse.HttpResponse = context.HttpResponse;
+			failDemandResponse.RequestId = context.StringValue("FailDemand.RequestId");
         
 			return failDemandResponse;
         }

@@ -26,19 +26,19 @@ namespace Aliyun.Acs.Iot.Transform.V20180120
 {
     public class QueryThingModelPublishedResponseUnmarshaller
     {
-        public static QueryThingModelPublishedResponse Unmarshall(UnmarshallerContext _ctx)
+        public static QueryThingModelPublishedResponse Unmarshall(UnmarshallerContext context)
         {
 			QueryThingModelPublishedResponse queryThingModelPublishedResponse = new QueryThingModelPublishedResponse();
 
-			queryThingModelPublishedResponse.HttpResponse = _ctx.HttpResponse;
-			queryThingModelPublishedResponse.RequestId = _ctx.StringValue("QueryThingModelPublished.RequestId");
-			queryThingModelPublishedResponse.Success = _ctx.BooleanValue("QueryThingModelPublished.Success");
-			queryThingModelPublishedResponse.Code = _ctx.StringValue("QueryThingModelPublished.Code");
-			queryThingModelPublishedResponse.ErrorMessage = _ctx.StringValue("QueryThingModelPublished.ErrorMessage");
-			queryThingModelPublishedResponse.ProductKey = _ctx.StringValue("QueryThingModelPublished.ProductKey");
+			queryThingModelPublishedResponse.HttpResponse = context.HttpResponse;
+			queryThingModelPublishedResponse.RequestId = context.StringValue("QueryThingModelPublished.RequestId");
+			queryThingModelPublishedResponse.Success = context.BooleanValue("QueryThingModelPublished.Success");
+			queryThingModelPublishedResponse.Code = context.StringValue("QueryThingModelPublished.Code");
+			queryThingModelPublishedResponse.ErrorMessage = context.StringValue("QueryThingModelPublished.ErrorMessage");
+			queryThingModelPublishedResponse.ProductKey = context.StringValue("QueryThingModelPublished.ProductKey");
 
 			QueryThingModelPublishedResponse.QueryThingModelPublished_Data data = new QueryThingModelPublishedResponse.QueryThingModelPublished_Data();
-			data.ThingModelJson = _ctx.StringValue("QueryThingModelPublished.Data.ThingModelJson");
+			data.ThingModelJson = context.StringValue("QueryThingModelPublished.Data.ThingModelJson");
 			queryThingModelPublishedResponse.Data = data;
         
 			return queryThingModelPublishedResponse;

@@ -26,15 +26,15 @@ namespace Aliyun.Acs.Iot.Transform.V20180120
 {
     public class CopyThingModelResponseUnmarshaller
     {
-        public static CopyThingModelResponse Unmarshall(UnmarshallerContext _ctx)
+        public static CopyThingModelResponse Unmarshall(UnmarshallerContext context)
         {
 			CopyThingModelResponse copyThingModelResponse = new CopyThingModelResponse();
 
-			copyThingModelResponse.HttpResponse = _ctx.HttpResponse;
-			copyThingModelResponse.RequestId = _ctx.StringValue("CopyThingModel.RequestId");
-			copyThingModelResponse.Success = _ctx.BooleanValue("CopyThingModel.Success");
-			copyThingModelResponse.Code = _ctx.StringValue("CopyThingModel.Code");
-			copyThingModelResponse.ErrorMessage = _ctx.StringValue("CopyThingModel.ErrorMessage");
+			copyThingModelResponse.HttpResponse = context.HttpResponse;
+			copyThingModelResponse.RequestId = context.StringValue("CopyThingModel.RequestId");
+			copyThingModelResponse.Success = context.BooleanValue("CopyThingModel.Success");
+			copyThingModelResponse.Code = context.StringValue("CopyThingModel.Code");
+			copyThingModelResponse.ErrorMessage = context.StringValue("CopyThingModel.ErrorMessage");
         
 			return copyThingModelResponse;
         }

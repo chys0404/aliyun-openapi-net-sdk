@@ -25,53 +25,17 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 	public class DescribeIntentResponse : AcsResponse
 	{
 
-		private string code;
-
-		private int? httpStatusCode;
-
-		private string message;
-
 		private string requestId;
 
 		private bool? success;
 
+		private string code;
+
+		private string message;
+
+		private int? httpStatusCode;
+
 		private DescribeIntent_Intent intent;
-
-		public string Code
-		{
-			get
-			{
-				return code;
-			}
-			set	
-			{
-				code = value;
-			}
-		}
-
-		public int? HttpStatusCode
-		{
-			get
-			{
-				return httpStatusCode;
-			}
-			set	
-			{
-				httpStatusCode = value;
-			}
-		}
-
-		public string Message
-		{
-			get
-			{
-				return message;
-			}
-			set	
-			{
-				message = value;
-			}
-		}
 
 		public string RequestId
 		{
@@ -97,6 +61,42 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 			}
 		}
 
+		public string Code
+		{
+			get
+			{
+				return code;
+			}
+			set	
+			{
+				code = value;
+			}
+		}
+
+		public string Message
+		{
+			get
+			{
+				return message;
+			}
+			set	
+			{
+				message = value;
+			}
+		}
+
+		public int? HttpStatusCode
+		{
+			get
+			{
+				return httpStatusCode;
+			}
+			set	
+			{
+				httpStatusCode = value;
+			}
+		}
+
 		public DescribeIntent_Intent Intent
 		{
 			get
@@ -112,45 +112,21 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 		public class DescribeIntent_Intent
 		{
 
-			private long? createTime;
-
-			private string intentDescription;
-
 			private string intentId;
-
-			private string intentName;
-
-			private string keywords;
 
 			private string scriptId;
 
-			private long? updateTime;
+			private string intentName;
+
+			private string intentDescription;
 
 			private string utterances;
 
-			public long? CreateTime
-			{
-				get
-				{
-					return createTime;
-				}
-				set	
-				{
-					createTime = value;
-				}
-			}
+			private string keywords;
 
-			public string IntentDescription
-			{
-				get
-				{
-					return intentDescription;
-				}
-				set	
-				{
-					intentDescription = value;
-				}
-			}
+			private long? createTime;
+
+			private long? updateTime;
 
 			public string IntentId
 			{
@@ -161,30 +137,6 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 				set	
 				{
 					intentId = value;
-				}
-			}
-
-			public string IntentName
-			{
-				get
-				{
-					return intentName;
-				}
-				set	
-				{
-					intentName = value;
-				}
-			}
-
-			public string Keywords
-			{
-				get
-				{
-					return keywords;
-				}
-				set	
-				{
-					keywords = value;
 				}
 			}
 
@@ -200,15 +152,27 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 				}
 			}
 
-			public long? UpdateTime
+			public string IntentName
 			{
 				get
 				{
-					return updateTime;
+					return intentName;
 				}
 				set	
 				{
-					updateTime = value;
+					intentName = value;
+				}
+			}
+
+			public string IntentDescription
+			{
+				get
+				{
+					return intentDescription;
+				}
+				set	
+				{
+					intentDescription = value;
 				}
 			}
 
@@ -221,6 +185,42 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 				set	
 				{
 					utterances = value;
+				}
+			}
+
+			public string Keywords
+			{
+				get
+				{
+					return keywords;
+				}
+				set	
+				{
+					keywords = value;
+				}
+			}
+
+			public long? CreateTime
+			{
+				get
+				{
+					return createTime;
+				}
+				set	
+				{
+					createTime = value;
+				}
+			}
+
+			public long? UpdateTime
+			{
+				get
+				{
+					return updateTime;
+				}
+				set	
+				{
+					updateTime = value;
 				}
 			}
 		}

@@ -25,53 +25,17 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 	public class ListInstancesResponse : AcsResponse
 	{
 
-		private string code;
-
-		private int? httpStatusCode;
-
-		private string message;
-
 		private string requestId;
 
 		private bool? success;
 
+		private string code;
+
+		private string message;
+
+		private int? httpStatusCode;
+
 		private List<ListInstances_Instance> instances;
-
-		public string Code
-		{
-			get
-			{
-				return code;
-			}
-			set	
-			{
-				code = value;
-			}
-		}
-
-		public int? HttpStatusCode
-		{
-			get
-			{
-				return httpStatusCode;
-			}
-			set	
-			{
-				httpStatusCode = value;
-			}
-		}
-
-		public string Message
-		{
-			get
-			{
-				return message;
-			}
-			set	
-			{
-				message = value;
-			}
-		}
 
 		public string RequestId
 		{
@@ -97,6 +61,42 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 			}
 		}
 
+		public string Code
+		{
+			get
+			{
+				return code;
+			}
+			set	
+			{
+				code = value;
+			}
+		}
+
+		public string Message
+		{
+			get
+			{
+				return message;
+			}
+			set	
+			{
+				message = value;
+			}
+		}
+
+		public int? HttpStatusCode
+		{
+			get
+			{
+				return httpStatusCode;
+			}
+			set	
+			{
+				httpStatusCode = value;
+			}
+		}
+
 		public List<ListInstances_Instance> Instances
 		{
 			get
@@ -112,61 +112,21 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 		public class ListInstances_Instance
 		{
 
-			private string callCenterInstanceId;
-
-			private long? creationTime;
-
-			private string instanceDescription;
-
 			private string instanceId;
 
 			private string instanceName;
 
-			private bool? isTemplateContainer;
+			private string instanceDescription;
 
 			private int? maxConcurrentConversation;
 
 			private string owner;
 
-			private string nluServiceType;
+			private long? creationTime;
 
-			private ListInstances_NluProfile nluProfile;
+			private string callCenterInstanceId;
 
-			public string CallCenterInstanceId
-			{
-				get
-				{
-					return callCenterInstanceId;
-				}
-				set	
-				{
-					callCenterInstanceId = value;
-				}
-			}
-
-			public long? CreationTime
-			{
-				get
-				{
-					return creationTime;
-				}
-				set	
-				{
-					creationTime = value;
-				}
-			}
-
-			public string InstanceDescription
-			{
-				get
-				{
-					return instanceDescription;
-				}
-				set	
-				{
-					instanceDescription = value;
-				}
-			}
+			private bool? isTemplateContainer;
 
 			public string InstanceId
 			{
@@ -192,15 +152,15 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 				}
 			}
 
-			public bool? IsTemplateContainer
+			public string InstanceDescription
 			{
 				get
 				{
-					return isTemplateContainer;
+					return instanceDescription;
 				}
 				set	
 				{
-					isTemplateContainer = value;
+					instanceDescription = value;
 				}
 			}
 
@@ -228,73 +188,39 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 				}
 			}
 
-			public string NluServiceType
+			public long? CreationTime
 			{
 				get
 				{
-					return nluServiceType;
+					return creationTime;
 				}
 				set	
 				{
-					nluServiceType = value;
+					creationTime = value;
 				}
 			}
 
-			public ListInstances_NluProfile NluProfile
+			public string CallCenterInstanceId
 			{
 				get
 				{
-					return nluProfile;
+					return callCenterInstanceId;
 				}
 				set	
 				{
-					nluProfile = value;
+					callCenterInstanceId = value;
 				}
 			}
 
-			public class ListInstances_NluProfile
+			public bool? IsTemplateContainer
 			{
-
-				private string endpoint;
-
-				private string accessKey;
-
-				private string secretKey;
-
-				public string Endpoint
+				get
 				{
-					get
-					{
-						return endpoint;
-					}
-					set	
-					{
-						endpoint = value;
-					}
+					return isTemplateContainer;
 				}
-
-				public string AccessKey
+				set	
 				{
-					get
-					{
-						return accessKey;
-					}
-					set	
-					{
-						accessKey = value;
-					}
-				}
-
-				public string SecretKey
-				{
-					get
-					{
-						return secretKey;
-					}
-					set	
-					{
-						secretKey = value;
-					}
+					isTemplateContainer = value;
 				}
 			}
 		}

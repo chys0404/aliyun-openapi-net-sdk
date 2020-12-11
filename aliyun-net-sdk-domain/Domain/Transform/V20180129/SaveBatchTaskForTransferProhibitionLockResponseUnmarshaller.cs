@@ -26,13 +26,13 @@ namespace Aliyun.Acs.Domain.Transform.V20180129
 {
     public class SaveBatchTaskForTransferProhibitionLockResponseUnmarshaller
     {
-        public static SaveBatchTaskForTransferProhibitionLockResponse Unmarshall(UnmarshallerContext _ctx)
+        public static SaveBatchTaskForTransferProhibitionLockResponse Unmarshall(UnmarshallerContext context)
         {
 			SaveBatchTaskForTransferProhibitionLockResponse saveBatchTaskForTransferProhibitionLockResponse = new SaveBatchTaskForTransferProhibitionLockResponse();
 
-			saveBatchTaskForTransferProhibitionLockResponse.HttpResponse = _ctx.HttpResponse;
-			saveBatchTaskForTransferProhibitionLockResponse.RequestId = _ctx.StringValue("SaveBatchTaskForTransferProhibitionLock.RequestId");
-			saveBatchTaskForTransferProhibitionLockResponse.TaskNo = _ctx.StringValue("SaveBatchTaskForTransferProhibitionLock.TaskNo");
+			saveBatchTaskForTransferProhibitionLockResponse.HttpResponse = context.HttpResponse;
+			saveBatchTaskForTransferProhibitionLockResponse.RequestId = context.StringValue("SaveBatchTaskForTransferProhibitionLock.RequestId");
+			saveBatchTaskForTransferProhibitionLockResponse.TaskNo = context.StringValue("SaveBatchTaskForTransferProhibitionLock.TaskNo");
         
 			return saveBatchTaskForTransferProhibitionLockResponse;
         }

@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Ecs.Transform.V20140526
 {
     public class DeleteAutoProvisioningGroupResponseUnmarshaller
     {
-        public static DeleteAutoProvisioningGroupResponse Unmarshall(UnmarshallerContext _ctx)
+        public static DeleteAutoProvisioningGroupResponse Unmarshall(UnmarshallerContext context)
         {
 			DeleteAutoProvisioningGroupResponse deleteAutoProvisioningGroupResponse = new DeleteAutoProvisioningGroupResponse();
 
-			deleteAutoProvisioningGroupResponse.HttpResponse = _ctx.HttpResponse;
-			deleteAutoProvisioningGroupResponse.RequestId = _ctx.StringValue("DeleteAutoProvisioningGroup.RequestId");
+			deleteAutoProvisioningGroupResponse.HttpResponse = context.HttpResponse;
+			deleteAutoProvisioningGroupResponse.RequestId = context.StringValue("DeleteAutoProvisioningGroup.RequestId");
         
 			return deleteAutoProvisioningGroupResponse;
         }

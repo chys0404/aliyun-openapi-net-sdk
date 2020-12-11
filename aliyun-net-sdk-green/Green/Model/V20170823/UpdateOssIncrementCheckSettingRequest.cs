@@ -44,11 +44,7 @@ namespace Aliyun.Acs.Green.Model.V20170823
 
 		private string imageSceneList;
 
-		private string audioSceneList;
-
 		private int? videoFrameInterval;
-
-		private bool? audioAutoFreezeOpened;
 
 		private string sourceIp;
 
@@ -58,13 +54,9 @@ namespace Aliyun.Acs.Green.Model.V20170823
 
 		private string videoAutoFreezeSceneList;
 
-		private int? audioMaxSize;
-
 		private string lang;
 
 		private string imageAutoFreeze;
-
-		private string audioAntispamFreezeConfig;
 
 		private int? videoMaxSize;
 
@@ -100,19 +92,6 @@ namespace Aliyun.Acs.Green.Model.V20170823
 			}
 		}
 
-		public string AudioSceneList
-		{
-			get
-			{
-				return audioSceneList;
-			}
-			set	
-			{
-				audioSceneList = value;
-				DictionaryUtil.Add(QueryParameters, "AudioSceneList", value);
-			}
-		}
-
 		public int? VideoFrameInterval
 		{
 			get
@@ -123,19 +102,6 @@ namespace Aliyun.Acs.Green.Model.V20170823
 			{
 				videoFrameInterval = value;
 				DictionaryUtil.Add(QueryParameters, "VideoFrameInterval", value.ToString());
-			}
-		}
-
-		public bool? AudioAutoFreezeOpened
-		{
-			get
-			{
-				return audioAutoFreezeOpened;
-			}
-			set	
-			{
-				audioAutoFreezeOpened = value;
-				DictionaryUtil.Add(QueryParameters, "AudioAutoFreezeOpened", value.ToString());
 			}
 		}
 
@@ -191,19 +157,6 @@ namespace Aliyun.Acs.Green.Model.V20170823
 			}
 		}
 
-		public int? AudioMaxSize
-		{
-			get
-			{
-				return audioMaxSize;
-			}
-			set	
-			{
-				audioMaxSize = value;
-				DictionaryUtil.Add(QueryParameters, "AudioMaxSize", value.ToString());
-			}
-		}
-
 		public string Lang
 		{
 			get
@@ -227,19 +180,6 @@ namespace Aliyun.Acs.Green.Model.V20170823
 			{
 				imageAutoFreeze = value;
 				DictionaryUtil.Add(QueryParameters, "ImageAutoFreeze", value);
-			}
-		}
-
-		public string AudioAntispamFreezeConfig
-		{
-			get
-			{
-				return audioAntispamFreezeConfig;
-			}
-			set	
-			{
-				audioAntispamFreezeConfig = value;
-				DictionaryUtil.Add(QueryParameters, "AudioAntispamFreezeConfig", value);
 			}
 		}
 

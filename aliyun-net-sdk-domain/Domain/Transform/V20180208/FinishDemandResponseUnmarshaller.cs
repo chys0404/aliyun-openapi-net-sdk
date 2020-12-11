@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Domain.Transform.V20180208
 {
     public class FinishDemandResponseUnmarshaller
     {
-        public static FinishDemandResponse Unmarshall(UnmarshallerContext _ctx)
+        public static FinishDemandResponse Unmarshall(UnmarshallerContext context)
         {
 			FinishDemandResponse finishDemandResponse = new FinishDemandResponse();
 
-			finishDemandResponse.HttpResponse = _ctx.HttpResponse;
-			finishDemandResponse.RequestId = _ctx.StringValue("FinishDemand.RequestId");
+			finishDemandResponse.HttpResponse = context.HttpResponse;
+			finishDemandResponse.RequestId = context.StringValue("FinishDemand.RequestId");
         
 			return finishDemandResponse;
         }

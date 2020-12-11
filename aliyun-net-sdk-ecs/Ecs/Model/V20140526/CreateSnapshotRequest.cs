@@ -34,8 +34,8 @@ namespace Aliyun.Acs.Ecs.Model.V20140526
         {
             if (this.GetType().GetProperty("ProductEndpointMap") != null && this.GetType().GetProperty("ProductEndpointType") != null)
             {
-                this.GetType().GetProperty("ProductEndpointMap").SetValue(this, Aliyun.Acs.Ecs.Endpoint.endpointMap, null);
-                this.GetType().GetProperty("ProductEndpointType").SetValue(this, Aliyun.Acs.Ecs.Endpoint.endpointRegionalType, null);
+                this.GetType().GetProperty("ProductEndpointMap").SetValue(this, Endpoint.endpointMap, null);
+                this.GetType().GetProperty("ProductEndpointType").SetValue(this, Endpoint.endpointRegionalType, null);
             }
 			Method = MethodType.POST;
         }
@@ -44,15 +44,11 @@ namespace Aliyun.Acs.Ecs.Model.V20140526
 
 		private string clientToken;
 
-		private bool? instantAccess;
-
 		private string description;
 
 		private string snapshotName;
 
 		private string resourceGroupId;
-
-		private int? instantAccessRetentionDays;
 
 		private string diskId;
 
@@ -94,19 +90,6 @@ namespace Aliyun.Acs.Ecs.Model.V20140526
 			}
 		}
 
-		public bool? InstantAccess
-		{
-			get
-			{
-				return instantAccess;
-			}
-			set	
-			{
-				instantAccess = value;
-				DictionaryUtil.Add(QueryParameters, "InstantAccess", value.ToString());
-			}
-		}
-
 		public string Description
 		{
 			get
@@ -143,19 +126,6 @@ namespace Aliyun.Acs.Ecs.Model.V20140526
 			{
 				resourceGroupId = value;
 				DictionaryUtil.Add(QueryParameters, "ResourceGroupId", value);
-			}
-		}
-
-		public int? InstantAccessRetentionDays
-		{
-			get
-			{
-				return instantAccessRetentionDays;
-			}
-			set	
-			{
-				instantAccessRetentionDays = value;
-				DictionaryUtil.Add(QueryParameters, "InstantAccessRetentionDays", value.ToString());
 			}
 		}
 

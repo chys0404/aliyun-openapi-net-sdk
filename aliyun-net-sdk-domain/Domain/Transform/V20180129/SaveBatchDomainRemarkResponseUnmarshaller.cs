@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Domain.Transform.V20180129
 {
     public class SaveBatchDomainRemarkResponseUnmarshaller
     {
-        public static SaveBatchDomainRemarkResponse Unmarshall(UnmarshallerContext _ctx)
+        public static SaveBatchDomainRemarkResponse Unmarshall(UnmarshallerContext context)
         {
 			SaveBatchDomainRemarkResponse saveBatchDomainRemarkResponse = new SaveBatchDomainRemarkResponse();
 
-			saveBatchDomainRemarkResponse.HttpResponse = _ctx.HttpResponse;
-			saveBatchDomainRemarkResponse.RequestId = _ctx.StringValue("SaveBatchDomainRemark.RequestId");
+			saveBatchDomainRemarkResponse.HttpResponse = context.HttpResponse;
+			saveBatchDomainRemarkResponse.RequestId = context.StringValue("SaveBatchDomainRemark.RequestId");
         
 			return saveBatchDomainRemarkResponse;
         }

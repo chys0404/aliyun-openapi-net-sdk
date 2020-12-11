@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Ecs.Transform.V20140526
 {
     public class AssociateEipAddressResponseUnmarshaller
     {
-        public static AssociateEipAddressResponse Unmarshall(UnmarshallerContext _ctx)
+        public static AssociateEipAddressResponse Unmarshall(UnmarshallerContext context)
         {
 			AssociateEipAddressResponse associateEipAddressResponse = new AssociateEipAddressResponse();
 
-			associateEipAddressResponse.HttpResponse = _ctx.HttpResponse;
-			associateEipAddressResponse.RequestId = _ctx.StringValue("AssociateEipAddress.RequestId");
+			associateEipAddressResponse.HttpResponse = context.HttpResponse;
+			associateEipAddressResponse.RequestId = context.StringValue("AssociateEipAddress.RequestId");
         
 			return associateEipAddressResponse;
         }

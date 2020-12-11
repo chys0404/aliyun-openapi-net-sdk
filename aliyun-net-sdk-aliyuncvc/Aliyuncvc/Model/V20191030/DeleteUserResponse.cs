@@ -27,7 +27,7 @@ namespace Aliyun.Acs.aliyuncvc.Model.V20191030
 
 		private string requestId;
 
-		private bool? success;
+		private string success;
 
 		private int? errorCode;
 
@@ -45,7 +45,7 @@ namespace Aliyun.Acs.aliyuncvc.Model.V20191030
 			}
 		}
 
-		public bool? Success
+		public string Success
 		{
 			get
 			{

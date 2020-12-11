@@ -26,12 +26,12 @@ namespace Aliyun.Acs.VoiceNavigator.Transform.V20180612
 {
     public class DeleteInstanceResponseUnmarshaller
     {
-        public static DeleteInstanceResponse Unmarshall(UnmarshallerContext _ctx)
+        public static DeleteInstanceResponse Unmarshall(UnmarshallerContext context)
         {
 			DeleteInstanceResponse deleteInstanceResponse = new DeleteInstanceResponse();
 
-			deleteInstanceResponse.HttpResponse = _ctx.HttpResponse;
-			deleteInstanceResponse.RequestId = _ctx.StringValue("DeleteInstance.RequestId");
+			deleteInstanceResponse.HttpResponse = context.HttpResponse;
+			deleteInstanceResponse.RequestId = context.StringValue("DeleteInstance.RequestId");
         
 			return deleteInstanceResponse;
         }

@@ -26,18 +26,18 @@ namespace Aliyun.Acs.Domain.Transform.V20180129
 {
     public class QueryFailingReasonListForQualificationResponseUnmarshaller
     {
-        public static QueryFailingReasonListForQualificationResponse Unmarshall(UnmarshallerContext _ctx)
+        public static QueryFailingReasonListForQualificationResponse Unmarshall(UnmarshallerContext context)
         {
 			QueryFailingReasonListForQualificationResponse queryFailingReasonListForQualificationResponse = new QueryFailingReasonListForQualificationResponse();
 
-			queryFailingReasonListForQualificationResponse.HttpResponse = _ctx.HttpResponse;
-			queryFailingReasonListForQualificationResponse.RequestId = _ctx.StringValue("QueryFailingReasonListForQualification.RequestId");
+			queryFailingReasonListForQualificationResponse.HttpResponse = context.HttpResponse;
+			queryFailingReasonListForQualificationResponse.RequestId = context.StringValue("QueryFailingReasonListForQualification.RequestId");
 
 			List<QueryFailingReasonListForQualificationResponse.QueryFailingReasonListForQualification_FailRecord> queryFailingReasonListForQualificationResponse_data = new List<QueryFailingReasonListForQualificationResponse.QueryFailingReasonListForQualification_FailRecord>();
-			for (int i = 0; i < _ctx.Length("QueryFailingReasonListForQualification.Data.Length"); i++) {
+			for (int i = 0; i < context.Length("QueryFailingReasonListForQualification.Data.Length"); i++) {
 				QueryFailingReasonListForQualificationResponse.QueryFailingReasonListForQualification_FailRecord failRecord = new QueryFailingReasonListForQualificationResponse.QueryFailingReasonListForQualification_FailRecord();
-				failRecord.Date = _ctx.StringValue("QueryFailingReasonListForQualification.Data["+ i +"].Date");
-				failRecord.FailReason = _ctx.StringValue("QueryFailingReasonListForQualification.Data["+ i +"].FailReason");
+				failRecord.Date = context.StringValue("QueryFailingReasonListForQualification.Data["+ i +"].Date");
+				failRecord.FailReason = context.StringValue("QueryFailingReasonListForQualification.Data["+ i +"].FailReason");
 
 				queryFailingReasonListForQualificationResponse_data.Add(failRecord);
 			}

@@ -26,13 +26,13 @@ namespace Aliyun.Acs.Domain.Transform.V20180208
 {
     public class GetReserveDomainUrlResponseUnmarshaller
     {
-        public static GetReserveDomainUrlResponse Unmarshall(UnmarshallerContext _ctx)
+        public static GetReserveDomainUrlResponse Unmarshall(UnmarshallerContext context)
         {
 			GetReserveDomainUrlResponse getReserveDomainUrlResponse = new GetReserveDomainUrlResponse();
 
-			getReserveDomainUrlResponse.HttpResponse = _ctx.HttpResponse;
-			getReserveDomainUrlResponse.RequestId = _ctx.StringValue("GetReserveDomainUrl.RequestId");
-			getReserveDomainUrlResponse.Url = _ctx.StringValue("GetReserveDomainUrl.Url");
+			getReserveDomainUrlResponse.HttpResponse = context.HttpResponse;
+			getReserveDomainUrlResponse.RequestId = context.StringValue("GetReserveDomainUrl.RequestId");
+			getReserveDomainUrlResponse.Url = context.StringValue("GetReserveDomainUrl.Url");
         
 			return getReserveDomainUrlResponse;
         }

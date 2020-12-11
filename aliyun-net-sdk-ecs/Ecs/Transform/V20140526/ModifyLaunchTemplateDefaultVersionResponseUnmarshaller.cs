@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Ecs.Transform.V20140526
 {
     public class ModifyLaunchTemplateDefaultVersionResponseUnmarshaller
     {
-        public static ModifyLaunchTemplateDefaultVersionResponse Unmarshall(UnmarshallerContext _ctx)
+        public static ModifyLaunchTemplateDefaultVersionResponse Unmarshall(UnmarshallerContext context)
         {
 			ModifyLaunchTemplateDefaultVersionResponse modifyLaunchTemplateDefaultVersionResponse = new ModifyLaunchTemplateDefaultVersionResponse();
 
-			modifyLaunchTemplateDefaultVersionResponse.HttpResponse = _ctx.HttpResponse;
-			modifyLaunchTemplateDefaultVersionResponse.RequestId = _ctx.StringValue("ModifyLaunchTemplateDefaultVersion.RequestId");
+			modifyLaunchTemplateDefaultVersionResponse.HttpResponse = context.HttpResponse;
+			modifyLaunchTemplateDefaultVersionResponse.RequestId = context.StringValue("ModifyLaunchTemplateDefaultVersion.RequestId");
         
 			return modifyLaunchTemplateDefaultVersionResponse;
         }

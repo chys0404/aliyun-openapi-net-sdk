@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Kms.Transform.V20160120
 {
     public class UpdateAliasResponseUnmarshaller
     {
-        public static UpdateAliasResponse Unmarshall(UnmarshallerContext _ctx)
+        public static UpdateAliasResponse Unmarshall(UnmarshallerContext context)
         {
 			UpdateAliasResponse updateAliasResponse = new UpdateAliasResponse();
 
-			updateAliasResponse.HttpResponse = _ctx.HttpResponse;
-			updateAliasResponse.RequestId = _ctx.StringValue("UpdateAlias.RequestId");
+			updateAliasResponse.HttpResponse = context.HttpResponse;
+			updateAliasResponse.RequestId = context.StringValue("UpdateAlias.RequestId");
         
 			return updateAliasResponse;
         }

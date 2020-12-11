@@ -26,13 +26,13 @@ namespace Aliyun.Acs.dcdn.Transform.V20180115
 {
     public class PreloadDcdnObjectCachesResponseUnmarshaller
     {
-        public static PreloadDcdnObjectCachesResponse Unmarshall(UnmarshallerContext _ctx)
+        public static PreloadDcdnObjectCachesResponse Unmarshall(UnmarshallerContext context)
         {
 			PreloadDcdnObjectCachesResponse preloadDcdnObjectCachesResponse = new PreloadDcdnObjectCachesResponse();
 
-			preloadDcdnObjectCachesResponse.HttpResponse = _ctx.HttpResponse;
-			preloadDcdnObjectCachesResponse.RequestId = _ctx.StringValue("PreloadDcdnObjectCaches.RequestId");
-			preloadDcdnObjectCachesResponse.PreloadTaskId = _ctx.StringValue("PreloadDcdnObjectCaches.PreloadTaskId");
+			preloadDcdnObjectCachesResponse.HttpResponse = context.HttpResponse;
+			preloadDcdnObjectCachesResponse.RequestId = context.StringValue("PreloadDcdnObjectCaches.RequestId");
+			preloadDcdnObjectCachesResponse.PreloadTaskId = context.StringValue("PreloadDcdnObjectCaches.PreloadTaskId");
         
 			return preloadDcdnObjectCachesResponse;
         }

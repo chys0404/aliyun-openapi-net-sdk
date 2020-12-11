@@ -26,15 +26,15 @@ namespace Aliyun.Acs.Iot.Transform.V20180120
 {
     public class CancelOTATaskByJobResponseUnmarshaller
     {
-        public static CancelOTATaskByJobResponse Unmarshall(UnmarshallerContext _ctx)
+        public static CancelOTATaskByJobResponse Unmarshall(UnmarshallerContext context)
         {
 			CancelOTATaskByJobResponse cancelOTATaskByJobResponse = new CancelOTATaskByJobResponse();
 
-			cancelOTATaskByJobResponse.HttpResponse = _ctx.HttpResponse;
-			cancelOTATaskByJobResponse.RequestId = _ctx.StringValue("CancelOTATaskByJob.RequestId");
-			cancelOTATaskByJobResponse.Success = _ctx.BooleanValue("CancelOTATaskByJob.Success");
-			cancelOTATaskByJobResponse.Code = _ctx.StringValue("CancelOTATaskByJob.Code");
-			cancelOTATaskByJobResponse.ErrorMessage = _ctx.StringValue("CancelOTATaskByJob.ErrorMessage");
+			cancelOTATaskByJobResponse.HttpResponse = context.HttpResponse;
+			cancelOTATaskByJobResponse.RequestId = context.StringValue("CancelOTATaskByJob.RequestId");
+			cancelOTATaskByJobResponse.Success = context.BooleanValue("CancelOTATaskByJob.Success");
+			cancelOTATaskByJobResponse.Code = context.StringValue("CancelOTATaskByJob.Code");
+			cancelOTATaskByJobResponse.ErrorMessage = context.StringValue("CancelOTATaskByJob.ErrorMessage");
         
 			return cancelOTATaskByJobResponse;
         }

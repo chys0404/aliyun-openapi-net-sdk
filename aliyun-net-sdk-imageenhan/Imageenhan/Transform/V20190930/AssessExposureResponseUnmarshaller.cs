@@ -26,15 +26,15 @@ namespace Aliyun.Acs.imageenhan.Transform.V20190930
 {
     public class AssessExposureResponseUnmarshaller
     {
-        public static AssessExposureResponse Unmarshall(UnmarshallerContext _ctx)
+        public static AssessExposureResponse Unmarshall(UnmarshallerContext context)
         {
 			AssessExposureResponse assessExposureResponse = new AssessExposureResponse();
 
-			assessExposureResponse.HttpResponse = _ctx.HttpResponse;
-			assessExposureResponse.RequestId = _ctx.StringValue("AssessExposure.RequestId");
+			assessExposureResponse.HttpResponse = context.HttpResponse;
+			assessExposureResponse.RequestId = context.StringValue("AssessExposure.RequestId");
 
 			AssessExposureResponse.AssessExposure_Data data = new AssessExposureResponse.AssessExposure_Data();
-			data.Exposure = _ctx.FloatValue("AssessExposure.Data.Exposure");
+			data.Exposure = context.FloatValue("AssessExposure.Data.Exposure");
 			assessExposureResponse.Data = data;
         
 			return assessExposureResponse;

@@ -26,14 +26,14 @@ namespace Aliyun.Acs.Actiontrail.Transform.V20171204
 {
     public class StartLoggingResponseUnmarshaller
     {
-        public static StartLoggingResponse Unmarshall(UnmarshallerContext _ctx)
+        public static StartLoggingResponse Unmarshall(UnmarshallerContext context)
         {
 			StartLoggingResponse startLoggingResponse = new StartLoggingResponse();
 
-			startLoggingResponse.HttpResponse = _ctx.HttpResponse;
-			startLoggingResponse.RequestId = _ctx.StringValue("StartLogging.RequestId");
-			startLoggingResponse.Param = _ctx.StringValue("StartLogging.Param");
-			startLoggingResponse.Result = _ctx.StringValue("StartLogging.Result");
+			startLoggingResponse.HttpResponse = context.HttpResponse;
+			startLoggingResponse.RequestId = context.StringValue("StartLogging.RequestId");
+			startLoggingResponse.Param = context.StringValue("StartLogging.Param");
+			startLoggingResponse.Result = context.StringValue("StartLogging.Result");
         
 			return startLoggingResponse;
         }

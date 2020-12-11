@@ -26,13 +26,13 @@ namespace Aliyun.Acs.multimediaai.Transform.V20190810
 {
     public class CreateGifTaskResponseUnmarshaller
     {
-        public static CreateGifTaskResponse Unmarshall(UnmarshallerContext _ctx)
+        public static CreateGifTaskResponse Unmarshall(UnmarshallerContext context)
         {
 			CreateGifTaskResponse createGifTaskResponse = new CreateGifTaskResponse();
 
-			createGifTaskResponse.HttpResponse = _ctx.HttpResponse;
-			createGifTaskResponse.RequestId = _ctx.StringValue("CreateGifTask.RequestId");
-			createGifTaskResponse.TaskId = _ctx.LongValue("CreateGifTask.TaskId");
+			createGifTaskResponse.HttpResponse = context.HttpResponse;
+			createGifTaskResponse.RequestId = context.StringValue("CreateGifTask.RequestId");
+			createGifTaskResponse.TaskId = context.LongValue("CreateGifTask.TaskId");
         
 			return createGifTaskResponse;
         }

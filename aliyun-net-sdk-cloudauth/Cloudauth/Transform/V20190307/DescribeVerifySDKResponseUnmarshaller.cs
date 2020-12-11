@@ -26,13 +26,13 @@ namespace Aliyun.Acs.Cloudauth.Transform.V20190307
 {
     public class DescribeVerifySDKResponseUnmarshaller
     {
-        public static DescribeVerifySDKResponse Unmarshall(UnmarshallerContext _ctx)
+        public static DescribeVerifySDKResponse Unmarshall(UnmarshallerContext context)
         {
 			DescribeVerifySDKResponse describeVerifySDKResponse = new DescribeVerifySDKResponse();
 
-			describeVerifySDKResponse.HttpResponse = _ctx.HttpResponse;
-			describeVerifySDKResponse.RequestId = _ctx.StringValue("DescribeVerifySDK.RequestId");
-			describeVerifySDKResponse.SdkUrl = _ctx.StringValue("DescribeVerifySDK.SdkUrl");
+			describeVerifySDKResponse.HttpResponse = context.HttpResponse;
+			describeVerifySDKResponse.RequestId = context.StringValue("DescribeVerifySDK.RequestId");
+			describeVerifySDKResponse.SdkUrl = context.StringValue("DescribeVerifySDK.SdkUrl");
         
 			return describeVerifySDKResponse;
         }

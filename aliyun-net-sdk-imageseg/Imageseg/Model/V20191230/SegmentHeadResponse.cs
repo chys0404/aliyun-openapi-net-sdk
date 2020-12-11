@@ -73,15 +73,27 @@ namespace Aliyun.Acs.imageseg.Model.V20191230
 			public class SegmentHead_Element
 			{
 
+				private string imageURL;
+
 				private int? x;
 
 				private int? y;
 
-				private string imageURL;
+				private int? width;
 
 				private int? height;
 
-				private int? width;
+				public string ImageURL
+				{
+					get
+					{
+						return imageURL;
+					}
+					set	
+					{
+						imageURL = value;
+					}
+				}
 
 				public int? X
 				{
@@ -107,15 +119,15 @@ namespace Aliyun.Acs.imageseg.Model.V20191230
 					}
 				}
 
-				public string ImageURL
+				public int? Width
 				{
 					get
 					{
-						return imageURL;
+						return width;
 					}
 					set	
 					{
-						imageURL = value;
+						width = value;
 					}
 				}
 
@@ -128,18 +140,6 @@ namespace Aliyun.Acs.imageseg.Model.V20191230
 					set	
 					{
 						height = value;
-					}
-				}
-
-				public int? Width
-				{
-					get
-					{
-						return width;
-					}
-					set	
-					{
-						width = value;
 					}
 				}
 			}

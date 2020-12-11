@@ -26,25 +26,25 @@ namespace Aliyun.Acs.scdn.Transform.V20171115
 {
     public class DescribeScdnDomainConfigsResponseUnmarshaller
     {
-        public static DescribeScdnDomainConfigsResponse Unmarshall(UnmarshallerContext _ctx)
+        public static DescribeScdnDomainConfigsResponse Unmarshall(UnmarshallerContext context)
         {
 			DescribeScdnDomainConfigsResponse describeScdnDomainConfigsResponse = new DescribeScdnDomainConfigsResponse();
 
-			describeScdnDomainConfigsResponse.HttpResponse = _ctx.HttpResponse;
-			describeScdnDomainConfigsResponse.RequestId = _ctx.StringValue("DescribeScdnDomainConfigs.RequestId");
+			describeScdnDomainConfigsResponse.HttpResponse = context.HttpResponse;
+			describeScdnDomainConfigsResponse.RequestId = context.StringValue("DescribeScdnDomainConfigs.RequestId");
 
 			List<DescribeScdnDomainConfigsResponse.DescribeScdnDomainConfigs_DomainConfig> describeScdnDomainConfigsResponse_domainConfigs = new List<DescribeScdnDomainConfigsResponse.DescribeScdnDomainConfigs_DomainConfig>();
-			for (int i = 0; i < _ctx.Length("DescribeScdnDomainConfigs.DomainConfigs.Length"); i++) {
+			for (int i = 0; i < context.Length("DescribeScdnDomainConfigs.DomainConfigs.Length"); i++) {
 				DescribeScdnDomainConfigsResponse.DescribeScdnDomainConfigs_DomainConfig domainConfig = new DescribeScdnDomainConfigsResponse.DescribeScdnDomainConfigs_DomainConfig();
-				domainConfig.FunctionName = _ctx.StringValue("DescribeScdnDomainConfigs.DomainConfigs["+ i +"].FunctionName");
-				domainConfig.ConfigId = _ctx.StringValue("DescribeScdnDomainConfigs.DomainConfigs["+ i +"].ConfigId");
-				domainConfig.Status = _ctx.StringValue("DescribeScdnDomainConfigs.DomainConfigs["+ i +"].Status");
+				domainConfig.FunctionName = context.StringValue("DescribeScdnDomainConfigs.DomainConfigs["+ i +"].FunctionName");
+				domainConfig.ConfigId = context.StringValue("DescribeScdnDomainConfigs.DomainConfigs["+ i +"].ConfigId");
+				domainConfig.Status = context.StringValue("DescribeScdnDomainConfigs.DomainConfigs["+ i +"].Status");
 
 				List<DescribeScdnDomainConfigsResponse.DescribeScdnDomainConfigs_DomainConfig.DescribeScdnDomainConfigs_FunctionArg> domainConfig_functionArgs = new List<DescribeScdnDomainConfigsResponse.DescribeScdnDomainConfigs_DomainConfig.DescribeScdnDomainConfigs_FunctionArg>();
-				for (int j = 0; j < _ctx.Length("DescribeScdnDomainConfigs.DomainConfigs["+ i +"].FunctionArgs.Length"); j++) {
+				for (int j = 0; j < context.Length("DescribeScdnDomainConfigs.DomainConfigs["+ i +"].FunctionArgs.Length"); j++) {
 					DescribeScdnDomainConfigsResponse.DescribeScdnDomainConfigs_DomainConfig.DescribeScdnDomainConfigs_FunctionArg functionArg = new DescribeScdnDomainConfigsResponse.DescribeScdnDomainConfigs_DomainConfig.DescribeScdnDomainConfigs_FunctionArg();
-					functionArg.ArgName = _ctx.StringValue("DescribeScdnDomainConfigs.DomainConfigs["+ i +"].FunctionArgs["+ j +"].ArgName");
-					functionArg.ArgValue = _ctx.StringValue("DescribeScdnDomainConfigs.DomainConfigs["+ i +"].FunctionArgs["+ j +"].ArgValue");
+					functionArg.ArgName = context.StringValue("DescribeScdnDomainConfigs.DomainConfigs["+ i +"].FunctionArgs["+ j +"].ArgName");
+					functionArg.ArgValue = context.StringValue("DescribeScdnDomainConfigs.DomainConfigs["+ i +"].FunctionArgs["+ j +"].ArgValue");
 
 					domainConfig_functionArgs.Add(functionArg);
 				}

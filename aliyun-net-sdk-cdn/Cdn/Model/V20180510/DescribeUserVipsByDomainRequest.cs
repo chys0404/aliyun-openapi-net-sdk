@@ -38,26 +38,16 @@ namespace Aliyun.Acs.Cdn.Model.V20180510
                 this.GetType().GetProperty("ProductEndpointMap").SetValue(this, Aliyun.Acs.Cdn.Endpoint.endpointMap, null);
                 this.GetType().GetProperty("ProductEndpointType").SetValue(this, Aliyun.Acs.Cdn.Endpoint.endpointRegionalType, null);
             }
+			Method = MethodType.POST;
         }
-
-		private string available;
 
 		private string domainName;
 
+		private string available;
+
 		private long? ownerId;
 
-		public string Available
-		{
-			get
-			{
-				return available;
-			}
-			set	
-			{
-				available = value;
-				DictionaryUtil.Add(QueryParameters, "Available", value);
-			}
-		}
+		private string securityToken;
 
 		public string DomainName
 		{
@@ -72,6 +62,19 @@ namespace Aliyun.Acs.Cdn.Model.V20180510
 			}
 		}
 
+		public string Available
+		{
+			get
+			{
+				return available;
+			}
+			set	
+			{
+				available = value;
+				DictionaryUtil.Add(QueryParameters, "Available", value);
+			}
+		}
+
 		public long? OwnerId
 		{
 			get
@@ -82,6 +85,19 @@ namespace Aliyun.Acs.Cdn.Model.V20180510
 			{
 				ownerId = value;
 				DictionaryUtil.Add(QueryParameters, "OwnerId", value.ToString());
+			}
+		}
+
+		public string SecurityToken
+		{
+			get
+			{
+				return securityToken;
+			}
+			set	
+			{
+				securityToken = value;
+				DictionaryUtil.Add(QueryParameters, "SecurityToken", value);
 			}
 		}
 

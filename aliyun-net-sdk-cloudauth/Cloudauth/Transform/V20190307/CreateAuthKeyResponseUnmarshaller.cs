@@ -26,13 +26,13 @@ namespace Aliyun.Acs.Cloudauth.Transform.V20190307
 {
     public class CreateAuthKeyResponseUnmarshaller
     {
-        public static CreateAuthKeyResponse Unmarshall(UnmarshallerContext _ctx)
+        public static CreateAuthKeyResponse Unmarshall(UnmarshallerContext context)
         {
 			CreateAuthKeyResponse createAuthKeyResponse = new CreateAuthKeyResponse();
 
-			createAuthKeyResponse.HttpResponse = _ctx.HttpResponse;
-			createAuthKeyResponse.RequestId = _ctx.StringValue("CreateAuthKey.RequestId");
-			createAuthKeyResponse.AuthKey = _ctx.StringValue("CreateAuthKey.AuthKey");
+			createAuthKeyResponse.HttpResponse = context.HttpResponse;
+			createAuthKeyResponse.RequestId = context.StringValue("CreateAuthKey.RequestId");
+			createAuthKeyResponse.AuthKey = context.StringValue("CreateAuthKey.AuthKey");
         
 			return createAuthKeyResponse;
         }

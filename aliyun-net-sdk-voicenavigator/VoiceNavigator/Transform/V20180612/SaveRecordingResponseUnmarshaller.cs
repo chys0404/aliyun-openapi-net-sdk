@@ -26,12 +26,12 @@ namespace Aliyun.Acs.VoiceNavigator.Transform.V20180612
 {
     public class SaveRecordingResponseUnmarshaller
     {
-        public static SaveRecordingResponse Unmarshall(UnmarshallerContext _ctx)
+        public static SaveRecordingResponse Unmarshall(UnmarshallerContext context)
         {
 			SaveRecordingResponse saveRecordingResponse = new SaveRecordingResponse();
 
-			saveRecordingResponse.HttpResponse = _ctx.HttpResponse;
-			saveRecordingResponse.RequestId = _ctx.StringValue("SaveRecording.RequestId");
+			saveRecordingResponse.HttpResponse = context.HttpResponse;
+			saveRecordingResponse.RequestId = context.StringValue("SaveRecording.RequestId");
         
 			return saveRecordingResponse;
         }

@@ -116,8 +116,6 @@ namespace Aliyun.Acs.dataworks_public.Model.V20200518
 
 			private string data;
 
-			private long? nodeId;
-
 			public string TableName
 			{
 				get
@@ -139,18 +137,6 @@ namespace Aliyun.Acs.dataworks_public.Model.V20200518
 				set	
 				{
 					data = value;
-				}
-			}
-
-			public long? NodeId
-			{
-				get
-				{
-					return nodeId;
-				}
-				set	
-				{
-					nodeId = value;
 				}
 			}
 		}

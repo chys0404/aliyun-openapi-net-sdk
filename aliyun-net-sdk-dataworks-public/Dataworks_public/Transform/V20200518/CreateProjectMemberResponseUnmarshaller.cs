@@ -26,12 +26,12 @@ namespace Aliyun.Acs.dataworks_public.Transform.V20200518
 {
     public class CreateProjectMemberResponseUnmarshaller
     {
-        public static CreateProjectMemberResponse Unmarshall(UnmarshallerContext _ctx)
+        public static CreateProjectMemberResponse Unmarshall(UnmarshallerContext context)
         {
 			CreateProjectMemberResponse createProjectMemberResponse = new CreateProjectMemberResponse();
 
-			createProjectMemberResponse.HttpResponse = _ctx.HttpResponse;
-			createProjectMemberResponse.RequestId = _ctx.StringValue("CreateProjectMember.RequestId");
+			createProjectMemberResponse.HttpResponse = context.HttpResponse;
+			createProjectMemberResponse.RequestId = context.StringValue("CreateProjectMember.RequestId");
         
 			return createProjectMemberResponse;
         }

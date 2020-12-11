@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Ecs.Transform.V20140526
 {
     public class DeleteStorageSetResponseUnmarshaller
     {
-        public static DeleteStorageSetResponse Unmarshall(UnmarshallerContext _ctx)
+        public static DeleteStorageSetResponse Unmarshall(UnmarshallerContext context)
         {
 			DeleteStorageSetResponse deleteStorageSetResponse = new DeleteStorageSetResponse();
 
-			deleteStorageSetResponse.HttpResponse = _ctx.HttpResponse;
-			deleteStorageSetResponse.RequestId = _ctx.StringValue("DeleteStorageSet.RequestId");
+			deleteStorageSetResponse.HttpResponse = context.HttpResponse;
+			deleteStorageSetResponse.RequestId = context.StringValue("DeleteStorageSet.RequestId");
         
 			return deleteStorageSetResponse;
         }

@@ -26,13 +26,13 @@ namespace Aliyun.Acs.Ecs.Transform.V20140526
 {
     public class CreateSecurityGroupResponseUnmarshaller
     {
-        public static CreateSecurityGroupResponse Unmarshall(UnmarshallerContext _ctx)
+        public static CreateSecurityGroupResponse Unmarshall(UnmarshallerContext context)
         {
 			CreateSecurityGroupResponse createSecurityGroupResponse = new CreateSecurityGroupResponse();
 
-			createSecurityGroupResponse.HttpResponse = _ctx.HttpResponse;
-			createSecurityGroupResponse.RequestId = _ctx.StringValue("CreateSecurityGroup.RequestId");
-			createSecurityGroupResponse.SecurityGroupId = _ctx.StringValue("CreateSecurityGroup.SecurityGroupId");
+			createSecurityGroupResponse.HttpResponse = context.HttpResponse;
+			createSecurityGroupResponse.RequestId = context.StringValue("CreateSecurityGroup.RequestId");
+			createSecurityGroupResponse.SecurityGroupId = context.StringValue("CreateSecurityGroup.SecurityGroupId");
         
 			return createSecurityGroupResponse;
         }

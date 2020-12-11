@@ -26,16 +26,16 @@ namespace Aliyun.Acs.imageprocess.Transform.V20200320
 {
     public class TranslateMedResponseUnmarshaller
     {
-        public static TranslateMedResponse Unmarshall(UnmarshallerContext _ctx)
+        public static TranslateMedResponse Unmarshall(UnmarshallerContext context)
         {
 			TranslateMedResponse translateMedResponse = new TranslateMedResponse();
 
-			translateMedResponse.HttpResponse = _ctx.HttpResponse;
-			translateMedResponse.RequestId = _ctx.StringValue("TranslateMed.RequestId");
+			translateMedResponse.HttpResponse = context.HttpResponse;
+			translateMedResponse.RequestId = context.StringValue("TranslateMed.RequestId");
 
 			TranslateMedResponse.TranslateMed_Data data = new TranslateMedResponse.TranslateMed_Data();
-			data.Text = _ctx.StringValue("TranslateMed.Data.Text");
-			data.Words = _ctx.LongValue("TranslateMed.Data.Words");
+			data.Text = context.StringValue("TranslateMed.Data.Text");
+			data.Words = context.LongValue("TranslateMed.Data.Words");
 			translateMedResponse.Data = data;
         
 			return translateMedResponse;

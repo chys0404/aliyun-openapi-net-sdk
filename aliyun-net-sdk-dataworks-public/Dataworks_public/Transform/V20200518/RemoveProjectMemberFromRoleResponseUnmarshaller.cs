@@ -26,12 +26,12 @@ namespace Aliyun.Acs.dataworks_public.Transform.V20200518
 {
     public class RemoveProjectMemberFromRoleResponseUnmarshaller
     {
-        public static RemoveProjectMemberFromRoleResponse Unmarshall(UnmarshallerContext _ctx)
+        public static RemoveProjectMemberFromRoleResponse Unmarshall(UnmarshallerContext context)
         {
 			RemoveProjectMemberFromRoleResponse removeProjectMemberFromRoleResponse = new RemoveProjectMemberFromRoleResponse();
 
-			removeProjectMemberFromRoleResponse.HttpResponse = _ctx.HttpResponse;
-			removeProjectMemberFromRoleResponse.RequestId = _ctx.StringValue("RemoveProjectMemberFromRole.RequestId");
+			removeProjectMemberFromRoleResponse.HttpResponse = context.HttpResponse;
+			removeProjectMemberFromRoleResponse.RequestId = context.StringValue("RemoveProjectMemberFromRole.RequestId");
         
 			return removeProjectMemberFromRoleResponse;
         }

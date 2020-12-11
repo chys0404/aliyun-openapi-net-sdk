@@ -26,15 +26,15 @@ namespace Aliyun.Acs.imageenhan.Transform.V20190930
 {
     public class ErasePersonResponseUnmarshaller
     {
-        public static ErasePersonResponse Unmarshall(UnmarshallerContext _ctx)
+        public static ErasePersonResponse Unmarshall(UnmarshallerContext context)
         {
 			ErasePersonResponse erasePersonResponse = new ErasePersonResponse();
 
-			erasePersonResponse.HttpResponse = _ctx.HttpResponse;
-			erasePersonResponse.RequestId = _ctx.StringValue("ErasePerson.RequestId");
+			erasePersonResponse.HttpResponse = context.HttpResponse;
+			erasePersonResponse.RequestId = context.StringValue("ErasePerson.RequestId");
 
 			ErasePersonResponse.ErasePerson_Data data = new ErasePersonResponse.ErasePerson_Data();
-			data.ImageUrl = _ctx.StringValue("ErasePerson.Data.ImageUrl");
+			data.ImageUrl = context.StringValue("ErasePerson.Data.ImageUrl");
 			erasePersonResponse.Data = data;
         
 			return erasePersonResponse;

@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Ecs.Transform.V20140526
 {
     public class ModifySecurityGroupPolicyResponseUnmarshaller
     {
-        public static ModifySecurityGroupPolicyResponse Unmarshall(UnmarshallerContext _ctx)
+        public static ModifySecurityGroupPolicyResponse Unmarshall(UnmarshallerContext context)
         {
 			ModifySecurityGroupPolicyResponse modifySecurityGroupPolicyResponse = new ModifySecurityGroupPolicyResponse();
 
-			modifySecurityGroupPolicyResponse.HttpResponse = _ctx.HttpResponse;
-			modifySecurityGroupPolicyResponse.RequestId = _ctx.StringValue("ModifySecurityGroupPolicy.RequestId");
+			modifySecurityGroupPolicyResponse.HttpResponse = context.HttpResponse;
+			modifySecurityGroupPolicyResponse.RequestId = context.StringValue("ModifySecurityGroupPolicy.RequestId");
         
 			return modifySecurityGroupPolicyResponse;
         }

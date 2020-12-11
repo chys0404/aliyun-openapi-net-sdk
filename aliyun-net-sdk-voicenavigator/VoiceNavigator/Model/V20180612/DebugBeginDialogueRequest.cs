@@ -34,15 +34,10 @@ namespace Aliyun.Acs.VoiceNavigator.Model.V20180612
         {
             if (this.GetType().GetProperty("ProductEndpointMap") != null && this.GetType().GetProperty("ProductEndpointType") != null)
             {
-                this.GetType().GetProperty("ProductEndpointMap").SetValue(this, Aliyun.Acs.VoiceNavigator.Endpoint.endpointMap, null);
-                this.GetType().GetProperty("ProductEndpointType").SetValue(this, Aliyun.Acs.VoiceNavigator.Endpoint.endpointRegionalType, null);
+                this.GetType().GetProperty("ProductEndpointMap").SetValue(this, Endpoint.endpointMap, null);
+                this.GetType().GetProperty("ProductEndpointType").SetValue(this, Endpoint.endpointRegionalType, null);
             }
-			Method = MethodType.POST;
         }
-
-		private string conversationId;
-
-		private string initialContext;
 
 		private string callingNumber;
 
@@ -50,31 +45,9 @@ namespace Aliyun.Acs.VoiceNavigator.Model.V20180612
 
 		private string calledNumber;
 
-		public string ConversationId
-		{
-			get
-			{
-				return conversationId;
-			}
-			set	
-			{
-				conversationId = value;
-				DictionaryUtil.Add(QueryParameters, "ConversationId", value);
-			}
-		}
+		private string conversationId;
 
-		public string InitialContext
-		{
-			get
-			{
-				return initialContext;
-			}
-			set	
-			{
-				initialContext = value;
-				DictionaryUtil.Add(QueryParameters, "InitialContext", value);
-			}
-		}
+		private string initialContext;
 
 		public string CallingNumber
 		{
@@ -112,6 +85,32 @@ namespace Aliyun.Acs.VoiceNavigator.Model.V20180612
 			{
 				calledNumber = value;
 				DictionaryUtil.Add(QueryParameters, "CalledNumber", value);
+			}
+		}
+
+		public string ConversationId
+		{
+			get
+			{
+				return conversationId;
+			}
+			set	
+			{
+				conversationId = value;
+				DictionaryUtil.Add(QueryParameters, "ConversationId", value);
+			}
+		}
+
+		public string InitialContext
+		{
+			get
+			{
+				return initialContext;
+			}
+			set	
+			{
+				initialContext = value;
+				DictionaryUtil.Add(QueryParameters, "InitialContext", value);
 			}
 		}
 

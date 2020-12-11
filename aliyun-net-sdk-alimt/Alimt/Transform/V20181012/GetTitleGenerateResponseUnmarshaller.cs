@@ -26,17 +26,17 @@ namespace Aliyun.Acs.alimt.Transform.V20181012
 {
     public class GetTitleGenerateResponseUnmarshaller
     {
-        public static GetTitleGenerateResponse Unmarshall(UnmarshallerContext _ctx)
+        public static GetTitleGenerateResponse Unmarshall(UnmarshallerContext context)
         {
 			GetTitleGenerateResponse getTitleGenerateResponse = new GetTitleGenerateResponse();
 
-			getTitleGenerateResponse.HttpResponse = _ctx.HttpResponse;
-			getTitleGenerateResponse.RequestId = _ctx.StringValue("GetTitleGenerate.RequestId");
-			getTitleGenerateResponse.Code = _ctx.IntegerValue("GetTitleGenerate.Code");
-			getTitleGenerateResponse.Message = _ctx.StringValue("GetTitleGenerate.Message");
+			getTitleGenerateResponse.HttpResponse = context.HttpResponse;
+			getTitleGenerateResponse.RequestId = context.StringValue("GetTitleGenerate.RequestId");
+			getTitleGenerateResponse.Code = context.IntegerValue("GetTitleGenerate.Code");
+			getTitleGenerateResponse.Message = context.StringValue("GetTitleGenerate.Message");
 
 			GetTitleGenerateResponse.GetTitleGenerate_Data data = new GetTitleGenerateResponse.GetTitleGenerate_Data();
-			data.Titles = _ctx.StringValue("GetTitleGenerate.Data.Titles");
+			data.Titles = context.StringValue("GetTitleGenerate.Data.Titles");
 			getTitleGenerateResponse.Data = data;
         
 			return getTitleGenerateResponse;

@@ -26,12 +26,12 @@ namespace Aliyun.Acs.scdn.Transform.V20171115
 {
     public class BatchDeleteScdnDomainConfigsResponseUnmarshaller
     {
-        public static BatchDeleteScdnDomainConfigsResponse Unmarshall(UnmarshallerContext _ctx)
+        public static BatchDeleteScdnDomainConfigsResponse Unmarshall(UnmarshallerContext context)
         {
 			BatchDeleteScdnDomainConfigsResponse batchDeleteScdnDomainConfigsResponse = new BatchDeleteScdnDomainConfigsResponse();
 
-			batchDeleteScdnDomainConfigsResponse.HttpResponse = _ctx.HttpResponse;
-			batchDeleteScdnDomainConfigsResponse.RequestId = _ctx.StringValue("BatchDeleteScdnDomainConfigs.RequestId");
+			batchDeleteScdnDomainConfigsResponse.HttpResponse = context.HttpResponse;
+			batchDeleteScdnDomainConfigsResponse.RequestId = context.StringValue("BatchDeleteScdnDomainConfigs.RequestId");
         
 			return batchDeleteScdnDomainConfigsResponse;
         }

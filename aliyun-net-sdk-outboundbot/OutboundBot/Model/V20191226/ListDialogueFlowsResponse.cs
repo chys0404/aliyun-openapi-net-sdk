@@ -25,53 +25,17 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 	public class ListDialogueFlowsResponse : AcsResponse
 	{
 
-		private string code;
-
-		private int? httpStatusCode;
-
-		private string message;
-
 		private string requestId;
 
 		private bool? success;
 
+		private string code;
+
+		private string message;
+
+		private int? httpStatusCode;
+
 		private List<ListDialogueFlows_DialogueFlow> dialogueFlows;
-
-		public string Code
-		{
-			get
-			{
-				return code;
-			}
-			set	
-			{
-				code = value;
-			}
-		}
-
-		public int? HttpStatusCode
-		{
-			get
-			{
-				return httpStatusCode;
-			}
-			set	
-			{
-				httpStatusCode = value;
-			}
-		}
-
-		public string Message
-		{
-			get
-			{
-				return message;
-			}
-			set	
-			{
-				message = value;
-			}
-		}
 
 		public string RequestId
 		{
@@ -97,6 +61,42 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 			}
 		}
 
+		public string Code
+		{
+			get
+			{
+				return code;
+			}
+			set	
+			{
+				code = value;
+			}
+		}
+
+		public string Message
+		{
+			get
+			{
+				return message;
+			}
+			set	
+			{
+				message = value;
+			}
+		}
+
+		public int? HttpStatusCode
+		{
+			get
+			{
+				return httpStatusCode;
+			}
+			set	
+			{
+				httpStatusCode = value;
+			}
+		}
+
 		public List<ListDialogueFlows_DialogueFlow> DialogueFlows
 		{
 			get
@@ -112,29 +112,17 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 		public class ListDialogueFlows_DialogueFlow
 		{
 
-			private string dialogueFlowDefinition;
-
 			private string dialogueFlowId;
 
 			private string dialogueFlowName;
-
-			private string dialogueFlowType;
 
 			private string scriptId;
 
 			private string scriptVersion;
 
-			public string DialogueFlowDefinition
-			{
-				get
-				{
-					return dialogueFlowDefinition;
-				}
-				set	
-				{
-					dialogueFlowDefinition = value;
-				}
-			}
+			private string dialogueFlowType;
+
+			private string dialogueFlowDefinition;
 
 			public string DialogueFlowId
 			{
@@ -160,18 +148,6 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 				}
 			}
 
-			public string DialogueFlowType
-			{
-				get
-				{
-					return dialogueFlowType;
-				}
-				set	
-				{
-					dialogueFlowType = value;
-				}
-			}
-
 			public string ScriptId
 			{
 				get
@@ -193,6 +169,30 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 				set	
 				{
 					scriptVersion = value;
+				}
+			}
+
+			public string DialogueFlowType
+			{
+				get
+				{
+					return dialogueFlowType;
+				}
+				set	
+				{
+					dialogueFlowType = value;
+				}
+			}
+
+			public string DialogueFlowDefinition
+			{
+				get
+				{
+					return dialogueFlowDefinition;
+				}
+				set	
+				{
+					dialogueFlowDefinition = value;
 				}
 			}
 		}

@@ -27,8 +27,6 @@ namespace Aliyun.Acs.Domain.Model.V20180208
 
 		private string requestId;
 
-		private string bindUrl;
-
 		public string RequestId
 		{
 			get
@@ -38,18 +36,6 @@ namespace Aliyun.Acs.Domain.Model.V20180208
 			set	
 			{
 				requestId = value;
-			}
-		}
-
-		public string BindUrl
-		{
-			get
-			{
-				return bindUrl;
-			}
-			set	
-			{
-				bindUrl = value;
 			}
 		}
 	}

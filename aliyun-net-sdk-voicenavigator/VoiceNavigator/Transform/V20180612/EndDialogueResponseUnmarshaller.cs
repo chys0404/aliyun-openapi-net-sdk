@@ -26,12 +26,12 @@ namespace Aliyun.Acs.VoiceNavigator.Transform.V20180612
 {
     public class EndDialogueResponseUnmarshaller
     {
-        public static EndDialogueResponse Unmarshall(UnmarshallerContext _ctx)
+        public static EndDialogueResponse Unmarshall(UnmarshallerContext context)
         {
 			EndDialogueResponse endDialogueResponse = new EndDialogueResponse();
 
-			endDialogueResponse.HttpResponse = _ctx.HttpResponse;
-			endDialogueResponse.RequestId = _ctx.StringValue("EndDialogue.RequestId");
+			endDialogueResponse.HttpResponse = context.HttpResponse;
+			endDialogueResponse.RequestId = context.StringValue("EndDialogue.RequestId");
         
 			return endDialogueResponse;
         }

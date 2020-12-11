@@ -26,15 +26,15 @@ namespace Aliyun.Acs.imageprocess.Transform.V20200320
 {
     public class DetectSkinDiseaseResponseUnmarshaller
     {
-        public static DetectSkinDiseaseResponse Unmarshall(UnmarshallerContext _ctx)
+        public static DetectSkinDiseaseResponse Unmarshall(UnmarshallerContext context)
         {
 			DetectSkinDiseaseResponse detectSkinDiseaseResponse = new DetectSkinDiseaseResponse();
 
-			detectSkinDiseaseResponse.HttpResponse = _ctx.HttpResponse;
-			detectSkinDiseaseResponse.RequestId = _ctx.StringValue("DetectSkinDisease.RequestId");
+			detectSkinDiseaseResponse.HttpResponse = context.HttpResponse;
+			detectSkinDiseaseResponse.RequestId = context.StringValue("DetectSkinDisease.RequestId");
 
 			DetectSkinDiseaseResponse.DetectSkinDisease_Data data = new DetectSkinDiseaseResponse.DetectSkinDisease_Data();
-			data.Results = _ctx.StringValue("DetectSkinDisease.Data.Results");
+			data.Results = context.StringValue("DetectSkinDisease.Data.Results");
 			detectSkinDiseaseResponse.Data = data;
         
 			return detectSkinDiseaseResponse;

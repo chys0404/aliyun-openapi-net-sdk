@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Ecs.Transform.V20140526
 {
     public class ModifyAutoProvisioningGroupResponseUnmarshaller
     {
-        public static ModifyAutoProvisioningGroupResponse Unmarshall(UnmarshallerContext _ctx)
+        public static ModifyAutoProvisioningGroupResponse Unmarshall(UnmarshallerContext context)
         {
 			ModifyAutoProvisioningGroupResponse modifyAutoProvisioningGroupResponse = new ModifyAutoProvisioningGroupResponse();
 
-			modifyAutoProvisioningGroupResponse.HttpResponse = _ctx.HttpResponse;
-			modifyAutoProvisioningGroupResponse.RequestId = _ctx.StringValue("ModifyAutoProvisioningGroup.RequestId");
+			modifyAutoProvisioningGroupResponse.HttpResponse = context.HttpResponse;
+			modifyAutoProvisioningGroupResponse.RequestId = context.StringValue("ModifyAutoProvisioningGroup.RequestId");
         
 			return modifyAutoProvisioningGroupResponse;
         }

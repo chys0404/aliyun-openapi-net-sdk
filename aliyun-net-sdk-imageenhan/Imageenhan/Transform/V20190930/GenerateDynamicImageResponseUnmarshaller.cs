@@ -26,15 +26,15 @@ namespace Aliyun.Acs.imageenhan.Transform.V20190930
 {
     public class GenerateDynamicImageResponseUnmarshaller
     {
-        public static GenerateDynamicImageResponse Unmarshall(UnmarshallerContext _ctx)
+        public static GenerateDynamicImageResponse Unmarshall(UnmarshallerContext context)
         {
 			GenerateDynamicImageResponse generateDynamicImageResponse = new GenerateDynamicImageResponse();
 
-			generateDynamicImageResponse.HttpResponse = _ctx.HttpResponse;
-			generateDynamicImageResponse.RequestId = _ctx.StringValue("GenerateDynamicImage.RequestId");
+			generateDynamicImageResponse.HttpResponse = context.HttpResponse;
+			generateDynamicImageResponse.RequestId = context.StringValue("GenerateDynamicImage.RequestId");
 
 			GenerateDynamicImageResponse.GenerateDynamicImage_Data data = new GenerateDynamicImageResponse.GenerateDynamicImage_Data();
-			data.Url = _ctx.StringValue("GenerateDynamicImage.Data.Url");
+			data.Url = context.StringValue("GenerateDynamicImage.Data.Url");
 			generateDynamicImageResponse.Data = data;
         
 			return generateDynamicImageResponse;

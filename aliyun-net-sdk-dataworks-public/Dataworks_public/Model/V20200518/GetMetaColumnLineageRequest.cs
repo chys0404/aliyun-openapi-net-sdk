@@ -22,7 +22,6 @@ using Aliyun.Acs.Core;
 using Aliyun.Acs.Core.Http;
 using Aliyun.Acs.Core.Transform;
 using Aliyun.Acs.Core.Utils;
-using Aliyun.Acs.dataworks_public;
 using Aliyun.Acs.dataworks_public.Transform;
 using Aliyun.Acs.dataworks_public.Transform.V20200518;
 
@@ -31,85 +30,23 @@ namespace Aliyun.Acs.dataworks_public.Model.V20200518
     public class GetMetaColumnLineageRequest : RpcAcsRequest<GetMetaColumnLineageResponse>
     {
         public GetMetaColumnLineageRequest()
-            : base("dataworks-public", "2020-05-18", "GetMetaColumnLineage")
+            : base("dataworks-public", "2020-05-18", "GetMetaColumnLineage", "dide", "openAPI")
         {
             if (this.GetType().GetProperty("ProductEndpointMap") != null && this.GetType().GetProperty("ProductEndpointType") != null)
             {
-                this.GetType().GetProperty("ProductEndpointMap").SetValue(this, Aliyun.Acs.dataworks_public.Endpoint.endpointMap, null);
-                this.GetType().GetProperty("ProductEndpointType").SetValue(this, Aliyun.Acs.dataworks_public.Endpoint.endpointRegionalType, null);
+                this.GetType().GetProperty("ProductEndpointMap").SetValue(this, Endpoint.endpointMap, null);
+                this.GetType().GetProperty("ProductEndpointType").SetValue(this, Endpoint.endpointRegionalType, null);
             }
 			Method = MethodType.POST;
         }
 
-		private string dataSourceType;
-
-		private string clusterId;
-
-		private int? pageNum;
-
-		private string columnName;
-
 		private string columnGuid;
-
-		private string databaseName;
 
 		private int? pageSize;
 
-		private string tableName;
+		private int? pageNum;
 
 		private string direction;
-
-		public string DataSourceType
-		{
-			get
-			{
-				return dataSourceType;
-			}
-			set	
-			{
-				dataSourceType = value;
-				DictionaryUtil.Add(QueryParameters, "DataSourceType", value);
-			}
-		}
-
-		public string ClusterId
-		{
-			get
-			{
-				return clusterId;
-			}
-			set	
-			{
-				clusterId = value;
-				DictionaryUtil.Add(QueryParameters, "ClusterId", value);
-			}
-		}
-
-		public int? PageNum
-		{
-			get
-			{
-				return pageNum;
-			}
-			set	
-			{
-				pageNum = value;
-				DictionaryUtil.Add(QueryParameters, "PageNum", value.ToString());
-			}
-		}
-
-		public string ColumnName
-		{
-			get
-			{
-				return columnName;
-			}
-			set	
-			{
-				columnName = value;
-				DictionaryUtil.Add(QueryParameters, "ColumnName", value);
-			}
-		}
 
 		public string ColumnGuid
 		{
@@ -121,19 +58,6 @@ namespace Aliyun.Acs.dataworks_public.Model.V20200518
 			{
 				columnGuid = value;
 				DictionaryUtil.Add(QueryParameters, "ColumnGuid", value);
-			}
-		}
-
-		public string DatabaseName
-		{
-			get
-			{
-				return databaseName;
-			}
-			set	
-			{
-				databaseName = value;
-				DictionaryUtil.Add(QueryParameters, "DatabaseName", value);
 			}
 		}
 
@@ -150,16 +74,16 @@ namespace Aliyun.Acs.dataworks_public.Model.V20200518
 			}
 		}
 
-		public string TableName
+		public int? PageNum
 		{
 			get
 			{
-				return tableName;
+				return pageNum;
 			}
 			set	
 			{
-				tableName = value;
-				DictionaryUtil.Add(QueryParameters, "TableName", value);
+				pageNum = value;
+				DictionaryUtil.Add(QueryParameters, "PageNum", value.ToString());
 			}
 		}
 

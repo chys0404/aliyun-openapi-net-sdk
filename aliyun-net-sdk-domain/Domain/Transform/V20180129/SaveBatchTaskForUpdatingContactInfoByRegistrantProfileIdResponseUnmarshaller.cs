@@ -26,13 +26,13 @@ namespace Aliyun.Acs.Domain.Transform.V20180129
 {
     public class SaveBatchTaskForUpdatingContactInfoByRegistrantProfileIdResponseUnmarshaller
     {
-        public static SaveBatchTaskForUpdatingContactInfoByRegistrantProfileIdResponse Unmarshall(UnmarshallerContext _ctx)
+        public static SaveBatchTaskForUpdatingContactInfoByRegistrantProfileIdResponse Unmarshall(UnmarshallerContext context)
         {
 			SaveBatchTaskForUpdatingContactInfoByRegistrantProfileIdResponse saveBatchTaskForUpdatingContactInfoByRegistrantProfileIdResponse = new SaveBatchTaskForUpdatingContactInfoByRegistrantProfileIdResponse();
 
-			saveBatchTaskForUpdatingContactInfoByRegistrantProfileIdResponse.HttpResponse = _ctx.HttpResponse;
-			saveBatchTaskForUpdatingContactInfoByRegistrantProfileIdResponse.RequestId = _ctx.StringValue("SaveBatchTaskForUpdatingContactInfoByRegistrantProfileId.RequestId");
-			saveBatchTaskForUpdatingContactInfoByRegistrantProfileIdResponse.TaskNo = _ctx.StringValue("SaveBatchTaskForUpdatingContactInfoByRegistrantProfileId.TaskNo");
+			saveBatchTaskForUpdatingContactInfoByRegistrantProfileIdResponse.HttpResponse = context.HttpResponse;
+			saveBatchTaskForUpdatingContactInfoByRegistrantProfileIdResponse.RequestId = context.StringValue("SaveBatchTaskForUpdatingContactInfoByRegistrantProfileId.RequestId");
+			saveBatchTaskForUpdatingContactInfoByRegistrantProfileIdResponse.TaskNo = context.StringValue("SaveBatchTaskForUpdatingContactInfoByRegistrantProfileId.TaskNo");
         
 			return saveBatchTaskForUpdatingContactInfoByRegistrantProfileIdResponse;
         }

@@ -26,13 +26,13 @@ namespace Aliyun.Acs.Cloudauth.Transform.V20190307
 {
     public class UpdateAppPackageResponseUnmarshaller
     {
-        public static UpdateAppPackageResponse Unmarshall(UnmarshallerContext _ctx)
+        public static UpdateAppPackageResponse Unmarshall(UnmarshallerContext context)
         {
 			UpdateAppPackageResponse updateAppPackageResponse = new UpdateAppPackageResponse();
 
-			updateAppPackageResponse.HttpResponse = _ctx.HttpResponse;
-			updateAppPackageResponse.RequestId = _ctx.StringValue("UpdateAppPackage.RequestId");
-			updateAppPackageResponse.TaskId = _ctx.StringValue("UpdateAppPackage.TaskId");
+			updateAppPackageResponse.HttpResponse = context.HttpResponse;
+			updateAppPackageResponse.RequestId = context.StringValue("UpdateAppPackage.RequestId");
+			updateAppPackageResponse.TaskId = context.StringValue("UpdateAppPackage.TaskId");
         
 			return updateAppPackageResponse;
         }

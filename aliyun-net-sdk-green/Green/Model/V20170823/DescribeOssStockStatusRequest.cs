@@ -40,24 +40,9 @@ namespace Aliyun.Acs.Green.Model.V20170823
 			Method = MethodType.POST;
         }
 
-		private long? stockTaskId;
-
 		private string sourceIp;
 
 		private string lang;
-
-		public long? StockTaskId
-		{
-			get
-			{
-				return stockTaskId;
-			}
-			set	
-			{
-				stockTaskId = value;
-				DictionaryUtil.Add(QueryParameters, "StockTaskId", value.ToString());
-			}
-		}
 
 		public string SourceIp
 		{

@@ -42,7 +42,7 @@ namespace Aliyun.Acs.Green.Model.V20170823
 
 		private string keywords;
 
-		private long? keywordLibId;
+		private int? keywordLibId;
 
 		private string sourceIp;
 
@@ -61,7 +61,7 @@ namespace Aliyun.Acs.Green.Model.V20170823
 			}
 		}
 
-		public long? KeywordLibId
+		public int? KeywordLibId
 		{
 			get
 			{

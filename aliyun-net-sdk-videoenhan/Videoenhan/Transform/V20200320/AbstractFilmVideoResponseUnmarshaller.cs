@@ -26,15 +26,15 @@ namespace Aliyun.Acs.videoenhan.Transform.V20200320
 {
     public class AbstractFilmVideoResponseUnmarshaller
     {
-        public static AbstractFilmVideoResponse Unmarshall(UnmarshallerContext _ctx)
+        public static AbstractFilmVideoResponse Unmarshall(UnmarshallerContext context)
         {
 			AbstractFilmVideoResponse abstractFilmVideoResponse = new AbstractFilmVideoResponse();
 
-			abstractFilmVideoResponse.HttpResponse = _ctx.HttpResponse;
-			abstractFilmVideoResponse.RequestId = _ctx.StringValue("AbstractFilmVideo.RequestId");
+			abstractFilmVideoResponse.HttpResponse = context.HttpResponse;
+			abstractFilmVideoResponse.RequestId = context.StringValue("AbstractFilmVideo.RequestId");
 
 			AbstractFilmVideoResponse.AbstractFilmVideo_Data data = new AbstractFilmVideoResponse.AbstractFilmVideo_Data();
-			data.VideoUrl = _ctx.StringValue("AbstractFilmVideo.Data.VideoUrl");
+			data.VideoUrl = context.StringValue("AbstractFilmVideo.Data.VideoUrl");
 			abstractFilmVideoResponse.Data = data;
         
 			return abstractFilmVideoResponse;

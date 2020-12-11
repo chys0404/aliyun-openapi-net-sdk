@@ -26,16 +26,16 @@ namespace Aliyun.Acs.aliyuncvc.Transform.V20191030
 {
     public class ListEvaluationsResponseUnmarshaller
     {
-        public static ListEvaluationsResponse Unmarshall(UnmarshallerContext _ctx)
+        public static ListEvaluationsResponse Unmarshall(UnmarshallerContext context)
         {
 			ListEvaluationsResponse listEvaluationsResponse = new ListEvaluationsResponse();
 
-			listEvaluationsResponse.HttpResponse = _ctx.HttpResponse;
-			listEvaluationsResponse.UserEvaluation = _ctx.StringValue("ListEvaluations.UserEvaluation");
-			listEvaluationsResponse.ErrorCode = _ctx.IntegerValue("ListEvaluations.ErrorCode");
-			listEvaluationsResponse.Message = _ctx.StringValue("ListEvaluations.Message");
-			listEvaluationsResponse.Success = _ctx.BooleanValue("ListEvaluations.Success");
-			listEvaluationsResponse.RequestId = _ctx.StringValue("ListEvaluations.RequestId");
+			listEvaluationsResponse.HttpResponse = context.HttpResponse;
+			listEvaluationsResponse.UserEvaluation = context.StringValue("ListEvaluations.UserEvaluation");
+			listEvaluationsResponse.ErrorCode = context.IntegerValue("ListEvaluations.ErrorCode");
+			listEvaluationsResponse.Message = context.StringValue("ListEvaluations.Message");
+			listEvaluationsResponse.Success = context.BooleanValue("ListEvaluations.Success");
+			listEvaluationsResponse.RequestId = context.StringValue("ListEvaluations.RequestId");
         
 			return listEvaluationsResponse;
         }

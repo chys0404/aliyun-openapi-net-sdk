@@ -26,17 +26,17 @@ namespace Aliyun.Acs.dataworks_public.Transform.V20200518
 {
     public class DeployFileResponseUnmarshaller
     {
-        public static DeployFileResponse Unmarshall(UnmarshallerContext _ctx)
+        public static DeployFileResponse Unmarshall(UnmarshallerContext context)
         {
 			DeployFileResponse deployFileResponse = new DeployFileResponse();
 
-			deployFileResponse.HttpResponse = _ctx.HttpResponse;
-			deployFileResponse.RequestId = _ctx.StringValue("DeployFile.RequestId");
-			deployFileResponse.Success = _ctx.BooleanValue("DeployFile.Success");
-			deployFileResponse.ErrorCode = _ctx.StringValue("DeployFile.ErrorCode");
-			deployFileResponse.ErrorMessage = _ctx.StringValue("DeployFile.ErrorMessage");
-			deployFileResponse.Data = _ctx.LongValue("DeployFile.Data");
-			deployFileResponse.HttpStatusCode = _ctx.IntegerValue("DeployFile.HttpStatusCode");
+			deployFileResponse.HttpResponse = context.HttpResponse;
+			deployFileResponse.RequestId = context.StringValue("DeployFile.RequestId");
+			deployFileResponse.Success = context.BooleanValue("DeployFile.Success");
+			deployFileResponse.ErrorCode = context.StringValue("DeployFile.ErrorCode");
+			deployFileResponse.ErrorMessage = context.StringValue("DeployFile.ErrorMessage");
+			deployFileResponse.Data = context.LongValue("DeployFile.Data");
+			deployFileResponse.HttpStatusCode = context.IntegerValue("DeployFile.HttpStatusCode");
         
 			return deployFileResponse;
         }

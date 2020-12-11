@@ -26,14 +26,14 @@ namespace Aliyun.Acs.Kms.Transform.V20160120
 {
     public class DeleteSecretResponseUnmarshaller
     {
-        public static DeleteSecretResponse Unmarshall(UnmarshallerContext _ctx)
+        public static DeleteSecretResponse Unmarshall(UnmarshallerContext context)
         {
 			DeleteSecretResponse deleteSecretResponse = new DeleteSecretResponse();
 
-			deleteSecretResponse.HttpResponse = _ctx.HttpResponse;
-			deleteSecretResponse.RequestId = _ctx.StringValue("DeleteSecret.RequestId");
-			deleteSecretResponse.SecretName = _ctx.StringValue("DeleteSecret.SecretName");
-			deleteSecretResponse.PlannedDeleteTime = _ctx.StringValue("DeleteSecret.PlannedDeleteTime");
+			deleteSecretResponse.HttpResponse = context.HttpResponse;
+			deleteSecretResponse.RequestId = context.StringValue("DeleteSecret.RequestId");
+			deleteSecretResponse.SecretName = context.StringValue("DeleteSecret.SecretName");
+			deleteSecretResponse.PlannedDeleteTime = context.StringValue("DeleteSecret.PlannedDeleteTime");
         
 			return deleteSecretResponse;
         }

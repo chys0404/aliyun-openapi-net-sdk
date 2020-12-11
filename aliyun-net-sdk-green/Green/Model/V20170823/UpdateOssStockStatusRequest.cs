@@ -50,13 +50,9 @@ namespace Aliyun.Acs.Green.Model.V20170823
 
 		private string videoAutoFreezeSceneList;
 
-		private int? audioMaxSize;
-
 		private string lang;
 
 		private string imageAutoFreeze;
-
-		private string audioAutoFreezeSceneList;
 
 		private int? videoMaxSize;
 
@@ -137,19 +133,6 @@ namespace Aliyun.Acs.Green.Model.V20170823
 			}
 		}
 
-		public int? AudioMaxSize
-		{
-			get
-			{
-				return audioMaxSize;
-			}
-			set	
-			{
-				audioMaxSize = value;
-				DictionaryUtil.Add(QueryParameters, "AudioMaxSize", value.ToString());
-			}
-		}
-
 		public string Lang
 		{
 			get
@@ -173,19 +156,6 @@ namespace Aliyun.Acs.Green.Model.V20170823
 			{
 				imageAutoFreeze = value;
 				DictionaryUtil.Add(QueryParameters, "ImageAutoFreeze", value);
-			}
-		}
-
-		public string AudioAutoFreezeSceneList
-		{
-			get
-			{
-				return audioAutoFreezeSceneList;
-			}
-			set	
-			{
-				audioAutoFreezeSceneList = value;
-				DictionaryUtil.Add(QueryParameters, "AudioAutoFreezeSceneList", value);
 			}
 		}
 

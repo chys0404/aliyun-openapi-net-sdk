@@ -26,12 +26,12 @@ namespace Aliyun.Acs.dcdn.Transform.V20180115
 {
     public class BatchStopDcdnDomainResponseUnmarshaller
     {
-        public static BatchStopDcdnDomainResponse Unmarshall(UnmarshallerContext _ctx)
+        public static BatchStopDcdnDomainResponse Unmarshall(UnmarshallerContext context)
         {
 			BatchStopDcdnDomainResponse batchStopDcdnDomainResponse = new BatchStopDcdnDomainResponse();
 
-			batchStopDcdnDomainResponse.HttpResponse = _ctx.HttpResponse;
-			batchStopDcdnDomainResponse.RequestId = _ctx.StringValue("BatchStopDcdnDomain.RequestId");
+			batchStopDcdnDomainResponse.HttpResponse = context.HttpResponse;
+			batchStopDcdnDomainResponse.RequestId = context.StringValue("BatchStopDcdnDomain.RequestId");
         
 			return batchStopDcdnDomainResponse;
         }

@@ -25,65 +25,17 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 	public class CreateOutboundCallNumberResponse : AcsResponse
 	{
 
-		private string code;
-
-		private int? httpStatusCode;
-
-		private string message;
-
-		private string outboundCallNumberId;
-
 		private string requestId;
 
 		private bool? success;
 
-		public string Code
-		{
-			get
-			{
-				return code;
-			}
-			set	
-			{
-				code = value;
-			}
-		}
+		private string code;
 
-		public int? HttpStatusCode
-		{
-			get
-			{
-				return httpStatusCode;
-			}
-			set	
-			{
-				httpStatusCode = value;
-			}
-		}
+		private string message;
 
-		public string Message
-		{
-			get
-			{
-				return message;
-			}
-			set	
-			{
-				message = value;
-			}
-		}
+		private int? httpStatusCode;
 
-		public string OutboundCallNumberId
-		{
-			get
-			{
-				return outboundCallNumberId;
-			}
-			set	
-			{
-				outboundCallNumberId = value;
-			}
-		}
+		private string outboundCallNumberId;
 
 		public string RequestId
 		{
@@ -106,6 +58,54 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 			set	
 			{
 				success = value;
+			}
+		}
+
+		public string Code
+		{
+			get
+			{
+				return code;
+			}
+			set	
+			{
+				code = value;
+			}
+		}
+
+		public string Message
+		{
+			get
+			{
+				return message;
+			}
+			set	
+			{
+				message = value;
+			}
+		}
+
+		public int? HttpStatusCode
+		{
+			get
+			{
+				return httpStatusCode;
+			}
+			set	
+			{
+				httpStatusCode = value;
+			}
+		}
+
+		public string OutboundCallNumberId
+		{
+			get
+			{
+				return outboundCallNumberId;
+			}
+			set	
+			{
+				outboundCallNumberId = value;
 			}
 		}
 	}

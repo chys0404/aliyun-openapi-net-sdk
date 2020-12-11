@@ -26,18 +26,18 @@ namespace Aliyun.Acs.Iot.Transform.V20180120
 {
     public class QueryThingModelExtendConfigResponseUnmarshaller
     {
-        public static QueryThingModelExtendConfigResponse Unmarshall(UnmarshallerContext _ctx)
+        public static QueryThingModelExtendConfigResponse Unmarshall(UnmarshallerContext context)
         {
 			QueryThingModelExtendConfigResponse queryThingModelExtendConfigResponse = new QueryThingModelExtendConfigResponse();
 
-			queryThingModelExtendConfigResponse.HttpResponse = _ctx.HttpResponse;
-			queryThingModelExtendConfigResponse.RequestId = _ctx.StringValue("QueryThingModelExtendConfig.RequestId");
-			queryThingModelExtendConfigResponse.Success = _ctx.BooleanValue("QueryThingModelExtendConfig.Success");
-			queryThingModelExtendConfigResponse.Code = _ctx.StringValue("QueryThingModelExtendConfig.Code");
-			queryThingModelExtendConfigResponse.ErrorMessage = _ctx.StringValue("QueryThingModelExtendConfig.ErrorMessage");
+			queryThingModelExtendConfigResponse.HttpResponse = context.HttpResponse;
+			queryThingModelExtendConfigResponse.RequestId = context.StringValue("QueryThingModelExtendConfig.RequestId");
+			queryThingModelExtendConfigResponse.Success = context.BooleanValue("QueryThingModelExtendConfig.Success");
+			queryThingModelExtendConfigResponse.Code = context.StringValue("QueryThingModelExtendConfig.Code");
+			queryThingModelExtendConfigResponse.ErrorMessage = context.StringValue("QueryThingModelExtendConfig.ErrorMessage");
 
 			QueryThingModelExtendConfigResponse.QueryThingModelExtendConfig_Data data = new QueryThingModelExtendConfigResponse.QueryThingModelExtendConfig_Data();
-			data.Configuration = _ctx.StringValue("QueryThingModelExtendConfig.Data.Configuration");
+			data.Configuration = context.StringValue("QueryThingModelExtendConfig.Data.Configuration");
 			queryThingModelExtendConfigResponse.Data = data;
         
 			return queryThingModelExtendConfigResponse;

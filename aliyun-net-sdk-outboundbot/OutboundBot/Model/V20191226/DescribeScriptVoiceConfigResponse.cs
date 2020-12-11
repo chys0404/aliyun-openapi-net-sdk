@@ -25,53 +25,17 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 	public class DescribeScriptVoiceConfigResponse : AcsResponse
 	{
 
-		private string code;
-
-		private int? httpStatusCode;
-
-		private string message;
-
 		private string requestId;
 
 		private bool? success;
 
+		private string code;
+
+		private string message;
+
+		private int? httpStatusCode;
+
 		private DescribeScriptVoiceConfig_ScriptVoiceConfig scriptVoiceConfig;
-
-		public string Code
-		{
-			get
-			{
-				return code;
-			}
-			set	
-			{
-				code = value;
-			}
-		}
-
-		public int? HttpStatusCode
-		{
-			get
-			{
-				return httpStatusCode;
-			}
-			set	
-			{
-				httpStatusCode = value;
-			}
-		}
-
-		public string Message
-		{
-			get
-			{
-				return message;
-			}
-			set	
-			{
-				message = value;
-			}
-		}
 
 		public string RequestId
 		{
@@ -97,6 +61,42 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 			}
 		}
 
+		public string Code
+		{
+			get
+			{
+				return code;
+			}
+			set	
+			{
+				code = value;
+			}
+		}
+
+		public string Message
+		{
+			get
+			{
+				return message;
+			}
+			set	
+			{
+				message = value;
+			}
+		}
+
+		public int? HttpStatusCode
+		{
+			get
+			{
+				return httpStatusCode;
+			}
+			set	
+			{
+				httpStatusCode = value;
+			}
+		}
+
 		public DescribeScriptVoiceConfig_ScriptVoiceConfig ScriptVoiceConfig
 		{
 			get
@@ -112,19 +112,31 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 		public class DescribeScriptVoiceConfig_ScriptVoiceConfig
 		{
 
-			private string instanceId;
+			private string scriptVoiceConfigId;
 
-			private string scriptContent;
+			private string instanceId;
 
 			private string scriptId;
 
-			private string scriptVoiceConfigId;
-
-			private string scriptWaveformRelation;
+			private string scriptContent;
 
 			private string source;
 
 			private string type;
+
+			private string scriptWaveformRelation;
+
+			public string ScriptVoiceConfigId
+			{
+				get
+				{
+					return scriptVoiceConfigId;
+				}
+				set	
+				{
+					scriptVoiceConfigId = value;
+				}
+			}
 
 			public string InstanceId
 			{
@@ -135,18 +147,6 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 				set	
 				{
 					instanceId = value;
-				}
-			}
-
-			public string ScriptContent
-			{
-				get
-				{
-					return scriptContent;
-				}
-				set	
-				{
-					scriptContent = value;
 				}
 			}
 
@@ -162,27 +162,15 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 				}
 			}
 
-			public string ScriptVoiceConfigId
+			public string ScriptContent
 			{
 				get
 				{
-					return scriptVoiceConfigId;
+					return scriptContent;
 				}
 				set	
 				{
-					scriptVoiceConfigId = value;
-				}
-			}
-
-			public string ScriptWaveformRelation
-			{
-				get
-				{
-					return scriptWaveformRelation;
-				}
-				set	
-				{
-					scriptWaveformRelation = value;
+					scriptContent = value;
 				}
 			}
 
@@ -207,6 +195,18 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 				set	
 				{
 					type = value;
+				}
+			}
+
+			public string ScriptWaveformRelation
+			{
+				get
+				{
+					return scriptWaveformRelation;
+				}
+				set	
+				{
+					scriptWaveformRelation = value;
 				}
 			}
 		}

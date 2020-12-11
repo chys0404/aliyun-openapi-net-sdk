@@ -26,16 +26,16 @@ namespace Aliyun.Acs.VoiceNavigator.Transform.V20180612
 {
     public class DialogueResponseUnmarshaller
     {
-        public static DialogueResponse Unmarshall(UnmarshallerContext _ctx)
+        public static DialogueResponse Unmarshall(UnmarshallerContext context)
         {
 			DialogueResponse dialogueResponse = new DialogueResponse();
 
-			dialogueResponse.HttpResponse = _ctx.HttpResponse;
-			dialogueResponse.RequestId = _ctx.StringValue("Dialogue.RequestId");
-			dialogueResponse.TextResponse = _ctx.StringValue("Dialogue.TextResponse");
-			dialogueResponse.Interruptible = _ctx.BooleanValue("Dialogue.Interruptible");
-			dialogueResponse.Action = _ctx.StringValue("Dialogue.Action");
-			dialogueResponse.ActionParams = _ctx.StringValue("Dialogue.ActionParams");
+			dialogueResponse.HttpResponse = context.HttpResponse;
+			dialogueResponse.RequestId = context.StringValue("Dialogue.RequestId");
+			dialogueResponse.TextResponse = context.StringValue("Dialogue.TextResponse");
+			dialogueResponse.Interruptible = context.BooleanValue("Dialogue.Interruptible");
+			dialogueResponse.Action = context.StringValue("Dialogue.Action");
+			dialogueResponse.ActionParams = context.StringValue("Dialogue.ActionParams");
         
 			return dialogueResponse;
         }

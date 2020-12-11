@@ -25,55 +25,19 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 	public class ListTagsResponse : AcsResponse
 	{
 
-		private string code;
-
-		private int? httpStatusCode;
-
-		private string message;
-
 		private string requestId;
 
 		private bool? success;
 
-		private List<ListTags_TagGroup> tagGroups;
+		private string code;
+
+		private string message;
+
+		private int? httpStatusCode;
 
 		private List<ListTags_Tag> tags;
 
-		public string Code
-		{
-			get
-			{
-				return code;
-			}
-			set	
-			{
-				code = value;
-			}
-		}
-
-		public int? HttpStatusCode
-		{
-			get
-			{
-				return httpStatusCode;
-			}
-			set	
-			{
-				httpStatusCode = value;
-			}
-		}
-
-		public string Message
-		{
-			get
-			{
-				return message;
-			}
-			set	
-			{
-				message = value;
-			}
-		}
+		private List<ListTags_TagGroup> tagGroups;
 
 		public string RequestId
 		{
@@ -99,15 +63,39 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 			}
 		}
 
-		public List<ListTags_TagGroup> TagGroups
+		public string Code
 		{
 			get
 			{
-				return tagGroups;
+				return code;
 			}
 			set	
 			{
-				tagGroups = value;
+				code = value;
+			}
+		}
+
+		public string Message
+		{
+			get
+			{
+				return message;
+			}
+			set	
+			{
+				message = value;
+			}
+		}
+
+		public int? HttpStatusCode
+		{
+			get
+			{
+				return httpStatusCode;
+			}
+			set	
+			{
+				httpStatusCode = value;
 			}
 		}
 
@@ -123,16 +111,66 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 			}
 		}
 
-		public class ListTags_TagGroup
+		public List<ListTags_TagGroup> TagGroups
 		{
+			get
+			{
+				return tagGroups;
+			}
+			set	
+			{
+				tagGroups = value;
+			}
+		}
+
+		public class ListTags_Tag
+		{
+
+			private string tagId;
+
+			private string tagName;
+
+			private int? tagIndex;
 
 			private string scriptId;
 
 			private string tagGroup;
 
-			private string tagGroupId;
+			public string TagId
+			{
+				get
+				{
+					return tagId;
+				}
+				set	
+				{
+					tagId = value;
+				}
+			}
 
-			private int? tagGroupIndex;
+			public string TagName
+			{
+				get
+				{
+					return tagName;
+				}
+				set	
+				{
+					tagName = value;
+				}
+			}
+
+			public int? TagIndex
+			{
+				get
+				{
+					return tagIndex;
+				}
+				set	
+				{
+					tagIndex = value;
+				}
+			}
 
 			public string ScriptId
 			{
@@ -157,6 +195,18 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 					tagGroup = value;
 				}
 			}
+		}
+
+		public class ListTags_TagGroup
+		{
+
+			private string tagGroupId;
+
+			private int? tagGroupIndex;
+
+			private string scriptId;
+
+			private string tagGroup;
 
 			public string TagGroupId
 			{
@@ -181,20 +231,6 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 					tagGroupIndex = value;
 				}
 			}
-		}
-
-		public class ListTags_Tag
-		{
-
-			private string scriptId;
-
-			private string tagGroup;
-
-			private string tagId;
-
-			private int? tagIndex;
-
-			private string tagName;
 
 			public string ScriptId
 			{
@@ -217,42 +253,6 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 				set	
 				{
 					tagGroup = value;
-				}
-			}
-
-			public string TagId
-			{
-				get
-				{
-					return tagId;
-				}
-				set	
-				{
-					tagId = value;
-				}
-			}
-
-			public int? TagIndex
-			{
-				get
-				{
-					return tagIndex;
-				}
-				set	
-				{
-					tagIndex = value;
-				}
-			}
-
-			public string TagName
-			{
-				get
-				{
-					return tagName;
-				}
-				set	
-				{
-					tagName = value;
 				}
 			}
 		}

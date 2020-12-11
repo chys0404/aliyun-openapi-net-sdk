@@ -34,10 +34,9 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
         {
             if (this.GetType().GetProperty("ProductEndpointMap") != null && this.GetType().GetProperty("ProductEndpointType") != null)
             {
-                this.GetType().GetProperty("ProductEndpointMap").SetValue(this, Aliyun.Acs.OutboundBot.Endpoint.endpointMap, null);
-                this.GetType().GetProperty("ProductEndpointType").SetValue(this, Aliyun.Acs.OutboundBot.Endpoint.endpointRegionalType, null);
+                this.GetType().GetProperty("ProductEndpointMap").SetValue(this, Endpoint.endpointMap, null);
+                this.GetType().GetProperty("ProductEndpointType").SetValue(this, Endpoint.endpointRegionalType, null);
             }
-			Method = MethodType.POST;
         }
 
 		private string mergedRecording;
@@ -45,6 +44,8 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 		private string resourceRecording;
 
 		private string instanceId;
+
+		private long? instanceOwnerId;
 
 		private string taskId;
 
@@ -84,6 +85,19 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 			{
 				instanceId = value;
 				DictionaryUtil.Add(QueryParameters, "InstanceId", value);
+			}
+		}
+
+		public long? InstanceOwnerId
+		{
+			get
+			{
+				return instanceOwnerId;
+			}
+			set	
+			{
+				instanceOwnerId = value;
+				DictionaryUtil.Add(QueryParameters, "InstanceOwnerId", value.ToString());
 			}
 		}
 

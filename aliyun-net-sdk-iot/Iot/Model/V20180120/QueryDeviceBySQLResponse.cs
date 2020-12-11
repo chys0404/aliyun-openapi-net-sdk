@@ -132,8 +132,6 @@ namespace Aliyun.Acs.Iot.Model.V20180120
 
 			private List<QueryDeviceBySQL_TagInfo> tags;
 
-			private List<QueryDeviceBySQL_OTAModuleInfo> oTAModules;
-
 			public string ProductKey
 			{
 				get
@@ -254,18 +252,6 @@ namespace Aliyun.Acs.Iot.Model.V20180120
 				}
 			}
 
-			public List<QueryDeviceBySQL_OTAModuleInfo> OTAModules
-			{
-				get
-				{
-					return oTAModules;
-				}
-				set	
-				{
-					oTAModules = value;
-				}
-			}
-
 			public class QueryDeviceBySQL_SimpleDeviceGroupInfo
 			{
 
@@ -312,38 +298,6 @@ namespace Aliyun.Acs.Iot.Model.V20180120
 					set	
 					{
 						tagValue = value;
-					}
-				}
-			}
-
-			public class QueryDeviceBySQL_OTAModuleInfo
-			{
-
-				private string moduleName;
-
-				private string firmwareVersion;
-
-				public string ModuleName
-				{
-					get
-					{
-						return moduleName;
-					}
-					set	
-					{
-						moduleName = value;
-					}
-				}
-
-				public string FirmwareVersion
-				{
-					get
-					{
-						return firmwareVersion;
-					}
-					set	
-					{
-						firmwareVersion = value;
 					}
 				}
 			}

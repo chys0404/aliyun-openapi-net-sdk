@@ -26,13 +26,13 @@ namespace Aliyun.Acs.multimediaai.Transform.V20190810
 {
     public class CreateLabelTaskResponseUnmarshaller
     {
-        public static CreateLabelTaskResponse Unmarshall(UnmarshallerContext _ctx)
+        public static CreateLabelTaskResponse Unmarshall(UnmarshallerContext context)
         {
 			CreateLabelTaskResponse createLabelTaskResponse = new CreateLabelTaskResponse();
 
-			createLabelTaskResponse.HttpResponse = _ctx.HttpResponse;
-			createLabelTaskResponse.RequestId = _ctx.StringValue("CreateLabelTask.RequestId");
-			createLabelTaskResponse.TaskId = _ctx.LongValue("CreateLabelTask.TaskId");
+			createLabelTaskResponse.HttpResponse = context.HttpResponse;
+			createLabelTaskResponse.RequestId = context.StringValue("CreateLabelTask.RequestId");
+			createLabelTaskResponse.TaskId = context.LongValue("CreateLabelTask.TaskId");
         
 			return createLabelTaskResponse;
         }

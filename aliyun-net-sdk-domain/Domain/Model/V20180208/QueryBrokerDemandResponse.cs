@@ -140,8 +140,6 @@ namespace Aliyun.Acs.Domain.Model.V20180208
 
 			private float? servicePayPrice;
 
-			private int? orderType;
-
 			public string BizId
 			{
 				get
@@ -307,18 +305,6 @@ namespace Aliyun.Acs.Domain.Model.V20180208
 				set	
 				{
 					servicePayPrice = value;
-				}
-			}
-
-			public int? OrderType
-			{
-				get
-				{
-					return orderType;
-				}
-				set	
-				{
-					orderType = value;
 				}
 			}
 		}

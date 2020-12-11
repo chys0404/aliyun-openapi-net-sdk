@@ -43,8 +43,6 @@ namespace Aliyun.Acs.Green.Model.V20170823
 
 		private int? voiceAntispamUnhandleCount;
 
-		private int? audioCount;
-
 		public string RequestId
 		{
 			get
@@ -150,18 +148,6 @@ namespace Aliyun.Acs.Green.Model.V20170823
 			set	
 			{
 				voiceAntispamUnhandleCount = value;
-			}
-		}
-
-		public int? AudioCount
-		{
-			get
-			{
-				return audioCount;
-			}
-			set	
-			{
-				audioCount = value;
 			}
 		}
 	}

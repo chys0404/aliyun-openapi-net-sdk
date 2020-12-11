@@ -25,59 +25,17 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 	public class DescribeScriptResponse : AcsResponse
 	{
 
-		private string code;
-
-		private int? httpStatusCode;
-
-		private string message;
-
 		private string requestId;
 
 		private bool? success;
 
-		private string chatbotId;
+		private string code;
 
-		private string asrConfig;
+		private string message;
 
-		private string ttsConfig;
+		private int? httpStatusCode;
 
 		private DescribeScript_Script script;
-
-		public string Code
-		{
-			get
-			{
-				return code;
-			}
-			set	
-			{
-				code = value;
-			}
-		}
-
-		public int? HttpStatusCode
-		{
-			get
-			{
-				return httpStatusCode;
-			}
-			set	
-			{
-				httpStatusCode = value;
-			}
-		}
-
-		public string Message
-		{
-			get
-			{
-				return message;
-			}
-			set	
-			{
-				message = value;
-			}
-		}
 
 		public string RequestId
 		{
@@ -103,39 +61,39 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 			}
 		}
 
-		public string ChatbotId
+		public string Code
 		{
 			get
 			{
-				return chatbotId;
+				return code;
 			}
 			set	
 			{
-				chatbotId = value;
+				code = value;
 			}
 		}
 
-		public string AsrConfig
+		public string Message
 		{
 			get
 			{
-				return asrConfig;
+				return message;
 			}
 			set	
 			{
-				asrConfig = value;
+				message = value;
 			}
 		}
 
-		public string TtsConfig
+		public int? HttpStatusCode
 		{
 			get
 			{
-				return ttsConfig;
+				return httpStatusCode;
 			}
 			set	
 			{
-				ttsConfig = value;
+				httpStatusCode = value;
 			}
 		}
 
@@ -154,97 +112,25 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 		public class DescribeScript_Script
 		{
 
-			private string debugStatus;
-
-			private string industry;
-
-			private bool? isDebugDrafted;
-
-			private bool? isDrafted;
-
-			private string scene;
-
-			private string scriptDescription;
-
 			private string scriptId;
 
 			private string scriptName;
 
+			private string scriptDescription;
+
+			private string industry;
+
+			private string scene;
+
 			private string status;
+
+			private string debugStatus;
 
 			private long? updateTime;
 
-			public string DebugStatus
-			{
-				get
-				{
-					return debugStatus;
-				}
-				set	
-				{
-					debugStatus = value;
-				}
-			}
+			private bool? isDrafted;
 
-			public string Industry
-			{
-				get
-				{
-					return industry;
-				}
-				set	
-				{
-					industry = value;
-				}
-			}
-
-			public bool? IsDebugDrafted
-			{
-				get
-				{
-					return isDebugDrafted;
-				}
-				set	
-				{
-					isDebugDrafted = value;
-				}
-			}
-
-			public bool? IsDrafted
-			{
-				get
-				{
-					return isDrafted;
-				}
-				set	
-				{
-					isDrafted = value;
-				}
-			}
-
-			public string Scene
-			{
-				get
-				{
-					return scene;
-				}
-				set	
-				{
-					scene = value;
-				}
-			}
-
-			public string ScriptDescription
-			{
-				get
-				{
-					return scriptDescription;
-				}
-				set	
-				{
-					scriptDescription = value;
-				}
-			}
+			private bool? isDebugDrafted;
 
 			public string ScriptId
 			{
@@ -270,6 +156,42 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 				}
 			}
 
+			public string ScriptDescription
+			{
+				get
+				{
+					return scriptDescription;
+				}
+				set	
+				{
+					scriptDescription = value;
+				}
+			}
+
+			public string Industry
+			{
+				get
+				{
+					return industry;
+				}
+				set	
+				{
+					industry = value;
+				}
+			}
+
+			public string Scene
+			{
+				get
+				{
+					return scene;
+				}
+				set	
+				{
+					scene = value;
+				}
+			}
+
 			public string Status
 			{
 				get
@@ -282,6 +204,18 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 				}
 			}
 
+			public string DebugStatus
+			{
+				get
+				{
+					return debugStatus;
+				}
+				set	
+				{
+					debugStatus = value;
+				}
+			}
+
 			public long? UpdateTime
 			{
 				get
@@ -291,6 +225,30 @@ namespace Aliyun.Acs.OutboundBot.Model.V20191226
 				set	
 				{
 					updateTime = value;
+				}
+			}
+
+			public bool? IsDrafted
+			{
+				get
+				{
+					return isDrafted;
+				}
+				set	
+				{
+					isDrafted = value;
+				}
+			}
+
+			public bool? IsDebugDrafted
+			{
+				get
+				{
+					return isDebugDrafted;
+				}
+				set	
+				{
+					isDebugDrafted = value;
 				}
 			}
 		}

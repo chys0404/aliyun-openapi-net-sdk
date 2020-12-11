@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Domain.Transform.V20180129
 {
     public class CancelDomainVerificationResponseUnmarshaller
     {
-        public static CancelDomainVerificationResponse Unmarshall(UnmarshallerContext _ctx)
+        public static CancelDomainVerificationResponse Unmarshall(UnmarshallerContext context)
         {
 			CancelDomainVerificationResponse cancelDomainVerificationResponse = new CancelDomainVerificationResponse();
 
-			cancelDomainVerificationResponse.HttpResponse = _ctx.HttpResponse;
-			cancelDomainVerificationResponse.RequestId = _ctx.StringValue("CancelDomainVerification.RequestId");
+			cancelDomainVerificationResponse.HttpResponse = context.HttpResponse;
+			cancelDomainVerificationResponse.RequestId = context.StringValue("CancelDomainVerification.RequestId");
         
 			return cancelDomainVerificationResponse;
         }

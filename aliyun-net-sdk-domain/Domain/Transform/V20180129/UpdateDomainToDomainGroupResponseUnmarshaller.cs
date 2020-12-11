@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Domain.Transform.V20180129
 {
     public class UpdateDomainToDomainGroupResponseUnmarshaller
     {
-        public static UpdateDomainToDomainGroupResponse Unmarshall(UnmarshallerContext _ctx)
+        public static UpdateDomainToDomainGroupResponse Unmarshall(UnmarshallerContext context)
         {
 			UpdateDomainToDomainGroupResponse updateDomainToDomainGroupResponse = new UpdateDomainToDomainGroupResponse();
 
-			updateDomainToDomainGroupResponse.HttpResponse = _ctx.HttpResponse;
-			updateDomainToDomainGroupResponse.RequestId = _ctx.StringValue("UpdateDomainToDomainGroup.RequestId");
+			updateDomainToDomainGroupResponse.HttpResponse = context.HttpResponse;
+			updateDomainToDomainGroupResponse.RequestId = context.StringValue("UpdateDomainToDomainGroup.RequestId");
         
 			return updateDomainToDomainGroupResponse;
         }

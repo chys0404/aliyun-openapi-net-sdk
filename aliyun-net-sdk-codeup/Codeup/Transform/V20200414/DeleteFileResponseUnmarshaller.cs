@@ -26,19 +26,19 @@ namespace Aliyun.Acs.codeup.Transform.V20200414
 {
     public class DeleteFileResponseUnmarshaller
     {
-        public static DeleteFileResponse Unmarshall(UnmarshallerContext _ctx)
+        public static DeleteFileResponse Unmarshall(UnmarshallerContext context)
         {
 			DeleteFileResponse deleteFileResponse = new DeleteFileResponse();
 
-			deleteFileResponse.HttpResponse = _ctx.HttpResponse;
-			deleteFileResponse.RequestId = _ctx.StringValue("DeleteFile.RequestId");
-			deleteFileResponse.ErrorCode = _ctx.StringValue("DeleteFile.ErrorCode");
-			deleteFileResponse.Success = _ctx.BooleanValue("DeleteFile.Success");
-			deleteFileResponse.ErrorMessage = _ctx.StringValue("DeleteFile.ErrorMessage");
+			deleteFileResponse.HttpResponse = context.HttpResponse;
+			deleteFileResponse.RequestId = context.StringValue("DeleteFile.RequestId");
+			deleteFileResponse.ErrorCode = context.StringValue("DeleteFile.ErrorCode");
+			deleteFileResponse.Success = context.BooleanValue("DeleteFile.Success");
+			deleteFileResponse.ErrorMessage = context.StringValue("DeleteFile.ErrorMessage");
 
 			DeleteFileResponse.DeleteFile_Result result = new DeleteFileResponse.DeleteFile_Result();
-			result.BranchName = _ctx.StringValue("DeleteFile.Result.BranchName");
-			result.FilePath = _ctx.StringValue("DeleteFile.Result.FilePath");
+			result.BranchName = context.StringValue("DeleteFile.Result.BranchName");
+			result.FilePath = context.StringValue("DeleteFile.Result.FilePath");
 			deleteFileResponse.Result = result;
         
 			return deleteFileResponse;

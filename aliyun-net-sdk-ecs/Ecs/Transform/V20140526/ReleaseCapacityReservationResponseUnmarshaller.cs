@@ -26,12 +26,12 @@ namespace Aliyun.Acs.Ecs.Transform.V20140526
 {
     public class ReleaseCapacityReservationResponseUnmarshaller
     {
-        public static ReleaseCapacityReservationResponse Unmarshall(UnmarshallerContext _ctx)
+        public static ReleaseCapacityReservationResponse Unmarshall(UnmarshallerContext context)
         {
 			ReleaseCapacityReservationResponse releaseCapacityReservationResponse = new ReleaseCapacityReservationResponse();
 
-			releaseCapacityReservationResponse.HttpResponse = _ctx.HttpResponse;
-			releaseCapacityReservationResponse.RequestId = _ctx.StringValue("ReleaseCapacityReservation.RequestId");
+			releaseCapacityReservationResponse.HttpResponse = context.HttpResponse;
+			releaseCapacityReservationResponse.RequestId = context.StringValue("ReleaseCapacityReservation.RequestId");
         
 			return releaseCapacityReservationResponse;
         }

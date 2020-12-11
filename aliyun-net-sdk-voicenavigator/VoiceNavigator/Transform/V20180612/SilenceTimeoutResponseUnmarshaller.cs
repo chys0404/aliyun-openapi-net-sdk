@@ -26,16 +26,16 @@ namespace Aliyun.Acs.VoiceNavigator.Transform.V20180612
 {
     public class SilenceTimeoutResponseUnmarshaller
     {
-        public static SilenceTimeoutResponse Unmarshall(UnmarshallerContext _ctx)
+        public static SilenceTimeoutResponse Unmarshall(UnmarshallerContext context)
         {
 			SilenceTimeoutResponse silenceTimeoutResponse = new SilenceTimeoutResponse();
 
-			silenceTimeoutResponse.HttpResponse = _ctx.HttpResponse;
-			silenceTimeoutResponse.Action = _ctx.StringValue("SilenceTimeout.Action");
-			silenceTimeoutResponse.ActionParams = _ctx.StringValue("SilenceTimeout.ActionParams");
-			silenceTimeoutResponse.Interruptible = _ctx.BooleanValue("SilenceTimeout.Interruptible");
-			silenceTimeoutResponse.RequestId = _ctx.StringValue("SilenceTimeout.RequestId");
-			silenceTimeoutResponse.TextResponse = _ctx.StringValue("SilenceTimeout.TextResponse");
+			silenceTimeoutResponse.HttpResponse = context.HttpResponse;
+			silenceTimeoutResponse.RequestId = context.StringValue("SilenceTimeout.RequestId");
+			silenceTimeoutResponse.TextResponse = context.StringValue("SilenceTimeout.TextResponse");
+			silenceTimeoutResponse.Interruptible = context.BooleanValue("SilenceTimeout.Interruptible");
+			silenceTimeoutResponse.Action = context.StringValue("SilenceTimeout.Action");
+			silenceTimeoutResponse.ActionParams = context.StringValue("SilenceTimeout.ActionParams");
         
 			return silenceTimeoutResponse;
         }
